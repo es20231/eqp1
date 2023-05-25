@@ -4,3 +4,4 @@ Equipe 1 - ES 2023.1
 - Markesley Ramos
 - Bruno Estrella
 - José Gayoso
+- Fernando Augusto
