@@ -1,0 +1,61 @@
+{% extends 'dashboard.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/style_pictures_add.css')}}">
+<div class="dashboard">
+    <div class="picture">
+        <div class="image">
+            <img class="img" src="https://blog.explorersclub.com.br/wp-content/uploads/2023/02/Banner-7-Hokages-de-Naruto.jpg" alt="">
+        </div>
+        <div class="container_card">
+            <div class="card">
+                <h1>Comentários</h1>
+                <hr class="line-card">
+                <div class="textfield">
+                    <input type="text" name="comentario" placeholder="Comentário">
+                </div>
+                <button class="btn-comment">Comentar</button>
+            </div>
+        </div> 
+    </div>
+    <div>
+        <hr class="line-picture">
+    </div>
+    <div class="picture">
+        <div class="image">
+            <img class="img" src="https://miro.medium.com/v2/resize:fit:1400/0*qKksSvflsm_XHdI7.jpg" alt="">
+        </div>
+        <div class="container_card">
+            <div class="card">
+                <h1>Comentários</h1>
+                <hr class="line-card">
+                <div class="textfield">
+                    <input type="text" name="comentario" placeholder="Comentário">
+                </div>
+                <button class="btn-comment">Comentar</button>
+            </div>
+        </div> 
+    </div>
+    <div>
+        <hr class="line-picture">
+    </div>
+    <div class="picture">
+        <div class="image">
+            <img class="img" src="https://www.einerd.com.br/wp-content/uploads/2019/11/Dojutsu-Sharingan.jpg" alt="">
+        </div>
+        <div class="container_card">
+            <div class="card">
+                <h1>Comentários</h1>
+                <hr class="line-card">
+                <div class="textfield">
+                    <input type="text" name="comentario" placeholder="Comentário">
+                </div>
+                <button class="btn-comment">Comentar</button>
+            </div>
+        </div> 
+    </div>
+    <div>
+        <hr class="line-picture">
+    </div>
+</div>
+
+{% endblock conteudo %}

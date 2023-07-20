@@ -1,0 +1,37 @@
+{% extends 'dashboard.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/style_gallery.css')}}">
+<div class="add">
+    <div class="add-picture">
+        <button>+ Adicionar</button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card-picture">
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/769399173442908361/46AE7D059A3CDA861239B0D19CA5DFA59525E56F/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="">
+        <div class="buttons">
+            <button class="btn-post">Postar</button>
+            <button class="btn-excluir">Excluir</button>
+        </div>
+    </div>
+    <hr class="line-below">
+    <div class="card-picture">
+        <img src="https://uploads.spiritfanfiction.com/historias/capitulos/201807/o-desejo-de-minato-namikaze-13603240-110720180453.jpg" alt="">
+        <div class="buttons">
+            <button class="btn-post">Postar</button>
+            <button class="btn-excluir">Excluir</button>
+        </div>
+    </div>
+    <hr class="line-below">
+    <div class="card-picture">
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/55500119939068607/C2EF6B446CB0D385C99FA1360B47445F54F705B2/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true" alt="">
+        <div class="buttons">
+            <button class="btn-post">Postar</button>
+            <button class="btn-excluir">Excluir</button>
+        </div>
+    </div>
+    <hr class="line-below">
+</div>
+
+{% endblock conteudo %}
