@@ -57,12 +57,11 @@ def dashboard():
 def pictures_add():
     return render_template("pictures_add.html")  
 
-@app.route('/perfil')
+@app.route('/perfil/<user>')
 @login_required
-def perfil():
-    users = User.query.all()
-    #perfil = User.query.filter_by(id=user_id).first
-    return render_template("perfil.html", users=users)
+def perfil(user):
+    profile = User.query.filter_by(id=user).first()
+    return render_template("perfil.html", profile=profile)
 
 @app.route('/gallery')
 @login_required
@@ -73,4 +72,9 @@ def gallery():
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
+@app.route('/users')
+def users():
+    users = User.query.all()
+    return render_template("users.html", users=users)
     
