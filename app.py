@@ -32,6 +32,10 @@ def gallery():
 def logout():
     return render_template("login.html")
 
+@app.route('/users')
+def users():
+    return render_template("users.html")
+
 
 if __name__ == '__main__':
     app.run(debug=True)

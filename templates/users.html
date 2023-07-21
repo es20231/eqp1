@@ -1,0 +1,21 @@
+{% extends 'dashboard.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/style_users.css')}}">
+<div class="card-title">
+    <div class="title">
+        <h2>Usuários</h2>
+    </div>
+    <hr class="line">
+</div>
+<div class="container">
+    <div class="card-user">
+        <a href="#">Uzumaki_Naruto</a>
+    </div>
+    <div class="card-user">
+        <a href="#">Estrella_Bruno</a>
+    </div>
+    <div class="card-user">
+        <a href="#">Ferd_Augusto</a>
+    </div>
+</div>
+{% endblock conteudo %}
