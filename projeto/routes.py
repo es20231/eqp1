@@ -101,6 +101,7 @@ def upload_image():
     return redirect(request.url)
 
 @app.route('/<int:id>/gallery')
+@login_required
 def delete_image(id):
     image = Uploads.query.filter_by(id=id).first()
     db.session.delete(image)
