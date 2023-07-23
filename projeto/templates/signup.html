@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style_signup.css')}}">
+    <title>signup</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                    <li style="background-color: lightcoral;">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    <div class="main-signup">
+        <div class="left-signup">
+            <h1>Microgram</h1>
+            <img src="../static/img/image-post-animate.svg" alt="" class="image-signup">
+        </div>
+        <div class="rigth-signup">
+            <div class="card-signup">
+                <h1>Cadastro</h1>
+                <form action="" method="post">
+                    <div class="textfield">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" required placeholder="Nome">
+                    </div>
+                    <div class="textfield">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" required placeholder="Usuário">
+                    </div>
+                    <div class="textfield">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required placeholder="Email">
+                    </div>
+                    <div class="textfield">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" required placeholder="Senha">
+                    </div>
+                    <div class="textfield">
+                        <label for="confirmar_senha">Confirmar Senha</label>
+                        <input type="password" name="confirmar_senha" required placeholder="Confirmar Senha">
+                    </div>
+                    <button class="btn-signup">Cadastrar</button>   
+                </form>
+                
+                <div class="login">
+                    <p>Já tem uma conta?</p>
+                    <a href="{{url_for('login')}}">Login</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

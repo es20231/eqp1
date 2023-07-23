@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.perfil{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-perfil{
+    height: 50vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.top-perfil >h2{
+    color: rgb(216, 216, 216);
+}
+
+.img{
+    height: 100px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.follow{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:space-evenly;   
+    color: rgb(216, 216, 216);
+
+}
+
+.seguidores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(216, 216, 216);
+    gap: 4px;
+}
+
+.seguindo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(216, 216, 216);
+}
+
+.usuarios >a{
+    font-weight: bold;
+    font-size: x-large;
+    color: rgb(216, 216, 216);
+    text-decoration: none;
+}
+
+.text{
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    color: #a75bb4;
+}
+
+.line-perfil{
+    width: 70vw;
+    background-color: #00ff88;
+    padding: 2px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 20px;
+}
+
+.bottom-perfil{
+    height: 30vh;
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 18px;
+    
+    
+}
+
+.bottom-perfil >img{
+    height: 70%;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width:600px){
+    .perfil{
+        height: auto;
+        width: 100%;
+    }
+    .top-perfil{
+        height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .follow{
+        height: auto;
+        width: 100%;
+    }
+
+}

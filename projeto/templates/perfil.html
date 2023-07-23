@@ -1,0 +1,41 @@
+{% extends 'dashboard.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/style_perfil.css')}}">
+<div class="perfil">
+    <div class="top-perfil">
+        <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG4YI6XqPxqFqyCSvDtGznh8w-nj0LJiKJuw&usqp=CAU" alt="">
+        <h2>{{profile.nome}}</h2>
+        <h2>@{{profile.usuario}}</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus blanditiis veritatis nesciunt hic eaque unde, consectetur perspiciatis totam aperiam dolores? Architecto accusantium laboriosam non ex iure praesentium vitae dolore aliquam.</p>
+    </div>
+    <div class="follow">
+        <div class="seguidores">
+            <h2>1000</h2>
+            <h2>Seguidores</h2>
+        </div>
+        <div class="usuarios">
+            <a href="{{url_for('users')}}">Usuários</a>
+        </div>
+        <div class="seguindo">
+            <h2>1000</h2>
+            <h2>Seguindo</h2>
+        </div>
+    </div>
+    <div>
+        <hr class="line-perfil">
+    </div>
+    <div class="bottom-perfil">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+        <img src="https://motionbgs.com/media/931/minato-namikaze-andwhirling-orb.jpg" alt="">
+    </div>
+</div>  
+{% endblock conteudo %}
