@@ -71,7 +71,7 @@ def gallery():
     images = Uploads.query.filter_by(usuario=current_user.id).all()
     images_list = []
     for image in images:
-        image = base64.b64encode(image.data).decode('ascii')
+        image = (base64.b64encode(image.data).decode('ascii'), image.id)
         images_list.insert(0, image)
     return render_template("gallery.html", images= images_list)
 
@@ -100,6 +100,13 @@ def upload_image():
         return redirect(url_for('gallery'))
     return redirect(request.url)
 
+@app.route('/<int:id>/gallery')
+def delete_image(id):
+    image = Uploads.query.filter_by(id=id).first()
+    db.session.delete(image)
+    db.session.commit()
+    return redirect(url_for('gallery'))
+    
 @app.route('/logout')
 def logout():
     logout_user()
