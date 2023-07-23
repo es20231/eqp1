@@ -68,7 +68,7 @@ def perfil(user):
 @app.route('/gallery')
 @login_required
 def gallery():
-    images = Uploads.query.all()
+    images = Uploads.query.filter_by(usuario=current_user.id).all()
     images_list = []
     for image in images:
         image = base64.b64encode(image.data).decode('ascii')
@@ -94,6 +94,7 @@ def upload_image():
         new_photo = Uploads(data=blob_photo)
         db.session.add(new_photo)
         db.session.commit()
+        new_photo.upload_foto(current_user)
         flash("Imagem cadastrada com sucesso", category="upload_sucess")
 
         return redirect(url_for('gallery'))
