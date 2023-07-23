@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="{{url_for('static', filename='css/style_signup.css')}}">
     <title>signup</title>
 </head>
+
 <body>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
-            <ul class=flashes>
-                {% for message in messages %}
-                    <li style="background-color: lightcoral;">{{ message }}</li>
-                {% endfor %}
-            </ul>
+            {% for message in messages %}
+                <div class="container">
+                    <span class="flashes">{{ message }}</span>
+                </div>
+            {% endfor %}
         {% endif %}
     {% endwith %}
     <div class="main-signup">
@@ -46,9 +48,9 @@
                         <label for="confirmar_senha">Confirmar Senha</label>
                         <input type="password" name="confirmar_senha" required placeholder="Confirmar Senha">
                     </div>
-                    <button class="btn-signup">Cadastrar</button>   
+                    <button class="btn-signup">Cadastrar</button>
                 </form>
-                
+
                 <div class="login">
                     <p>Já tem uma conta?</p>
                     <a href="{{url_for('login')}}">Login</a>
@@ -58,4 +60,5 @@
 
     </div>
 </body>
+
 </html>

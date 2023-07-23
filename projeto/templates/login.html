@@ -10,11 +10,14 @@
 <body>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
-            <ul class=flashes>
-                {% for message in messages %}
-                    <li style="background-color: lightcoral;">{{ message }}</li>
-                {% endfor %}
-            </ul>
+            
+            {% for message in messages %}
+            <div class="container">
+                <span class="flashes">{{ message }}</span>
+            </div>
+                
+            {% endfor %}
+            
         {% endif %}
     {% endwith %}
     <div class="main-login">
@@ -43,7 +46,6 @@
                 
             </div>
         </div>
-
     </div>
 </body>
 </html>
