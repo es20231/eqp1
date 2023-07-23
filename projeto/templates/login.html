@@ -10,6 +10,7 @@
 <body>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
+<<<<<<< HEAD
 
             <div class="popup-container">
                 <div class="popup-content">
@@ -24,6 +25,16 @@
             </div>
 
 
+=======
+            
+            {% for message in messages %}
+            <div class="container">
+                <span class="flashes">{{ message }}</span>
+            </div>
+                
+            {% endfor %}
+            
+>>>>>>> b47bf482ab95e7d2201d6da3f55c3d41fba83dda
         {% endif %}
     {% endwith %}
     <div class="main-login">
@@ -52,7 +63,6 @@
                 
             </div>
         </div>
-
     </div>
     <script src="{{ url_for('static', filename='js/script_popup.js') }}"></script>
 </body>
