@@ -42,7 +42,7 @@ def login():
         
         if user_logged and user_logged.converte_senha(senha_texto_claro=senha):
             login_user(user_logged)
-            return redirect(url_for('dashboard'))
+            return redirect(url_for('pictures_add'))
         else:
             flash('Erro ao logar', category='danger')
 
