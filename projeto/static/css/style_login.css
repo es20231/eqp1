@@ -52,6 +52,16 @@ body *{
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
+
+.card-login form{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
 .card-login >h1{
     color: #00ff88;
     font-weight: 800;
