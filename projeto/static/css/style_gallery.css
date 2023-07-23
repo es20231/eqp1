@@ -141,43 +141,40 @@
     
 }
 
-.btn-post{
+.btn-post,
+.btn-excluir {
     width: 70%;
-    padding: 4px 0 ;
+    padding: 4px 0;
     margin-top: 5px;
     border: none;
     border-radius: 8px;
     outline: none;
     font-weight: 700;
     letter-spacing: 1.0px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-post {
     background: #00ff88;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
-
+    font-size: 18px; 
 }
 
-.btn-excluir{
-    width: 70%;
-    padding: 4px 0 ;
-    margin-top: 5px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    font-weight: 700;
-    letter-spacing: 1.0px;
+.btn-excluir {
     background: #fc1606f8;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
-
+    font-size: 18px; 
 }
 
-.btn-post:hover{
-    background: #03b964;transition: background 0.7s;
+.btn-post:hover {
+    background: #03b964;
+    transition: background 0.7s;
 }
 
-.btn-excluir:hover{
-    background: #cc1003f8;transition: background 0.7s;
+.btn-excluir:hover {
+    background: #cc1003f8;
+    transition: background 0.7s;
 }
+
 
 .line-below{
     height: 10%;
