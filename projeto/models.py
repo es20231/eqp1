@@ -33,5 +33,8 @@ class User(db.Model, UserMixin):
 
 class Uploads(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    path = db.Column(db.String(length=1024), nullable=False)
+    data = db.Column(db.LargeBinary, nullable=False)
     usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
+
+    def __init__(self, data):
+        self.data = data
