@@ -27,7 +27,7 @@ def signup():
                 db.session.commit()
                 return redirect(url_for('login'))
         else:
-            flash('Erro ao cadastrar', category='danger')
+            flash('Erro ao cadastrar, tente novamente', category='danger')
 
     return render_template('signup.html')
 
@@ -44,7 +44,7 @@ def login():
             login_user(user_logged)
             return redirect(url_for('pictures_add'))
         else:
-            flash('Erro ao logar', category='danger')
+            flash('Erro ao logar, email ou senha inválidos!!!', category='danger')
 
     return render_template('login.html')
 

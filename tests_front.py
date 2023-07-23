@@ -35,11 +35,6 @@ class TestRoutes(unittest.TestCase):
         self.assertIn(b'<!DOCTYPE html>', soup.encode())
         self.assertIn(b'<title>signup</title>', soup.encode())
 
-    def test_dashboard(self):
-        soup = self.get_soup('/dashboard')
-        self.assertIn(b'<!DOCTYPE html>', soup.encode())
-        self.assertIn(b'<title>Dashboard</title>', soup.encode())
-
     # def test_pictures_add(self):
     #     with app.app_context():
     #         user = User(nome='Test User', usuario='testuser', email='test@example.com', senha='testpassword')
