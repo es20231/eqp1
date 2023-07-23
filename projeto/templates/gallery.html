@@ -39,10 +39,12 @@
 <div class="container">
     {% for image in images %}
     <div class="card-picture">
-        <img src="data:;base64,{{image}}" alt="">
+        <img src="data:;base64,{{image[0]}}" alt="">
         <div class="buttons">
             <button class="btn-post">Postar</button>
-            <button class="btn-excluir">Excluir</button>
+            <a href="{{image[1]}}/gallery" 
+            onclick="return confirm('Deseja realmente excluir esta imagem da sua galeria de fotos?')"
+             class="btn-excluir">Excluir</a>
         </div>
     </div>
     <hr class="line-below">
