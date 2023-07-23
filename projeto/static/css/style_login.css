@@ -128,14 +128,6 @@ body *{
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
-.flashes {
-    background-color: #201b2c; /* Vermelho */
-    color: #48ff00; /* Branco */
-    font-size: 20px; /* Tamanho da fonte de 18px */
-    text-align: center; /* Centralizar o texto */
-    padding: 10px;
-}
-
 button:hover {
     background: #02cc6e;transition: background 0.8s;
 }

@@ -7,42 +7,102 @@
     box-sizing: border-box;
 }
 
+.alert{
+    width: 100vw;
+    display: flex;
+    background-color: #00ff88;
+}
+
+.alert_pass{
+    width: 100vw;
+    display: flex;
+    background-color: #201b2c;
+}
+
+.flashes{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    color: rgb(241, 11, 11);
+}
+
+.flashes_pass{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    color: #00ff88;
+}
+
 .add{
     height: 20vh;
-    width: 42vw;
+    width: 52vw;
     display: flex;
     justify-content: end;
 }
 
-.add-picture{
-    height: 20%;
-    width: 30%;
+.add-picture {
+    height: 50%;
+    width: 42%;
     display: flex;
-    justify-content: center;
     align-items: center;
     margin-top: 90px;
-    padding: 30px  35px ;
+    padding: 30px;
     background: #2f2841;
     border-radius: 20px;
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.add-picture >button{
+.add-picture form {
     width: 100%;
-    padding: 4px 0 ;
-    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-picture input[type="file"] {
+    flex:auto; /* Ocupa o espaço disponível restante no form */
+    width: 105%;
+    padding: 4px 10px;
+    border: 2px solid #28125e;
+    border-radius: 50px;
+    margin-top: 10px;
+    font-weight: 700;
+    letter-spacing: 1.0px;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 10px 10px 40px -12px #00ff8052;
+    font-size: 14px;
+}
+
+.add-picture input[type="file"]:hover {
+    background: #03b964;
+    transition: background 0.7s;
+}
+
+.add-picture input[type="submit"] {
+    width: 50%; /* Defina o valor desejado para a largura do botão */
+    padding: 4px 0;
+    border: 2px solid #28125e;
     border-radius: 20px;
+    margin-top: 10px;
     outline: none;
     font-weight: 700;
     letter-spacing: 1.0px;
     background: #00ff88;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #00ff8052;
+    font-size: 14px;
 }
 
-.add-picture >button:hover{
-    background: #03b964;transition: background 0.7s;
+.add-picture input[type="submit"]:hover {
+    background: #03b964;
+    transition: background 0.7s;
 }
+
 
 .container{
     display: flex;

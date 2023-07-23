@@ -14,27 +14,27 @@
 </div>
 
 
-<!-- <p>
+ <p>
     {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
             {% for category,message in messages %}
                 {% if category == "file_erro" %}
-                    <div>
-                        <label>{{message}}</label>
+                    <div class="alert">
+                        <label class="flashes">{{message}}</label>
                     </div>
                 {% elif category == "compatibility_error" %}
-                    <div>
-                        <label>{{message}}</label>
+                    <div class="alert">
+                        <label class="flashes">{{message}}</label>
                     </div>
                 {% elif category == "upload_sucess" %}
-                    <div>
-                        <label>{{message}}</label>
+                    <div class="alert_pass">
+                        <label class="flashes_pass">{{message}}</label>
                     </div>
                 {% endif %}
             {% endfor %}
         {% endif %}
     {% endwith %}
-</p> -->
+</p> 
 
 <div class="container">
     {% for image in images %}

@@ -5,27 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style_login.css') }}">
+    <link rel="icon" href="static/img/Logo_microgram.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
     {% with messages = get_flashed_messages() %}
         {% if messages %}
-<<<<<<< HEAD
-
-            <div class="popup-container">
-                <div class="popup-content">
-                    <h2>Alerta!</h2>
-                    <ul class=flashes>
-                        {% for message in messages %}
-                            {{ message }}
-                        {% endfor %}
-                    </ul>
-                    <button class="close-popup">Continuar</button>
-                </div>
-            </div>
-
-
-=======
             
             {% for message in messages %}
             <div class="container">
@@ -34,7 +19,6 @@
                 
             {% endfor %}
             
->>>>>>> b47bf482ab95e7d2201d6da3f55c3d41fba83dda
         {% endif %}
     {% endwith %}
     <div class="main-login">
