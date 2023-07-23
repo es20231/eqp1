@@ -99,16 +99,6 @@ def upload_image():
         return redirect(url_for('gallery'))
     return redirect(request.url)
 
-# @app.route('/gallery/images')
-# @login_required
-# def display_images():
-    # images = Uploads.query.all()
-    # images_list = []
-    # for image in images:
-    #     image = base64.b64encode(image.data).decode('ascii')
-    #     images_list.insert(0, image)
-    # return render_template("gallery.html", images = images_list)
-
 @app.route('/logout')
 def logout():
     logout_user()
