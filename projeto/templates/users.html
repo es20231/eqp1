@@ -11,7 +11,7 @@
     {% for user in users %}
         {% if user.id != current_user.id %}
             <div class="card-user">
-                <a href="{{url_for('perfil', user=user.id)}}">{{user.nome}}</a>
+                <a href="{{url_for('perfil', user=user.id)}}">{{user.nome}} (@{{user.usuario}})</a>
             </div>
         {% endif %}
     {% endfor %}

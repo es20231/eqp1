@@ -8,6 +8,15 @@
     <title>signup</title>
 </head>
 <body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+                {% for message in messages %}
+                    <li style="background-color: lightcoral;">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
     <div class="main-signup">
         <div class="left-signup">
             <h1>Microgram</h1>
