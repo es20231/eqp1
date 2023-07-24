@@ -1,7 +1,7 @@
 import unittest
 from projeto import app, db
 from projeto.models import User
-from flask_login import login_user, logout_user
+from flask_login import login_user, logout_user, current_user
 
 
 
@@ -201,8 +201,25 @@ class AppTestCase(unittest.TestCase):
             self.assertEqual(inserted_user.usuario, 'novo_usuario')
             self.assertEqual(inserted_user.email, 'novo_usuario@example.com')
 
-    
-                
+    def test_list_users(self):
+        with app.app_context():
+            user1 = User(nome='Kely', usuario='kelyyy', email='kellyaaaa@gmail.com', senha='testpassword')
+            db.session.add(user1)
+            db.session.commit()
+
+            user2 = User(nome='Kely2', usuario='kelyyy2', email='kellyaaaa2@gmail.com', senha='testpassword2')
+            db.session.add(user2)
+            db.session.commit()
+
+            user3 = User(nome='Kely3', usuario='kelyyy3', email='kellyaaaa3@gmail.com', senha='testpassword3')
+            db.session.add(user3)
+            db.session.commit()
+
+            response = self.app.get('/users')
+            self.assertEqual(response.status_code, 200)
+            for user in User.query.all():
+                if user != current_user:
+                    self.assertIn(user.nome.encode(), response.data)
 
 if __name__ == '__main__':
     unittest.main()
