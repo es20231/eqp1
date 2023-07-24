@@ -1,9 +1,11 @@
 from projeto import app
 from projeto import db
+from projeto import allowed_extensions
 from projeto.validators import validate_email, validate_senha, validate_usuario
 from projeto.models import User, Uploads
 from flask import render_template, redirect, request, url_for, flash
 from flask_login import login_user, logout_user, login_required, current_user
+import base64
 
 
 @app.route('/signup', methods=['POST', 'GET'])
@@ -66,8 +68,46 @@ def perfil(user):
 @app.route('/gallery')
 @login_required
 def gallery():
-    return render_template("gallery.html")
+    images = Uploads.query.filter_by(usuario=current_user.id).all()
+    images_list = []
+    for image in images:
+        image = (base64.b64encode(image.data).decode('ascii'), image.id)
+        images_list.insert(0, image)
+    return render_template("gallery.html", images= images_list)
 
+@app.route('/gallery', methods=["POST"])
+@login_required
+def upload_image():
+    if request.method == 'POST':
+        photo = request.files['image']
+    
+        if photo.filename == '':
+            flash("Nenhum arquivo foi selecionado", category="file_error")
+            return redirect(request.url)
+        
+        if not allowed_extensions(photo.filename):
+            flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
+            return redirect(request.url)
+        
+        blob_photo = photo.read()
+        
+        new_photo = Uploads(data=blob_photo)
+        db.session.add(new_photo)
+        db.session.commit()
+        new_photo.upload_foto(current_user)
+        flash("Imagem cadastrada com sucesso", category="upload_sucess")
+
+        return redirect(url_for('gallery'))
+    return redirect(request.url)
+
+@app.route('/<int:id>/gallery')
+@login_required
+def delete_image(id):
+    image = Uploads.query.filter_by(id=id).first()
+    db.session.delete(image)
+    db.session.commit()
+    return redirect(url_for('gallery'))
+    
 @app.route('/logout')
 def logout():
     logout_user()
