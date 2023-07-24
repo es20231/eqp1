@@ -10,13 +10,15 @@
 .alert{
     width: 100vw;
     display: flex;
-    background-color: #00ff88;
+    background-color: #201b2c;
+    margin-top: 85px;
 }
 
 .alert_pass{
     width: 100vw;
     display: flex;
     background-color: #201b2c;
+    margin-top: 85px;
 }
 
 .flashes{
@@ -37,16 +39,17 @@
     color: #00ff88;
 }
 
+
 .add{
     height: 20vh;
-    width: 52vw;
+    width: 59vw;
     display: flex;
     justify-content: end;
 }
 
 .add-picture {
-    height: 50%;
-    width: 42%;
+    height: 60%;
+    width: 50%;
     display: flex;
     align-items: center;
     margin-top: 90px;
@@ -56,15 +59,22 @@
     box-shadow: 0px 10px 40px #00000056;
 }
 
-.add-picture form {
-    width: 100%;
+.input-group{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
-.add-picture input[type="file"] {
-    flex:auto; /* Ocupa o espaço disponível restante no form */
+.add-picture form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-picture input[type="file"] { 
     width: 105%;
     padding: 4px 10px;
     border: 2px solid #28125e;
@@ -88,7 +98,6 @@
     padding: 4px 0;
     border: 2px solid #28125e;
     border-radius: 20px;
-    margin-top: 10px;
     outline: none;
     font-weight: 700;
     letter-spacing: 1.0px;
@@ -133,7 +142,7 @@
 }
 
 .buttons{
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,12 +166,17 @@
 
 .btn-post {
     background: #00ff88;
-    font-size: 18px; 
+    font-size: 16px; 
 }
 
 .btn-excluir {
     background: #fc1606f8;
-    font-size: 18px; 
+    font-size: 16px; 
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .btn-post:hover {
@@ -194,6 +208,9 @@
         width: 85%;
     }
     .add-picture{
+        width: 85%;
+    }
+    .add-picture input[type="submit"]{
         width: 85%;
     }
 }
