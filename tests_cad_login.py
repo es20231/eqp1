@@ -207,17 +207,27 @@ class AppTestCase(unittest.TestCase):
 
     def test_list_users(self):
         with app.app_context():
-            user1 = User(nome='Kely', usuario='kelyyy', email='kellyaaaa@gmail.com', senha='testpassword')
+            user1 = User(nome='Kely', usuario='kelyyy', email='kellyaaaa@gmail.com', senhacrip='testpassword')
             db.session.add(user1)
             db.session.commit()
 
-            user2 = User(nome='Kely2', usuario='kelyyy2', email='kellyaaaa2@gmail.com', senha='testpassword2')
+            user2 = User(nome='Kely2', usuario='kelyyy2', email='kellyaaaa2@gmail.com', senhacrip='testpassword2')
             db.session.add(user2)
             db.session.commit()
 
-            user3 = User(nome='Kely3', usuario='kelyyy3', email='kellyaaaa3@gmail.com', senha='testpassword3')
+            user3 = User(nome='Kely3', usuario='kelyyy3', email='kellyaaaa3@gmail.com', senhacrip='testpassword3')
             db.session.add(user3)
             db.session.commit()
+
+            # Fazer a requisição para a página de login com as credenciais corretas
+            response = self.app.post('/', data={
+                'email': 'kellyaaaa@gmail.com',
+                'senha': 'testpassword'
+            }, follow_redirects=True)
+
+            self.assertEqual(response.status_code, 200)
+
+            self.assertEqual(response.request.path, '/pictures_add')
 
             response = self.app.get('/users')
             self.assertEqual(response.status_code, 200)
@@ -229,3 +239,4 @@ class AppTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

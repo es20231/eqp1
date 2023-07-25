@@ -51,6 +51,7 @@ def login():
     return render_template('login.html')
 
 @app.route('/dashboard')
+@login_required
 def dashboard():
     return render_template("dashboard.html")
     
@@ -94,7 +95,7 @@ def upload_image():
         new_photo = Uploads(data=blob_photo)
         db.session.add(new_photo)
         db.session.commit()
-        new_photo.upload_foto(current_user)
+        new_photo.insert_logged_user_id(current_user)
         flash("Imagem cadastrada com sucesso", category="upload_sucess")
 
         return redirect(url_for('gallery'))
@@ -106,14 +107,17 @@ def delete_image(id):
     image = Uploads.query.filter_by(id=id).first()
     db.session.delete(image)
     db.session.commit()
+    flash("Imagem removida com sucesso", category="delete_success")
     return redirect(url_for('gallery'))
     
 @app.route('/logout')
+@login_required
 def logout():
     logout_user()
     return redirect(url_for('login'))
 
 @app.route('/users')
+@login_required
 def users():
     users = User.query.all()
     return render_template("users.html", users=users)

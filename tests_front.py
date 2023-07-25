@@ -34,20 +34,6 @@ class TestRoutes(unittest.TestCase):
         soup = self.get_soup('/signup')
         self.assertIn(b'<!DOCTYPE html>', soup.encode())
         self.assertIn(b'<title>signup</title>', soup.encode())
-
-    # def test_pictures_add(self):
-    #     with app.app_context():
-    #         user = User(nome='Test User', usuario='testuser', email='test@example.com', senha='testpassword')
-    #         db.session.add(user)
-    #         db.session.commit()
-
-    #         response = self.app.post('/', data={
-    #             'email': 'testuser@example.com',
-    #             'senha': 'testpassword'
-    #         }, follow_redirects=True)
-    #         self.assertEqual(response.status_code, 200)
-    #         soup = self.get_soup('/pictures_add')
-    #         self.assertIn(b'<!DOCTYPE html>', soup.encode())
             
     def test_login_and_redirect_to_pictures_add(self):
         with app.app_context():
@@ -114,9 +100,24 @@ class TestRoutes(unittest.TestCase):
             self.assertIn(b'<title>Dashboard</title>', soup.encode())
 
     def test_users(self):
-        soup = self.get_soup('/users')
-        self.assertIn(b'<!DOCTYPE html>', soup.encode())
-        self.assertIn(b'<title>Dashboard</title>', soup.encode())
+        with app.app_context():
+            # Criar um usuário de teste
+            user = User(nome='Test User', usuario='testuser', email='test@example.com', senhacrip='testpassword')
+            db.session.add(user)
+            db.session.commit()
+
+            # Fazer a requisição para a página de login com as credenciais corretas
+            response = self.app.post('/', data={
+                'email': 'test@example.com',
+                'senha': 'testpassword'
+            }, follow_redirects=True)
+
+            self.assertEqual(response.status_code, 200)
+
+            self.assertEqual(response.request.path, '/pictures_add')
+            soup = self.get_soup('/users')
+            self.assertIn(b'<!DOCTYPE html>', soup.encode())
+            self.assertIn(b'<title>Dashboard</title>', soup.encode())
 
 if __name__ == '__main__':
     unittest.main()

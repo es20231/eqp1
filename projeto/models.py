@@ -39,6 +39,6 @@ class Uploads(db.Model):
     def __init__(self, data):
         self.data = data
     
-    def upload_foto(self, user_logged):
+    def insert_logged_user_id(self, user_logged):
         self.usuario = user_logged.id
         db.session.commit()
