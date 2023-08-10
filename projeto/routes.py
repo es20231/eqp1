@@ -126,3 +126,8 @@ def users():
     users = User.query.all()
     return render_template("users.html", users=users)
     
+
+@app.route('/configuration')
+@login_required
+def configuration():
+    return render_template('configuration.html')
