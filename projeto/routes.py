@@ -50,6 +50,10 @@ def login():
 
     return render_template('login.html')
 
+@app.route('/password_recovery')
+def password_recovery():
+    return render_template("password_recovery.html")
+
 @app.route('/dashboard')
 @login_required
 def dashboard():
@@ -122,3 +126,8 @@ def users():
     users = User.query.all()
     return render_template("users.html", users=users)
     
+
+@app.route('/configuration')
+@login_required
+def configuration():
+    return render_template('configuration.html')

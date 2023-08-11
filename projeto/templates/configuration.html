@@ -1,0 +1,87 @@
+{% extends 'dashboard.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/style_configuration.css')}}">
+
+<div class="container">
+    <div class="card-update">
+        <a href="#" id="show-or-hide">Atualizar Perfil</a>
+    </div>
+
+    <div class="card-update-below">
+        <div class="image">
+            <img src="https://yt3.googleusercontent.com/_q52i8bUAEvcb7JR4e-eNTv23y2A_wg5sCz0NC0GrGtcw1CRMWJSOPVHUDh_bngD0q4gMvVeoA=s900-c-k-c0x00ffffff-no-rj" alt="">
+            <a href="#">Alterar foto de perfil</a>
+        </div>
+
+        <div class="textfield">
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" placeholder="Usuário">
+        </div>
+
+        <div class="textfield2">
+            <label for="biografia">Biografia</label>
+            <textarea name="biografia" cols="30" rows="3" placeholder="Biografia"></textarea>
+        </div>
+
+        <button class="save">Salvar alterações</button>
+    </div>
+
+    <div class="card-update2">
+        <a href="#" id="show-or-hide2">Configurações de Perfil</a>
+    </div>
+
+    <div class="card-update-below2">
+        <div class="textfield-email">
+            <label for="email">Email</label>
+            <input type="email" name="email" required placeholder="Email">
+        </div>
+
+        <div class="textfield3">
+            <label for="senha">Senha atual</label>
+            <input type="password" name="senha" required placeholder="Senha atual">
+        </div>
+
+        <div class="textfield3">
+            <label for="senha">Nova senha</label>
+            <input type="password" name="senha" required placeholder="Nova senha">
+        </div>
+
+        <button class="save">Salvar alterações</button>
+    </div>
+</div>
+
+<script>
+    var btn = document.querySelector('#show-or-hide');
+    var card_update_below = document.querySelector('.card-update-below');
+    var card_update = document.querySelector('.card-update');
+
+    btn.addEventListener('click', function(){
+        if(card_update_below.style.display === 'block'){
+            card_update_below.style.display = 'none';
+            card_update.style.borderRadius = '20px';
+        } else {
+            card_update_below.style.display = 'block';
+            card_update_below.style.textAlign = 'center';
+            card_update.style.borderBottomLeftRadius = '0px';
+            card_update.style.borderBottomRightRadius = '0px';
+        }
+    });
+
+    var btn2 = document.querySelector('#show-or-hide2');
+    var card_update_below2 = document.querySelector('.card-update-below2');
+    var card_update2 = document.querySelector('.card-update2');
+
+    btn2.addEventListener('click', function(){
+        if(card_update_below2.style.display === 'block'){
+            card_update_below2.style.display = 'none';
+            card_update2.style.borderRadius = '20px';
+        } else {
+            card_update_below2.style.display = 'block';
+            card_update_below2.style.textAlign = 'center';
+            card_update2.style.borderBottomLeftRadius = '0px';
+            card_update2.style.borderBottomRightRadius = '0px';
+        }
+    });
+</script>
+
+{% endblock conteudo %}

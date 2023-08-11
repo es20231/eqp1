@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap');
+
+body{
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Noto Sans',sans-serif;
+}
+body *{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 40px;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-update{
+    height: 5vh;
+    width: 50vw;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px  35px ;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-update >a{
+    font-family:'Roboto Mono', monospace;
+    color: rgb(216, 216, 216);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-update-below{
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px  35px ;
+    background: #2f2841;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-update-below{
+    display: none;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.image >img{
+    height: 80px;
+    width: 90px;
+    border-radius: 50%;
+}
+
+.image >a{
+    color: #8b27b3;
+}
+
+.textfield{
+    width:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.textfield >input{
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield2{
+    width:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.textfield2 >textarea{
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield2 >label{
+    color: #f0ffffde;
+}
+
+.textfield2 >textarea::placeholder{
+    color: #f0ffff94;
+}
+
+.textfield >label{
+    color: #f0ffffde;
+}
+.textfield >input::placeholder{
+    color: #f0ffff94;
+}
+
+.save{
+    width: 35%;
+    padding: 12px 0 ;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+button:hover {
+    background: #02cc6e;transition: background 0.8s;
+}
+
+
+.card-update2{
+    height: 5vh;
+    width: 50vw;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px  35px ;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-update2 >a{
+    font-family:'Roboto Mono', monospace;
+    color: rgb(216, 216, 216);
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-update-below2{
+    height: 55vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px  35px ;
+    background: #2f2841;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-update-below2{
+    display: none;
+}
+
+.textfield-email{
+    width:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0;
+    gap: 66px;
+}
+
+.textfield-email >input{
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield-email >label{
+    color: #f0ffffde;
+}
+.textfield-email >input::placeholder{
+    color: #f0ffff94;
+}
+
+.textfield3{
+    width:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 20px 0;
+    gap: 13px;
+}
+
+.textfield3 >input{
+    width: 70%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield3 >label{
+    color: #f0ffffde;
+}
+.textfield3 >input::placeholder{
+    color: #f0ffff94;
+}
+
+@media only screen and (max-width:950px){
+    .card-update{
+        width: 85%;
+    }
+    .card-update-below{
+        width: 85%;
+    }
+    .card-update2{
+        width: 85%;
+    }
+    .card-update-below2{
+        width: 85%;
+    }
+}
+@media only screen and (max-width:600px){
+    .card-update-below{
+        height: 80%;
+    }
+    .card-update-below2{
+        height: 80%;
+    }
+}

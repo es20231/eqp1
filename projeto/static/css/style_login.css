@@ -132,6 +132,10 @@ button:hover {
     background: #02cc6e;transition: background 0.8s;
 }
 
+.forget-password >a{
+    color: #8b27b3;
+}
+
 .signup{
     display: flex;
     align-items: center;
