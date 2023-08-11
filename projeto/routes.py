@@ -50,6 +50,18 @@ def login():
 
     return render_template('login.html')
 
+@app.route('/registration')
+def registration():
+    return render_template("registration.html")
+
+@app.route('/confirm_registration')
+def confirm_registration():
+    return render_template("confirm_registration.html")
+
+@app.route('/token_expired')
+def token_expired():
+    return render_template("token_expired.html")
+
 @app.route('/password_recovery')
 def password_recovery():
     return render_template("password_recovery.html")
