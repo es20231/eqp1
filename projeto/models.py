@@ -15,7 +15,11 @@ class User(db.Model, UserMixin):
     usuario = db.Column(db.String(length=50), nullable=False, unique=True)
     email = db.Column(db.String(length=100), nullable=False, unique=True)
     senha = db.Column(db.String(length=15), nullable=False, unique=True)
+    email_confirmed = db.Column(db.Boolean, nullable=False, default=False)  # Novo campo para rastrear o status de confirmação do e-mail
+    email_confirm_token = db.Column(db.String(100), unique=True)  # Novo campo para armazenar o token de confirmação de e-mail
     uploads = db.relationship('Uploads', backref='dono_user', lazy=True)
+
+    
 
     @property
     def senhacrip(self):
