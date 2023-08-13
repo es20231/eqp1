@@ -54,18 +54,18 @@
             <li>
                 <a href="#">
                     <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                    <input class="input"  type="text" id="search-input" placeholder="Digite sua pesquisa">
+                    <input class="input"  type="search" id="search-input" placeholder="Digite sua pesquisa">
                 </a>
             </li>
         </ul>
     </div>
     <div class="search-below" id="search-below">
         <div class="users">
-            <a href="#">Mariana</a>
-            <a href="#">Fernando</a>
-            <a href="#">João</a>
-            <a href="#">Ana</a>
-            <a href="#">Carlos</a>
+            <a href="#" data-name="Mariana">Mariana</a>
+            <a href="#" data-name="Fernando">Fernando</a>
+            <a href="#" data-name="João">João</a>
+            <a href="#" data-name="Ana">Ana</a>
+            <a href="#" data-name="Carlos">Carlos</a>
         </div>
     </div>
     <div class="conteiner">
@@ -73,10 +73,6 @@
         {% endblock conteudo %}
     </div>
     <script type="text/javascript">
-        function toggleMenu() {
-            let navigation = document.querySelector('.navigation');
-            navigation.classList.toggle('active');
-        }
 
         document.addEventListener('DOMContentLoaded', function () {
             const search = document.getElementById('search');
@@ -122,9 +118,51 @@
             searchBelow.addEventListener('click', function (event) {
                 event.stopPropagation();
             });
+        
+            const content = document.querySelector(".users");
+            const inputSearch = document.querySelector("input[type='search']");
+            const usersLinks = document.querySelectorAll(".users a");
+
+            let items = [];
+
+            usersLinks.forEach(link => {
+                const name = link.getAttribute("data-name");
+                items.push(name);
+
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    inputSearch.value = name;
+                    inputSearch.dispatchEvent(new Event('input'));
+                });
+            });
+
+            inputSearch.addEventListener('input', () => {
+                content.innerHTML = "";
+
+                items
+                    .filter((item) =>
+                        item.toLowerCase().includes(inputSearch.value.toLowerCase())
+                    )
+                    .forEach((item) => addHTML(item));
+            });
+
+            function addHTML(item) {
+            const link = document.createElement("a");
+            link.href = "#";
+            link.setAttribute("data-name", item);
+            link.classList.add("user-link"); // Adicione as classes ou estilos necessários aqui
+            link.textContent = item;
+
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                inputSearch.value = item;
+                inputSearch.dispatchEvent(new Event('input'));
+            });
+
+            content.appendChild(link);
+            }
+
         });
-
-
     </script>
 </body>
 
