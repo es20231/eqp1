@@ -28,6 +28,15 @@ class User(db.Model, UserMixin):
         self.bio = desc
         db.session.commit()
 
+    def add_usuario(self, usuario):
+        self.usuario = usuario
+        db.session.commit()
+
+    def add_nova_senha(self, senha):
+        self.senhacrip = senha
+        db.session.commit()
+        
+
     @property
     def senhacrip(self):
         return self.senhacrip
@@ -48,7 +57,7 @@ class Uploads(db.Model):
     data = db.Column(db.LargeBinary, nullable=False)
     usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
 
-    def upload_foto(self, user_logged):
+    def insert_logged_user_id(self, user_logged):
         self.usuario = user_logged.id
         db.session.commit()
 

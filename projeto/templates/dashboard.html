@@ -14,6 +14,18 @@
 </head>
 
 <body>
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            
+            {% for message in messages %}
+            <div class="container">
+                <span class="flashes">{{ message }}</span>
+            </div>
+                
+            {% endfor %}
+            
+        {% endif %}
+    {% endwith %}
     <div class="navigation">
         <ul>
             <li class="in">
@@ -35,7 +47,7 @@
                 </a>
             </li>
             <li class="in">
-                <a href="#">
+                <a href="{{url_for('configuration')}}">
                     <span class="icon"><i class="fa-solid fa-gear"></i></span>
                     <span class="title">Configurações </span>
                 </a>

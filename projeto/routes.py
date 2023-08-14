@@ -50,6 +50,27 @@ def login():
 
     return render_template('login.html')
 
+
+@app.route('/registration')
+def registration():
+    return render_template("registration.html")
+
+
+@app.route('/confirm_registration')
+def confirm_registration():
+    return render_template("confirm_registration.html")
+
+
+@app.route('/token_expired')
+def token_expired():
+    return render_template("token_expired.html")
+
+
+@app.route('/password_recovery')
+def password_recovery():
+    return render_template("password_recovery.html")
+
+
 @app.route('/dashboard')
 @login_required
 def dashboard():
@@ -59,6 +80,7 @@ def dashboard():
 @login_required
 def pictures_add():
     return render_template("pictures_add.html")  
+
 
 @app.route('/perfil/<user>')
 @login_required
@@ -75,6 +97,7 @@ def gallery():
         image = (base64.b64encode(image.data).decode('ascii'), image.id)
         images_list.insert(0, image)
     return render_template("gallery.html", images= images_list)
+
 
 @app.route('/gallery', methods=["POST"])
 @login_required
@@ -101,6 +124,7 @@ def upload_image():
         return redirect(url_for('gallery'))
     return redirect(request.url)
 
+
 @app.route('/<int:id>/gallery')
 @login_required
 def delete_image(id):
@@ -110,11 +134,13 @@ def delete_image(id):
     flash("Imagem removida com sucesso", category="delete_success")
     return redirect(url_for('gallery'))
     
+
 @app.route('/logout')
 @login_required
 def logout():
     logout_user()
     return redirect(url_for('login'))
+
 
 @app.route('/users')
 @login_required
@@ -122,3 +148,27 @@ def users():
     users = User.query.all()
     return render_template("users.html", users=users)
     
+
+@app.route('/configuration', methods=['POST', 'GET'])
+@login_required
+def configuration():
+
+    if request.method == 'POST':
+        usuario = request.form.get('usuario')
+        bio = request.form.get('biografia')
+        email = request.form.get('email')
+        senha = request.form.get('senha')
+        nova_senha = request.form.get('nova_senha')
+        if usuario:
+            current_user.add_usuario(usuario)
+        if bio:
+            current_user.add_bio(bio)
+        if current_user.converte_senha(senha_texto_claro=senha) and not validate_email(email):
+            current_user.add_nova_senha(nova_senha)
+        else:
+            flash('Erro ao alterar senha: Email ou Senha fornecidos inválidos', category='danger')
+            return redirect(url_for('configuration'))
+        return redirect(url_for('perfil', user=current_user.id))
+    
+
+    return render_template('configuration.html')
