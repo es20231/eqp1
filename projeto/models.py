@@ -17,6 +17,8 @@ class User(db.Model, UserMixin):
     senha = db.Column(db.String(length=15), nullable=False, unique=True)
     bio = db.Column(db.String(length=1024))
     perfil_photo = db.Column(db.LargeBinary)
+    email_confirmed = db.Column(db.Boolean, nullable=False, default=False)  # Novo campo para rastrear o status de confirmação do e-mail
+    email_confirm_token = db.Column(db.String(100), unique=True)  # Novo campo para armazenar o token de confirmação de e-mail
     posts = db.relationship('Posts', backref='dono_user', lazy=True)
     uploads = db.relationship('Uploads', backref='dono_user', lazy=True)
 
