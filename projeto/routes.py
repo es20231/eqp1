@@ -42,8 +42,7 @@ def signup():
 
                 # Enviar o e-mail de confirmação
                 msg = Message('Confirme seu registro',
-                              recipients=[email],
-                              sender='microgram84@gmail.com')
+                              recipients=[email])
                 link = url_for('confirm_email', token=token, _external=True)
                 msg.html = render_template("registration.html", link=link)
                 mail.send(msg)
@@ -81,7 +80,7 @@ def confirm_email(token):
                 user.email_confirm_token = None
                 db.session.commit()
                 flash('E-mail confirmado com sucesso. Você pode fazer login agora.', category='success')
-                msg = Message('Conta confirmada!', recipients=[user.email], sender="microgram84@gmail.com")
+                msg = Message('Conta confirmada!', recipients=[user.email])
                 msg.html = render_template("confirm_registration.html", user=user)
                 mail.send(msg)
             else:
