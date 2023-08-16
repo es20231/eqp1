@@ -41,17 +41,23 @@
 </p> 
 
 <div class="container">
-    {% for image in images %}
+    {% for image in pagination %}
     <div class="card-picture">
-        <img src="data:;base64,{{image[0]}}" alt="">
+        <img src="data:;base64,{{image.string_data}}" alt="">
         <div class="buttons">
             <button class="btn-post">Postar</button>
-            <a href="{{image[1]}}/gallery" 
+            <a href="{{image.id}}/gallery" 
             onclick="return confirm('Deseja realmente excluir esta imagem da sua galeria de fotos?')"
              class="btn-excluir">Excluir</a>
         </div>
     </div>
     <hr class="line-below">
     {% endfor %}
+    {% if pagination.has_prev %}
+        <a href="{{url_for('gallery', page=pagination.prev_num)}}"> Fotos Anteriores</a>
+    {% endif %}
+    {% if pagination.has_next %}
+        <a href="{{url_for('gallery', page=pagination.next_num)}}"> Próximas Fotos</a>
+    {% endif %}
 </div>
 {% endblock conteudo %}
