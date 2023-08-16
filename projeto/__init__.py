@@ -7,17 +7,16 @@ from itsdangerous import URLSafeTimedSerializer
 import os
 from dotenv import load_dotenv
 
-
+load_dotenv()
 db = SQLAlchemy()
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///projeto.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("SQLALCHEMY_DATABASE_URI")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024
 db.init_app(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
-load_dotenv()
 
 #GMAIL
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
