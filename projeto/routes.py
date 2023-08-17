@@ -11,6 +11,10 @@ import base64
 from flask_mail import Mail, Message
 from sqlalchemy import desc
 from datetime import datetime
+<<<<<<< HEAD
+=======
+from werkzeug.exceptions import RequestEntityTooLarge
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 
 
 @app.route('/signup', methods=['POST', 'GET'])
@@ -110,6 +114,25 @@ def login():
 
     return render_template('login.html')
 
+<<<<<<< HEAD
+=======
+
+@app.route('/registration')
+def registration():
+    return render_template("registration.html")
+
+
+@app.route('/confirm_registration')
+def confirm_registration():
+    return render_template("confirm_registration.html")
+
+
+@app.route('/token_expired')
+def token_expired():
+    return render_template("token_expired.html")
+
+
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 @app.route('/password_recovery')
 def password_recovery():
     return render_template("password_recovery.html")
@@ -139,11 +162,20 @@ def gallery():
     per_page = 5
     all_images = Uploads.query.filter_by(usuario=current_user.id).order_by(desc(Uploads.upload_date)).paginate(page=page, per_page=per_page)
     return render_template("gallery.html", pagination = all_images)
+<<<<<<< HEAD
+=======
+
+@app.errorhandler(RequestEntityTooLarge)
+def handle_request_entity_too_large(e):
+    flash("O arquivo é muito grande. O tamanho máximo permitido é de 20 MB.", "file_length_error")
+    return redirect(request.url)
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 
 @app.route('/gallery', methods=["POST"])
 @login_required
 def upload_image():
     if request.method == 'POST':
+<<<<<<< HEAD
         photo = request.files['image']
     
         if photo.filename == '':
@@ -161,12 +193,41 @@ def upload_image():
         db.session.commit()
         new_photo.insert_logged_user_id(current_user)
         flash("Imagem cadastrada com sucesso", category="upload_sucess")
+=======
+        photos = request.files.getlist('images[]')
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 
+
+        for photo in photos:
+            if photo.filename == '':
+                flash("Nenhum arquivo foi selecionado", category="file_error")
+                return redirect(request.url)
+            
+            if not allowed_extensions(photo.filename):
+                flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
+                return redirect(request.url)
+            
+
+            blob_photo = photo.read()
+            blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
+            new_photo = Uploads(data=blob_photo, string_data=blob_photo_decoded,upload_date=datetime.now())
+            db.session.add(new_photo)
+            db.session.commit()
+            new_photo.insert_logged_user_id(current_user)
+
+        if len(photos) > 1:
+            flash("Imagens cadastrada com sucesso", category="upload_sucess")
+        else:
+            flash("Imagem cadastrada com sucesso", category="upload_success")
         return redirect(url_for('gallery'))
+
     return redirect(request.url)
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 @app.route('/<int:id>/gallery')
 @login_required
 def delete_image(id):
@@ -201,10 +262,15 @@ def configuration():
         email = request.form.get('email')
         senha = request.form.get('senha')
         nova_senha = request.form.get('nova_senha')
+<<<<<<< HEAD
+=======
+        novo_email = request.form.get('novo_email')
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
         if usuario:
             current_user.add_usuario(usuario)
         if bio:
             current_user.add_bio(bio)
+<<<<<<< HEAD
         if current_user.converte_senha(senha_texto_claro=senha) and not validate_email(email):
             current_user.add_nova_senha(nova_senha)
         else:
@@ -219,3 +285,17 @@ def configuration():
 @app.route('/password_redefinition')
 def password_redefinition():
     return render_template('password_redefinition.html')
+=======
+        if novo_email:
+            current_user.add_novo_email(novo_email)
+        if email and senha and nova_senha:
+            if current_user.converte_senha(senha_texto_claro=senha) and not validate_email(email):
+                current_user.add_nova_senha(nova_senha)
+            else:
+                flash('Erro ao alterar senha: Email ou Senha fornecidos inválidos', category='danger')
+                return redirect(url_for('configuration'))
+        return redirect(url_for('perfil', user=current_user.id))
+    
+
+    return render_template('configuration.html', user=current_user)
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f

@@ -286,6 +286,7 @@
     margin-top: 100px;
 }
 
+<<<<<<< HEAD
 dialog::backdrop{
     background-color: rgb(0 0 0 / .5);
 }
@@ -333,6 +334,22 @@ dialog{
 .pagination >a{
     text-decoration: none;
     color: #8b27b3;
+=======
+#Progress_Status {
+    width: 50%;
+    background-color: #ddd;
+}
+
+.show-progress #progressBar{
+    display: block;
+}
+
+#progressBar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+    display: none;
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 }
 
 @media only screen and (max-width:1100px){

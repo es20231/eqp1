@@ -7,12 +7,20 @@ from itsdangerous import URLSafeTimedSerializer
 import os
 from dotenv import load_dotenv
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 load_dotenv()
 db = SQLAlchemy()
 app = Flask(__name__)
 app.config["SQLALCHEMY_DATABASE_URI"] = os.environ.get("SQLALCHEMY_DATABASE_URI")
 app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
+<<<<<<< HEAD
 app.config["MAX_CONTENT_LENGTH"] = 16 * 1024 * 1024
+=======
+app.config["MAX_CONTENT_LENGTH"] = 20 * 1024 * 1024
+>>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 db.init_app(app)
 bcrypt = Bcrypt(app)
 login_manager = LoginManager()
