@@ -104,8 +104,9 @@ def login():
         user_logged = User.query.filter_by(email=email).first()
         
         if user_logged and user_logged.converte_senha(senha_texto_claro=senha):
-            login_user(user_logged)
-            return redirect(url_for('pictures_add'))
+            if user_logged.email_confirmed:
+                login_user(user_logged)
+                return redirect(url_for('pictures_add'))
         else:
             flash('Erro ao logar, email ou senha inválidos!!!', category='danger')
 
@@ -187,8 +188,8 @@ def upload_image():
             new_photo.insert_logged_user_id(current_user)
 
         if len(photos) > 1:
-            flash("Imagens cadastrada com sucesso", category="upload_sucess")
-        else:
+            flash("Imagens cadastradas com sucesso", category="upload_success")
+        elif len(photos) == 1:
             flash("Imagem cadastrada com sucesso", category="upload_success")
         return redirect(url_for('gallery'))
 

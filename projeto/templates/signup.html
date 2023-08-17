@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style_signup.css')}}">
     <link rel="icon" href="static/img/Logo_microgram.png" type="image/x-icon">
-    <title>signup</title>
+    <title>Signup</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
         <div class="rigth-signup">
             <div class="card-signup">
                 <h1>Cadastro</h1>
-                <form action="" method="post">
+                <form action="{{url_for('signup')}}" method="post">
                     <div class="textfield">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" required placeholder="Nome">
