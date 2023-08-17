@@ -3,6 +3,7 @@ from projeto import db
 from projeto import serializer
 from projeto import mail
 from projeto import allowed_extensions
+from projeto import socketio
 from projeto.validators import validate_email, validate_senha, validate_usuario
 from projeto.models import User, Uploads
 from flask import render_template, redirect, request, url_for, flash
@@ -11,6 +12,7 @@ import base64
 from flask_mail import Mail, Message
 from sqlalchemy import desc
 from datetime import datetime
+from flask_socketio import emit
 
 
 @app.route('/signup', methods=['POST', 'GET'])
@@ -160,25 +162,29 @@ def gallery():
 @login_required
 def upload_image():
     if request.method == 'POST':
-        photo = request.files['image']
-    
-        if photo.filename == '':
-            flash("Nenhum arquivo foi selecionado", category="file_error")
-            return redirect(request.url)
-        
-        if not allowed_extensions(photo.filename):
-            flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
-            return redirect(request.url)
-        
-        blob_photo = photo.read()
-        blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
-        new_photo = Uploads(data=blob_photo, string_data=blob_photo_decoded,upload_date=datetime.now())
-        db.session.add(new_photo)
-        db.session.commit()
-        new_photo.insert_logged_user_id(current_user)
-        flash("Imagem cadastrada com sucesso", category="upload_sucess")
+        photos = request.files.getlist('images[]')
 
+
+        for photo in photos:
+            if photo.filename == '':
+                flash("Nenhum arquivo foi selecionado", category="file_error")
+                return redirect(request.url)
+            
+            if not allowed_extensions(photo.filename):
+                flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
+                return redirect(request.url)
+            
+
+            blob_photo = photo.read()
+            blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
+            new_photo = Uploads(data=blob_photo, string_data=blob_photo_decoded,upload_date=datetime.now())
+            db.session.add(new_photo)
+            db.session.commit()
+            new_photo.insert_logged_user_id(current_user)
+
+        flash("Imagens cadastrada com sucesso", category="upload_sucess")
         return redirect(url_for('gallery'))
+
     return redirect(request.url)
 
 
@@ -216,16 +222,20 @@ def configuration():
         email = request.form.get('email')
         senha = request.form.get('senha')
         nova_senha = request.form.get('nova_senha')
+        novo_email = request.form.get('novo_email')
         if usuario:
             current_user.add_usuario(usuario)
         if bio:
             current_user.add_bio(bio)
-        if current_user.converte_senha(senha_texto_claro=senha) and not validate_email(email):
-            current_user.add_nova_senha(nova_senha)
-        else:
-            flash('Erro ao alterar senha: Email ou Senha fornecidos inválidos', category='danger')
-            return redirect(url_for('configuration'))
+        if novo_email:
+            current_user.add_novo_email(novo_email)
+        if email and senha and nova_senha:
+            if current_user.converte_senha(senha_texto_claro=senha) and not validate_email(email):
+                current_user.add_nova_senha(nova_senha)
+            else:
+                flash('Erro ao alterar senha: Email ou Senha fornecidos inválidos', category='danger')
+                return redirect(url_for('configuration'))
         return redirect(url_for('perfil', user=current_user.id))
     
 
-    return render_template('configuration.html')
+    return render_template('configuration.html', user=current_user)
