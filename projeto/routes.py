@@ -3,7 +3,6 @@ from projeto import db
 from projeto import serializer
 from projeto import mail
 from projeto import allowed_extensions
-from projeto import socketio
 from projeto.validators import validate_email, validate_senha, validate_usuario
 from projeto.models import User, Uploads
 from flask import render_template, redirect, request, url_for, flash
@@ -12,7 +11,7 @@ import base64
 from flask_mail import Mail, Message
 from sqlalchemy import desc
 from datetime import datetime
-from flask_socketio import emit
+from werkzeug.exceptions import RequestEntityTooLarge
 
 
 @app.route('/signup', methods=['POST', 'GET'])
@@ -158,6 +157,11 @@ def gallery():
     all_images = Uploads.query.filter_by(usuario=current_user.id).order_by(desc(Uploads.upload_date)).paginate(page=page, per_page=per_page)
     return render_template("gallery.html", pagination = all_images)
 
+@app.errorhandler(RequestEntityTooLarge)
+def handle_request_entity_too_large(e):
+    flash("O arquivo é muito grande. O tamanho máximo permitido é de 20 MB.", "file_length_error")
+    return redirect(request.url)
+
 @app.route('/gallery', methods=["POST"])
 @login_required
 def upload_image():
@@ -182,7 +186,10 @@ def upload_image():
             db.session.commit()
             new_photo.insert_logged_user_id(current_user)
 
-        flash("Imagens cadastrada com sucesso", category="upload_sucess")
+        if len(photos) > 1:
+            flash("Imagens cadastrada com sucesso", category="upload_sucess")
+        else:
+            flash("Imagem cadastrada com sucesso", category="upload_success")
         return redirect(url_for('gallery'))
 
     return redirect(request.url)
