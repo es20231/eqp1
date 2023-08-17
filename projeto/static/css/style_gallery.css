@@ -141,8 +141,65 @@
     margin-bottom: 25px;
 }
 
+.box-picture{
+    height: 25vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px  15px ;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.box-picture >img{
+    width: 60%;
+    height: 90%;
+    border-radius: 10px;
+    
+}
+
+.box-filters{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box-filters >label{
+    color: #f0ffffde;
+}
+
+.textfield2{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0;
+    gap: 10px;
+}
+
+.textfield2 >textarea{
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield2 >textarea::placeholder{
+    color: #f0ffff94;
+}
+
 .buttons{
-    width: 40%;
+    margin-top: 45px;
+    width: 35%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,6 +218,8 @@
     font-weight: 700;
     letter-spacing: 1.0px;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
     box-shadow: 0px 10px 40px -12px #00ff8052;
 }
 
@@ -189,6 +248,33 @@
     transition: background 0.7s;
 }
 
+.btn-close{
+    width: 70%;
+    padding: 4px 0;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 700;
+    letter-spacing: 1.0px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-close{
+    background: #fc1606f8;
+    font-size: 16px; 
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-close:hover {
+    background: #cc1003f8;
+    transition: background 0.7s;
+}
 
 .line-below{
     height: 10%;
@@ -200,20 +286,78 @@
     margin-top: 100px;
 }
 
-#Progress_Status {
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .5);
+}
+
+dialog{
+    left: 30%;
+    top: 20%;
+    height: 70%;
+    width: 40%;
+    background-color: #2f2841;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgb(0 0 0 / .3);
+}
+
+.box-post{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+} 
+.pagination{
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pagination >a{
+    text-decoration: none;
+    color: #8b27b3;
+}
+#Progress_Status {
+    width: 100vw;
     background-color: #ddd;
 }
 
 .show-progress #progressBar{
+    width: 100%;
     display: block;
 }
 
 #progressBar {
     width: 0%;
     height: 20px;
-    background-color: #4CAF50;
+    background-color: #00ff88;
     display: none;
+}
+
+@media only screen and (max-width: 950px) {
+    
+    dialog{
+        width: 65%;
+        left: 13%;
+        height: 100%;
+    }
 }
 
 @media only screen and (max-width:1100px){
@@ -229,5 +373,16 @@
     .add-picture input[type="submit"]{
         width: 85%;
     }
+
 }
 
+@media only screen and (max-width: 600px) {
+    .box-picture{
+        width: 65%;
+    }
+    dialog{
+        width: 90%;
+        left: 5%;
+        height: 75%;
+    }
+}

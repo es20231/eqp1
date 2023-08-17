@@ -7,7 +7,6 @@ from itsdangerous import URLSafeTimedSerializer
 import os
 from dotenv import load_dotenv
 
-
 load_dotenv()
 db = SQLAlchemy()
 app = Flask(__name__)
