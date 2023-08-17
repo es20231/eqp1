@@ -7,7 +7,7 @@
         <form method="POST" enctype="multipart/form-data" action="{{url_for('upload_image')}}">
             <div class="input-group">
                 <input type="file" name="image">
-                <input  type="submit" value="+ Adicionar">
+                <input type="submit" value="+ Adicionar">
             </div>
         </form>
     </div>
@@ -16,29 +16,29 @@
 
 <p>
     {% with messages = get_flashed_messages(with_categories=true) %}
-        {% if messages %}
-            {% for category,message in messages %}
-                {% if category == "file_error" %}
-                    <div class="alert">
-                        <label class="flashes">{{message}}</label>
-                    </div>
-                {% elif category == "compatibility_error" %}
-                    <div class="alert">
-                        <label class="flashes">{{message}}</label>
-                    </div>
-                {% elif category == "upload_sucess" %}
-                    <div class="alert_pass">
-                        <label class="flashes_pass">{{message}}</label>
-                    </div>
-                {% elif category == "delete_success" %}
-                    <div class="alert_pass">
-                        <label class="flashes_pass">{{message}}</label>
-                    </div>
-                {% endif %}
-            {% endfor %}
-        {% endif %}
-    {% endwith %}
-</p> 
+    {% if messages %}
+    {% for category,message in messages %}
+    {% if category == "file_error" %}
+<div class="alert">
+    <label class="flashes">{{message}}</label>
+</div>
+{% elif category == "compatibility_error" %}
+<div class="alert">
+    <label class="flashes">{{message}}</label>
+</div>
+{% elif category == "upload_sucess" %}
+<div class="alert_pass">
+    <label class="flashes_pass">{{message}}</label>
+</div>
+{% elif category == "delete_success" %}
+<div class="alert_pass">
+    <label class="flashes_pass">{{message}}</label>
+</div>
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endwith %}
+</p>
 
 <div class="container">
     {% for image in pagination %}
@@ -46,18 +46,61 @@
         <img src="data:;base64,{{image.string_data}}" alt="">
         <div class="buttons">
             <button class="btn-post">Postar</button>
-            <a href="{{image.id}}/gallery" 
-            onclick="return confirm('Deseja realmente excluir esta imagem da sua galeria de fotos?')"
-             class="btn-excluir">Excluir</a>
+            <a href="{{image.id}}/gallery"
+                onclick="return confirm('Deseja realmente excluir esta imagem da sua galeria de fotos?')"
+                class="btn-excluir">Excluir</a>
         </div>
     </div>
     <hr class="line-below">
     {% endfor %}
-    {% if pagination.has_prev %}
+        <div class="pagination">
+        {% if pagination.has_prev %}
         <a href="{{url_for('gallery', page=pagination.prev_num)}}"> Fotos Anteriores</a>
-    {% endif %}
-    {% if pagination.has_next %}
+        {% endif %}
+        {% if pagination.has_next %}
         <a href="{{url_for('gallery', page=pagination.next_num)}}"> Próximas Fotos</a>
+    </div>
     {% endif %}
+
 </div>
+
+<dialog>
+    <div class="box-post">
+        <div class="box-picture">
+            <img src="https://www.datocms-assets.com/48401/1628645197-learn-typescript.png" alt="">
+        </div>
+        <div class="textfield2">
+            <textarea name="biografia" cols="20" rows="2" placeholder="Legenda"></textarea>
+        </div>
+        <div class="box-filters">
+            <label for="Filtros">Filtros</label>
+            <select class="filter">
+                <option value="opcao1">Original</option>
+                <option value="opcao2">Preto e Branco</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <a href="#" class="btn-post">Confirmar</a>
+            <button class="btn-close">Cancelar</button>
+        </div>
+    </div>
+</dialog>
+
+
+
+<script>
+    var btn = document.querySelector(".btn-post")
+    var modal = document.querySelector("dialog")
+    var btnClose = document.querySelector(".btn-close")
+
+    btn.onclick = function () {
+        modal.showModal()
+    }
+
+    btnClose.onclick = function () {
+        modal.close()
+    }
+
+</script>
 {% endblock conteudo %}

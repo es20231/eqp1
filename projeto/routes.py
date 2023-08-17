@@ -166,6 +166,7 @@ def upload_image():
     return redirect(request.url)
 
 
+
 @app.route('/<int:id>/gallery')
 @login_required
 def delete_image(id):
@@ -213,3 +214,8 @@ def configuration():
     
 
     return render_template('configuration.html')
+
+
+@app.route('/password_redefinition')
+def password_redefinition():
+    return render_template('password_redefinition.html')

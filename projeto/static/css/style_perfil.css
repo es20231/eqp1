@@ -23,7 +23,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 50px;
 }
 
 .top-perfil >h2{
@@ -73,6 +73,10 @@
     font-weight: 400;
     font-size: 15px;
     color: #a75bb4;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+    word-wrap: break-word;
 }
 
 .line-perfil{
