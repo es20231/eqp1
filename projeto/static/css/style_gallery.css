@@ -200,6 +200,22 @@
     margin-top: 100px;
 }
 
+#Progress_Status {
+    width: 50%;
+    background-color: #ddd;
+}
+
+.show-progress #progressBar{
+    display: block;
+}
+
+#progressBar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+    display: none;
+}
+
 @media only screen and (max-width:1100px){
     .card-picture{
         width: 85%;

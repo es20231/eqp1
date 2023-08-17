@@ -6,10 +6,13 @@
     <div class="add-picture">
         <form method="POST" enctype="multipart/form-data" action="{{url_for('upload_image')}}">
             <div class="input-group">
-                <input type="file" name="image">
-                <input  type="submit" value="+ Adicionar">
+                <input type="file" name="images[]" multiple accept="image/*">
+                <input  type="submit" onclick="update()" value="+ Adicionar">
             </div>
         </form>
+        <div id="Progress_Status">
+            <div id="progressBar"></div>
+          </div>
     </div>
 </div>
 
@@ -33,6 +36,10 @@
                 {% elif category == "delete_success" %}
                     <div class="alert_pass">
                         <label class="flashes_pass">{{message}}</label>
+                    </div>
+                {% elif category == "file_length_error" %}
+                    <div class="alert">
+                        <label class="flashes">{{message}}</label>
                     </div>
                 {% endif %}
             {% endfor %}
@@ -60,4 +67,26 @@
         <a href="{{url_for('gallery', page=pagination.next_num)}}"> Próximas Fotos</a>
     {% endif %}
 </div>
+
+<script>
+    function update() {
+        var progressStatus = document.getElementById("Progress_Status");
+        progressStatus.classList.add("show-progress");
+
+
+        var element = document.getElementById("progressBar");   
+        var width = 0;
+        var identity = setInterval(scene, 15);
+        function scene() {
+        if (width >= 100) {
+            clearInterval(identity);
+        } else {
+            width++; 
+            element.style.width = width + '%'; 
+            }
+        }
+    }
+    </script>
+
+
 {% endblock conteudo %}
