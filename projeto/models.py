@@ -21,11 +21,7 @@ class User(db.Model, UserMixin):
     senha = db.Column(db.String(length=15), nullable=False, unique=True)
     bio = db.Column(db.String(length=1024))
     date_created = db.Column(db.DateTime(timezone=True), nullable=False)
-<<<<<<< HEAD
-    perfil_photo = db.Column(db.LargeBinary)
-=======
     perfil_photo = db.Column(db.Text, nullable=False, default= default_profile_photo)
->>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
     email_confirmed = db.Column(db.Boolean, nullable=False, default=False)  # Novo campo para rastrear o status de confirmação do e-mail
     email_confirm_token = db.Column(db.String(100), unique=True)  # Novo campo para armazenar o token de confirmação de e-mail
     posts = db.relationship('Posts', backref='dono_user', lazy=True)
@@ -46,14 +42,10 @@ class User(db.Model, UserMixin):
     def add_nova_senha(self, senha):
         self.senhacrip = senha
         db.session.commit()
-<<<<<<< HEAD
-        
-=======
     
     def add_novo_email(self, novo_email):
         self.email = novo_email
         db.session.commit()
->>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 
     @property
     def senhacrip(self):

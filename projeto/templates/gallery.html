@@ -2,53 +2,24 @@
 {% block conteudo %}
 <link rel="stylesheet" href="{{url_for('static', filename='css/style_gallery.css')}}">
 
+<div id="Progress_Status">
+    <div id="progressBar"></div>
+</div>
+
 <div class="add">
     <div class="add-picture">
         <form method="POST" enctype="multipart/form-data" action="{{url_for('upload_image')}}">
             <div class="input-group">
-<<<<<<< HEAD
-                <input type="file" name="image">
-                <input type="submit" value="+ Adicionar">
-=======
                 <input type="file" name="images[]" multiple accept="image/*">
                 <input  type="submit" onclick="update()" value="+ Adicionar">
->>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
             </div>
         </form>
-        <div id="Progress_Status">
-            <div id="progressBar"></div>
-          </div>
     </div>
 </div>
 
 
 <p>
     {% with messages = get_flashed_messages(with_categories=true) %}
-<<<<<<< HEAD
-    {% if messages %}
-    {% for category,message in messages %}
-    {% if category == "file_error" %}
-<div class="alert">
-    <label class="flashes">{{message}}</label>
-</div>
-{% elif category == "compatibility_error" %}
-<div class="alert">
-    <label class="flashes">{{message}}</label>
-</div>
-{% elif category == "upload_sucess" %}
-<div class="alert_pass">
-    <label class="flashes_pass">{{message}}</label>
-</div>
-{% elif category == "delete_success" %}
-<div class="alert_pass">
-    <label class="flashes_pass">{{message}}</label>
-</div>
-{% endif %}
-{% endfor %}
-{% endif %}
-{% endwith %}
-</p>
-=======
         {% if messages %}
             {% for category,message in messages %}
                 {% if category == "file_error" %}
@@ -76,7 +47,6 @@
         {% endif %}
     {% endwith %}
 </p> 
->>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
 
 <div class="container">
     {% for image in pagination %}
@@ -84,20 +54,13 @@
         <img src="data:;base64,{{image.string_data}}" alt="">
         <div class="buttons">
             <button class="btn-post">Postar</button>
-<<<<<<< HEAD
             <a href="{{image.id}}/gallery"
                 onclick="return confirm('Deseja realmente excluir esta imagem da sua galeria de fotos?')"
                 class="btn-excluir">Excluir</a>
-=======
-            <a href="{{image.id}}/gallery" 
-            onclick="return confirm('Deseja realmente excluir esta imagem da sua galeria de fotos?')"
-             class="btn-excluir">Excluir</a>
->>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
         </div>
     </div>
     <hr class="line-below">
     {% endfor %}
-<<<<<<< HEAD
         <div class="pagination">
         {% if pagination.has_prev %}
         <a href="{{url_for('gallery', page=pagination.prev_num)}}"> Fotos Anteriores</a>
@@ -147,17 +110,6 @@
         modal.close()
     }
 
-</script>
-=======
-    {% if pagination.has_prev %}
-        <a href="{{url_for('gallery', page=pagination.prev_num)}}"> Fotos Anteriores</a>
-    {% endif %}
-    {% if pagination.has_next %}
-        <a href="{{url_for('gallery', page=pagination.next_num)}}"> Próximas Fotos</a>
-    {% endif %}
-</div>
-
-<script>
     function update() {
         var progressStatus = document.getElementById("Progress_Status");
         progressStatus.classList.add("show-progress");
@@ -175,8 +127,6 @@
             }
         }
     }
-    </script>
 
-
->>>>>>> cc4a15435386f96af635227c84a4e00d8ed81e0f
+</script>
 {% endblock conteudo %}
