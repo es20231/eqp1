@@ -5,5 +5,4 @@ Bcrypt
 flask_bcrypt
 flask_login
 flask_mail
-os
 python-dotenv
