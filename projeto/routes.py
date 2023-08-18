@@ -4,7 +4,7 @@ from projeto import serializer
 from projeto import mail
 from projeto import allowed_extensions
 from projeto.validators import validate_email, validate_senha, validate_usuario
-from projeto.models import User, Uploads
+from projeto.models import User, Uploads, Posts
 from flask import render_template, redirect, request, url_for, flash
 from flask_login import login_user, logout_user, login_required, current_user
 import base64
@@ -106,7 +106,7 @@ def login():
         if user_logged and user_logged.converte_senha(senha_texto_claro=senha):
             if user_logged.email_confirmed:
                 login_user(user_logged)
-                return redirect(url_for('pictures_add'))
+                return redirect(url_for('feed', id=user_logged.id))
         else:
             flash('Erro ao logar, email ou senha inválidos!!!', category='danger')
 
@@ -188,10 +188,33 @@ def password_redefinition(token):
 def dashboard():
     return render_template("dashboard.html")
     
-@app.route('/pictures_add')
+@app.route('/perfil/<int:id>/feed')
 @login_required
-def pictures_add():
-    return render_template("pictures_add.html")  
+def feed(id):
+    all_posts = Posts.query.order_by(desc(Posts.data_postagem)).all()
+    return render_template("feed.html", posts= all_posts)
+
+@app.route('/perfil/<int:id>/feed/post/<int:image_id>', methods=["POST"])
+@login_required
+def postar_foto(id,image_id):
+    if request.method == "POST":
+        legenda_post = request.form.get('legenda')
+
+        imagem_post = Uploads.query.filter_by(id=image_id).first()
+        if imagem_post.data == None:
+            flash('Imagem não registrada na galeria. Faça upload da imagem na galeria para depois realizar a postagem.', "feed_post_image_error")
+            return redirect(request.url)
+        
+        else:
+            new_post = Posts(data=imagem_post.string_data,desc=legenda_post, data_postagem=datetime.now())
+            db.session.add(new_post)
+            db.session.commit()
+            new_post.insert_logged_user_id(current_user)
+            flash("Postagem realizada com sucesso.", "success_post")
+            return redirect(url_for('feed', id=current_user.id))
+
+    return redirect(request.url)
+
 
 
 @app.route('/perfil/<user>')

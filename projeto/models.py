@@ -75,10 +75,11 @@ class Uploads(db.Model):
 
 
 class Posts(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    data = db.Column(db.LargeBinary, nullable=False)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    data = db.Column(db.Text, nullable=False)
     desc =  db.Column(db.String(length=1024))
     quant_curtidas = db.Column(db.Integer, default=0)
+    data_postagem = db.Column(db.DateTime(timezone=True), nullable=False)
     usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
     curtidas = db.relationship('Likes', backref='like_user', lazy=True)
     comentarios = db.relationship('Comments', backref='com_user', lazy=True)
@@ -87,6 +88,9 @@ class Posts(db.Model):
         self.quant_curtidas += 1
         db.session.commit()
 
+    def insert_logged_user_id(self, user_logged):
+        self.usuario = user_logged.id
+        db.session.commit()
 
 class Likes(db.Model):
     id = db.Column(db.Integer, primary_key=True)
