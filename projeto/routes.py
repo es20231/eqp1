@@ -128,9 +128,59 @@ def token_expired():
     return render_template("token_expired.html")
 
 
-@app.route('/password_recovery')
+@app.route('/password_recovery', methods=['GET', 'POST'])
 def password_recovery():
-    return render_template("password_recovery.html")
+    if request.method == 'POST':
+        email = request.form.get('email')
+        user = User.query.filter_by(email=email).first()
+
+        if user:
+            # Gerar um token para a redefinição de senha
+            token = serializer.dumps({'email': email}, salt='password-reset')
+
+            # Enviar o email de redefinição de senha
+            msg = Message('Redefinição de Senha',
+                          recipients=[email],
+                          sender='microgram84@gmail.com')
+            link = url_for('password_redefinition', token=token, _external=True)
+            msg.body = f'Clique no link a seguir para redefinir sua senha: {link}'
+            mail.send(msg)
+
+            flash('Um email de redefinição de senha foi enviado. Por favor, verifique sua caixa de entrada.', category='success')
+            return redirect(url_for('login'))
+        else:
+            flash('O email fornecido não corresponde a nenhum usuário.', category='danger')
+            return redirect(url_for('login'))
+
+    return render_template('password_recovery.html')
+
+
+@app.route('/password_redefinition/<token>', methods=['GET', 'POST'])
+def password_redefinition(token):
+    try:
+        decoded_token = serializer.loads(token, salt='password-reset', max_age=3600)
+        email = decoded_token.get('email', None)
+        user = User.query.filter_by(email=email).first()
+
+        if request.method == 'POST':
+            nova_senha = request.form.get('nova_senha')
+            confirma_senha = request.form.get('confirmar_senha')
+
+            if nova_senha == confirma_senha:
+                user.senhacrip = nova_senha  # Atualizar a senha do usuário
+                user.email_confirmed = True  # Defina o status de confirmação como True
+                db.session.commit()
+
+                flash('Senha redefinida com sucesso. Você pode fazer login agora.', category='success')
+                return redirect(url_for('login'))
+            else:
+                flash('As senhas digitadas não correspondem.', category='danger')
+
+    except Exception as e:
+        flash('Erro ao redefinir senha. Por favor, tente novamente.', category='danger')
+
+    
+    return render_template("password_redefinition.html", token=token)
 
 
 @app.route('/dashboard')
