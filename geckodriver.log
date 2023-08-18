@@ -1,0 +1,1508 @@
+1692236707731	geckodriver	INFO	Listening on 127.0.0.1:50518
+1692236710794	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50519" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileuI9KOH"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692236711020	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692236711109	Marionette	INFO	Listening on port 50530
+WebDriver BiDi listening on ws://127.0.0.1:50519
+Read port: 50530
+1692236711252	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50519/devtools/browser/4ceee32e-793f-4202-a931-2c5d1f84fb24
+[Parent 10588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4000, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/ck=xjs.s.Al72wKYK720.L.F4.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUS5pAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/exm=SNUn3,cEt90b,cdos,cr,csi,d,dtl0hd,eHDfl,hsm,jsa,mb4ZUb,qddgKe,sTsDMc/ed=1/dg=2/rs=ACT90oG4l7O2-sZv54MvGkYBaXL2Uc8jnQ/ee=AfeaP:TkrAjf;BMxAGc:E5bFse;BgS6mb:fidj5d;BjwMce:cXX2Wb;CxXAWb:YyRLvc;DULqB:RKfG5c;DpcR3d:zL72xf;EABSZ:MXZt9d;ESrPQc:mNTJvc;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;F9mqte:UoRcbe;Fmv9Nc:O1Tzwc;G0KhTb:LIaoZ;G6wU6e:hezEbd;GleZL:J1A7Od;IoGlCf:b5lhvb;JXS8fb:Qj0suc;JsbNhc:Xd8iUd;K8vqCc:MyIcle;KQzWid:mB4wNe;KcokUb:KiuZBf;KpRAue:Tia57b;LBgRLc:SdcwHb,XVMNvd;LEikZe:byfTOb,lsjVmc;LsNahb:ucGLNb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Np8Qkd:Dpx6qc;Nyt6ic:jn2sGd;Oj465e:KG2eXe;Pjplud:EEDORb,PoEs9b;PqHfGe:im2cZe;Q1Ow7b:x5CSu;QGR0gd:Mlhmy;R2kc8b:ALJqWb;R4IIIb:QWfeKf;R9Ulx:CR7Ufe;SLtqO:Kh1xYe;SMDL4c:fTfGO,vjQg0b;SNUn3:ZwDk9d,x8cHvb;TxfV6d:YORN0b;U96pRd:FsR04;UDrY1c:eps46d;UVmjEd:EesRsb;UyG7Kb:wQd0G;V2HTTe:RolTY;VGRfx:VFqbr;VN6jIc:ddQyuf;VOcgDe:YquhTb;VxQ32b:k0XsBb;WCEKNd:I46Hvd;WDGyFe:jcVOxd;Wfmdue:g3MJlb;YV5bee:IvPZ6d;ZWEUA:afR4Cf;ZrFutb:W4Cdfc;a56pNe:JEfCwb;aAJE9c:WHW6Ef;aZ61od:arTwJ;bcPXSc:gSZLJb;cEt90b:ws9Tlc;cFTWae:gT8qnd;dIoSBb:ZgGg9b;dLlj2:Qqt3Gf;daB6be:lMxGPd;dtl0hd:lLQWFe;eBAeSb:Ck63tb;eBZ5Nd:audvde;eHDfl:ofjVkb;g8nkx:U4MzKc;gaub4:TN6bMe;gtVSi:ekUOYd;hK67qb:QWEO5b;hjRo6e:F62sG;iFQyKf:QIhFr,vfuNJf;imqimf:jKGL2e;io8t5d:sgY6Zb;jY0zg:Q6tNgc;kCQyJ:ueyPK;kMFpHd:OTA3Ae;kY7VAf:d91TEb;kbAm9d:MkHyGd;l8Azde:j4Ca9b;lkq0A:Z0MWEf;lzgfYb:PI40bd;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;oSUNyd:fTfGO,vjQg0b;oUlnpc:RagDlc;okUaUd:wItadb;pNsl2d:j9Yuyc;pXdRYb:JKoKVe,MdUzUe;pj82le:mg5CW;qGV2uc:HHi04c;qaS3gd:yiLg6e;qavrXe:mYbt1d,zQzcXe;qddgKe:d7YSfd,x4FYXe;rQSrae:C6D5Fc;sP4Vbe:VwDzFe;sTsDMc:kHVSUb;tH4IIe:Ymry6;tosKvd:ZCqP3;trZL0b:qY8PFe;uY49fb:COQbmf;uknmt:GkPrzb;uuQkY:u2V3ud;vfVwPd:OXTqFb;w3bZCb:ZPGaIb;w9w86d:dt4g2b;wQlYve:aLUfP;wR5FRb:O1Gjze,TtcOte;wV5Pjc:L8KGxe;whEZac:F4AmNb;xBbsrc:NEW1Qc;xbe2wc:wbTLEd;xqZiqf:wmnU7d;yGxLoc:FmAr0c;yxTchf:KUM7Z;z97YGf:oug9te;zOsCQe:Ko78Df;zxnPse:GkRiKb/m=DhPYme,EkevXb,GU4Gab,MpJwZc,NzU6V,UUJqVe,aa,abd,async,epYOx,loL8vb,ms4mZb,mu,pHXghd,q0xTif,s39S4,sOXFj,sb_wiz,sf?xjs=s1, line 35: Script terminated by timeout at:
+Onr@https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/ck=xjs.s.Al72wKYK720.L.F4.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUS5pAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/exm=SNUn3,cEt90b,cdos,cr,csi,d,dtl0hd,eHDfl,hsm,jsa,mb4ZUb,qddgKe,sTsDMc/ed=1/dg=2/rs=ACT90oG4l7O2-sZv54MvGkYBaXL2Uc8jnQ/ee=AfeaP:TkrAjf;BMxAGc:E5bFse;BgS6mb:fidj5d;BjwMce:cXX2Wb;CxXAWb:YyRLvc;DULqB:RKfG5c;DpcR3d:zL72xf;EABSZ:MXZt9d;ESrPQc:mNTJvc;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;F9mqte:UoRcbe;Fmv9Nc:O1Tzwc;G0KhTb:LIaoZ;G6wU6e:hezEbd;GleZL:J1A7Od;IoGlCf:b5lhvb;JXS8fb:Qj0suc;JsbNhc:Xd8iUd;K8vqCc:MyIcle;KQzWid:mB4wNe;KcokUb:KiuZBf;KpRAue:Tia57b;LBgRLc:SdcwHb,XVMNvd;LEikZe:byfTOb,lsjVmc;LsNahb:ucGLNb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Np8Qkd:Dpx6qc;Nyt6ic:jn2sGd;Oj465e:KG2eXe;Pjplud:EEDORb,PoEs9b;PqHfGe:im2cZe;Q1Ow7b:x5CSu;QGR0gd:Mlhmy;R2kc8b:ALJqWb;R4IIIb:QWfeKf;R9Ulx:CR7Ufe;SLtqO:Kh1xYe;SMDL4c:fTfGO,vjQg0b;SNUn3:ZwDk9d,x8cHvb;TxfV6d:YORN0b;U96pRd:FsR04;UDrY1c:eps46d;UVmjEd:EesRsb;UyG7Kb:wQd0G;V2HTTe:RolTY;VGRfx:VFqbr;VN6jIc:ddQyuf;VOcgDe:YquhTb;VxQ32b:k0XsBb;WCEKNd:I46Hvd;WDGyFe:jcVOxd;Wfmdue:g3MJlb;YV5bee:IvPZ6d;ZWEUA:afR4Cf;ZrFutb:W4Cdfc;a56pNe:JEfCwb;aAJE9c:WHW6Ef;aZ61od:arTwJ;bcPXSc:gSZLJb;cEt90b:ws9Tlc;cFTWae:gT8qnd;dIoSBb:ZgGg9b;dLlj2:Qqt3Gf;daB6be:lMxGPd;dtl0hd:lLQWFe;eBAeSb:Ck63tb;eBZ5Nd:audvde;eHDfl:ofjVkb;g8nkx:U4MzKc;gaub4:TN6bMe;gtVSi:ekUOYd;hK67qb:QWEO5b;hjRo6e:F62sG;iFQyKf:QIhFr,vfuNJf;imqimf:jKGL2e;io8t5d:sgY6Zb;jY0zg:Q6tNgc;kCQyJ:ueyPK;kMFpHd:OTA3Ae;kY7VAf:d91TEb;kbAm9d:MkHyGd;l8Azde:j4Ca9b;lkq0A:Z0MWEf;lzgfYb:PI40bd;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;oSUNyd:fTfGO,vjQg0b;oUlnpc:RagDlc;okUaUd:wItadb;pNsl2d:j9Yuyc;pXdRYb:JKoKVe,MdUzUe;pj82le:mg5CW;qGV2uc:HHi04c;qaS3gd:yiLg6e;qavrXe:mYbt1d,zQzcXe;qddgKe:d7YSfd,x4FYXe;rQSrae:C6D5Fc;sP4Vbe:VwDzFe;sTsDMc:kHVSUb;tH4IIe:Ymry6;tosKvd:ZCqP3;trZL0b:qY8PFe;uY49fb:COQbmf;uknmt:GkPrzb;uuQkY:u2V3ud;vfVwPd:OXTqFb;w3bZCb:ZPGaIb;w9w86d:dt4g2b;wQlYve:aLUfP;wR5FRb:O1Gjze,TtcOte;wV5Pjc:L8KGxe;whEZac:F4AmNb;xBbsrc:NEW1Qc;xbe2wc:wbTLEd;xqZiqf:wmnU7d;yGxLoc:FmAr0c;yxTchf:KUM7Z;z97YGf:oug9te;zOsCQe:Ko78Df;zxnPse:GkRiKb/m=DhPYme,EkevXb,GU4Gab,MpJwZc,NzU6V,UUJqVe,aa,abd,async,epYOx,loL8vb,ms4mZb,mu,pHXghd,q0xTif,s39S4,sOXFj,sb_wiz,sf?xjs=s1:35:145
+Hor.prototype.Aa@https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/ck=xjs.s.Al72wKYK720.L.F4.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUS5pAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/exm=SNUn3,cEt90b,cdos,cr,csi,d,dtl0hd,eHDfl,hsm,jsa,mb4ZUb,qddgKe,sTsDMc/ed=1/dg=2/rs=ACT90oG4l7O2-sZv54MvGkYBaXL2Uc8jnQ/ee=AfeaP:TkrAjf;BMxAGc:E5bFse;BgS6mb:fidj5d;BjwMce:cXX2Wb;CxXAWb:YyRLvc;DULqB:RKfG5c;DpcR3d:zL72xf;EABSZ:MXZt9d;ESrPQc:mNTJvc;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;F9mqte:UoRcbe;Fmv9Nc:O1Tzwc;G0KhTb:LIaoZ;G6wU6e:hezEbd;GleZL:J1A7Od;IoGlCf:b5lhvb;JXS8fb:Qj0suc;JsbNhc:Xd8iUd;K8vqCc:MyIcle;KQzWid:mB4wNe;KcokUb:KiuZBf;KpRAue:Tia57b;LBgRLc:SdcwHb,XVMNvd;LEikZe:byfTOb,lsjVmc;LsNahb:ucGLNb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Np8Qkd:Dpx6qc;Nyt6ic:jn2sGd;Oj465e:KG2eXe;Pjplud:EEDORb,PoEs9b;PqHfGe:im2cZe;Q1Ow7b:x5CSu;QGR0gd:Mlhmy;R2kc8b:ALJqWb;R4IIIb:QWfeKf;R9Ulx:CR7Ufe;SLtqO:Kh1xYe;SMDL4c:fTfGO,vjQg0b;SNUn3:ZwDk9d,x8cHvb;TxfV6d:YORN0b;U96pRd:FsR04;UDrY1c:eps46d;UVmjEd:EesRsb;UyG7Kb:wQd0G;V2HTTe:RolTY;VGRfx:VFqbr;VN6jIc:ddQyuf;VOcgDe:YquhTb;VxQ32b:k0XsBb;WCEKNd:I46Hvd;WDGyFe:jcVOxd;Wfmdue:g3MJlb;YV5bee:IvPZ6d;ZWEUA:afR4Cf;ZrFutb:W4Cdfc;a56pNe:JEfCwb;aAJE9c:WHW6Ef;aZ61od:arTwJ;bcPXSc:gSZLJb;cEt90b:ws9Tlc;cFTWae:gT8qnd;dIoSBb:ZgGg9b;dLlj2:Qqt3Gf;daB6be:lMxGPd;dtl0hd:lLQWFe;eBAeSb:Ck63tb;eBZ5Nd:audvde;eHDfl:ofjVkb;g8nkx:U4MzKc;gaub4:TN6bMe;gtVSi:ekUOYd;hK67qb:QWEO5b;hjRo6e:F62sG;iFQyKf:QIhFr,vfuNJf;imqimf:jKGL2e;io8t5d:sgY6Zb;jY0zg:Q6tNgc;kCQyJ:ueyPK;kMFpHd:OTA3Ae;kY7VAf:d91TEb;kbAm9d:MkHyGd;l8Azde:j4Ca9b;lkq0A:Z0MWEf;lzgfYb:PI40bd;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;oSUNyd:fTfGO,vjQg0b;oUlnpc:RagDlc;okUaUd:wItadb;pNsl2d:j9Yuyc;pXdRYb:JKoKVe,MdUzUe;pj82le:mg5CW;qGV2uc:HHi04c;qaS3gd:yiLg6e;qavrXe:mYbt1d,zQzcXe;qddgKe:d7YSfd,x4FYXe;rQSrae:C6D5Fc;sP4Vbe:VwDzFe;sTsDMc:kHVSUb;tH4IIe:Ymry6;tosKvd:ZCqP3;trZL0b:qY8PFe;uY49fb:COQbmf;uknmt:GkPrzb;uuQkY:u2V3ud;vfVwPd:OXTqFb;w3bZCb:ZPGaIb;w9w86d:dt4g2b;wQlYve:aLUfP;wR5FRb:O1Gjze,TtcOte;wV5Pjc:L8KGxe;whEZac:F4AmNb;xBbsrc:NEW1Qc;xbe2wc:wbTLEd;xqZiqf:wmnU7d;yGxLoc:FmAr0c;yxTchf:KUM7Z;z97YGf:oug9te;zOsCQe:Ko78Df;zxnPse:GkRiKb/m=DhPYme,EkevXb,GU4Gab,MpJwZc,NzU6V,UUJqVe,aa,abd,async,epYOx,loL8vb,ms4mZb,mu,pHXghd,q0xTif,s39S4,sOXFj,sb_wiz,sf?xjs=s1:59:139
+Ita@https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUS5pAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/ed=1/dg=2/rs=ACT90oEztrzoCbjrrfEHlCptvoN06RiOfQ/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe,MdUzUe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;YV5bee:IvPZ6d;kbAm9d:MkHyGd;ZWEUA:afR4Cf;g8nkx:U4MzKc;lzgfYb:PI40bd;ESrPQc:mNTJvc;qavrXe:zQzcXe,mYbt1d;w9w86d:dt4g2b;GleZL:J1A7Od;bcPXSc:gSZLJb;JXS8fb:Qj0suc;IoGlCf:b5lhvb;vfVwPd:OXTqFb;VGRfx:VFqbr;BjwMce:cXX2Wb;pNsl2d:j9Yuyc;R9Ulx:CR7Ufe;kY7VAf:d91TEb;KpRAue:Tia57b;jY0zg:Q6tNgc;l8Azde:j4Ca9b;oSUNyd:fTfGO,fTfGO,vjQg0b;SMDL4c:fTfGO,vjQg0b;aZ61od:arTwJ;ZrFutb:W4Cdfc;K8vqCc:MyIcle;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;CxXAWb:YyRLvc;VN6jIc:ddQyuf;SLtqO:Kh1xYe;tosKvd:ZCqP3;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;xBbsrc:NEW1Qc;DpcR3d:zL72xf;hjRo6e:F62sG;yGxLoc:FmAr0c;oUlnpc:RagDlc;R2kc8b:ALJqWb;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;gtVSi:ekUOYd;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:wbTLEd;Q1Ow7b:x5CSu;okUaUd:wItadb;G6wU6e:hezEbd;uknmt:GkPrzb;PqHfGe:im2cZe;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;zxnPse:GkRiKb;xqZiqf:wmnU7d;lkq0A:Z0MWEf;daB6be:lMxGPd;U96pRd:FsR04;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl:415:292
+Fta@https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUS5pAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/ed=1/dg=2/rs=ACT90oEztrzoCbjrrfEHlCptvoN06RiOfQ/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe,MdUzUe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;YV5bee:IvPZ6d;kbAm9d:MkHyGd;ZWEUA:afR4Cf;g8nkx:U4MzKc;lzgfYb:PI40bd;ESrPQc:mNTJvc;qavrXe:zQzcXe,mYbt1d;w9w86d:dt4g2b;GleZL:J1A7Od;bcPXSc:gSZLJb;JXS8fb:Qj0suc;IoGlCf:b5lhvb;vfVwPd:OXTqFb;VGRfx:VFqbr;BjwMce:cXX2Wb;pNsl2d:j9Yuyc;R9Ulx:CR7Ufe;kY7VAf:d91TEb;KpRAue:Tia57b;jY0zg:Q6tNgc;l8Azde:j4Ca9b;oSUNyd:fTfGO,fTfGO,vjQg0b;SMDL4c:fTfGO,vjQg0b;aZ61od:arTwJ;ZrFutb:W4Cdfc;K8vqCc:MyIcle;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;CxXAWb:YyRLvc;VN6jIc:ddQyuf;SLtqO:Kh1xYe;tosKvd:ZCqP3;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;xBbsrc:NEW1Qc;DpcR3d:zL72xf;hjRo6e:F62sG;yGxLoc:FmAr0c;oUlnpc:RagDlc;R2kc8b:ALJqWb;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;gtVSi:ekUOYd;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:wbTLEd;Q1Ow7b:x5CSu;okUaUd:wItadb;G6wU6e:hezEbd;uknmt:GkPrzb;PqHfGe:im2cZe;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;zxnPse:GkRiKb;xqZiqf:wmnU7d;lkq0A:Z0MWEf;daB6be:lMxGPd;U96pRd:FsR04;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl:415:341
+b@https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUS5pAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/ed=1/dg=2/rs=ACT90oEztrzoCbjrrfEHlCptvoN06RiOfQ/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe,MdUzUe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;YV5bee:IvPZ6d;kbAm9d:MkHyGd;ZWEUA:afR4Cf;g8nkx:U4MzKc;lzgfYb:PI40bd;ESrPQc:mNTJvc;qavrXe:zQzcXe,mYbt1d;w9w86d:dt4g2b;GleZL:J1A7Od;bcPXSc:gSZLJb;JXS8fb:Qj0suc;IoGlCf:b5lhvb;vfVwPd:OXTqFb;VGRfx:VFqbr;BjwMce:cXX2Wb;pNsl2d:j9Yuyc;R9Ulx:CR7Ufe;kY7VAf:d91TEb;KpRAue:Tia57b;jY0zg:Q6tNgc;l8Azde:j4Ca9b;oSUNyd:fTfGO,fTfGO,vjQg0b;SMDL4c:fTfGO,vjQg0b;aZ61od:arTwJ;ZrFutb:W4Cdfc;K8vqCc:MyIcle;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;CxXAWb:YyRLvc;VN6jIc:ddQyuf;SLtqO:Kh1xYe;tosKvd:ZCqP3;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;xBbsrc:NEW1Qc;DpcR3d:zL72xf;hjRo6e:F62sG;yGxLoc:FmAr0c;oUlnpc:RagDlc;R2kc8b:ALJqWb;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;gtVSi:ekUOYd;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:wbTLEd;Q1Ow7b:x5CSu;okUaUd:wItadb;G6wU6e:hezEbd;uknmt:GkPrzb;PqHfGe:im2cZe;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;zxnPse:GkRiKb;xqZiqf:wmnU7d;lkq0A:Z0MWEf;daB6be:lMxGPd;U96pRd:FsR04;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl:411:49
+
+1692236733096	Marionette	INFO	Stopped listening on port 50530
+Dynamically enable window occlusion 1
+[Parent 10588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4000, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4000, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4000, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4000, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692236938079	geckodriver	INFO	Listening on 127.0.0.1:50601
+1692236941148	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50602" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilezXwaCe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692236941357	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692236941441	Marionette	INFO	Listening on port 50610
+WebDriver BiDi listening on ws://127.0.0.1:50602
+Read port: 50610
+1692236941579	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50602/devtools/browser/36a90810-270c-434f-a53b-aadf252c29ee
+[Parent 8100, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13032, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 597))
+JavaScript warning: https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUSZpAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/ed=1/dg=2/rs=ACT90oEXn5AfqHgh8wISCKwUtN9hyAfJsg/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe,MdUzUe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;YV5bee:IvPZ6d;kbAm9d:MkHyGd;ZWEUA:afR4Cf;g8nkx:U4MzKc;lzgfYb:PI40bd;ESrPQc:mNTJvc;qavrXe:zQzcXe,mYbt1d;w9w86d:dt4g2b;GleZL:J1A7Od;bcPXSc:gSZLJb;JXS8fb:Qj0suc;IoGlCf:b5lhvb;vfVwPd:OXTqFb;VGRfx:VFqbr;BjwMce:cXX2Wb;pNsl2d:j9Yuyc;R9Ulx:CR7Ufe;kY7VAf:d91TEb;KpRAue:Tia57b;jY0zg:Q6tNgc;l8Azde:j4Ca9b;oSUNyd:fTfGO,fTfGO,vjQg0b;SMDL4c:fTfGO,vjQg0b;aZ61od:arTwJ;ZrFutb:W4Cdfc;K8vqCc:MyIcle;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;CxXAWb:YyRLvc;VN6jIc:ddQyuf;SLtqO:Kh1xYe;tosKvd:ZCqP3;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;xBbsrc:NEW1Qc;DpcR3d:zL72xf;hjRo6e:F62sG;yGxLoc:FmAr0c;oUlnpc:RagDlc;R2kc8b:ALJqWb;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;gtVSi:ekUOYd;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:wbTLEd;Q1Ow7b:x5CSu;okUaUd:wItadb;G6wU6e:hezEbd;uknmt:GkPrzb;PqHfGe:im2cZe;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;zxnPse:GkRiKb;xqZiqf:wmnU7d;lkq0A:Z0MWEf;daB6be:lMxGPd;U96pRd:FsR04;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl, line 411: Script terminated by timeout at:
+b@https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/am=CAAAAAAAAAAgAADRQDgEYAMYIAAABAAAQAAABQAAAABgEAGAAYDgUSZpAAgIEEJgAMTADQBKKAEAAAAAIOwHAAAAAABwAAQAAFAIAANCQAEIAAAAgDwAAA8AGExYAAAAAAAAAAAAAAGXIBhckAAICIAAAAAAAAAAAAAAqWTyYgAC/d=1/ed=1/dg=2/rs=ACT90oEXn5AfqHgh8wISCKwUtN9hyAfJsg/ee=cEt90b:ws9Tlc;qddgKe:x4FYXe,d7YSfd;yxTchf:KUM7Z;dtl0hd:lLQWFe;eHDfl:ofjVkb;qaS3gd:yiLg6e;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;iFQyKf:vfuNJf,QIhFr;SNUn3:ZwDk9d,x8cHvb;io8t5d:sgY6Zb;Oj465e:KG2eXe,KG2eXe;Erl4fe:FloWmf,FloWmf;JsbNhc:Xd8iUd;sP4Vbe:VwDzFe;kMFpHd:OTA3Ae;uY49fb:COQbmf;Pjplud:PoEs9b,EEDORb;QGR0gd:Mlhmy;a56pNe:JEfCwb;Me32dd:MEeYgc;wR5FRb:TtcOte,O1Gjze;pXdRYb:JKoKVe,MdUzUe;dIoSBb:ZgGg9b;EmZ2Bf:zr1jrb;NSEoX:lazG7b;eBAeSb:Ck63tb;WCEKNd:I46Hvd;wV5Pjc:L8KGxe;EVNhjf:pw70Gc;sTsDMc:kHVSUb;wQlYve:aLUfP;zOsCQe:Ko78Df;KcokUb:KiuZBf;YV5bee:IvPZ6d;kbAm9d:MkHyGd;ZWEUA:afR4Cf;g8nkx:U4MzKc;lzgfYb:PI40bd;ESrPQc:mNTJvc;qavrXe:zQzcXe,mYbt1d;w9w86d:dt4g2b;GleZL:J1A7Od;bcPXSc:gSZLJb;JXS8fb:Qj0suc;IoGlCf:b5lhvb;vfVwPd:OXTqFb;VGRfx:VFqbr;BjwMce:cXX2Wb;pNsl2d:j9Yuyc;R9Ulx:CR7Ufe;kY7VAf:d91TEb;KpRAue:Tia57b;jY0zg:Q6tNgc;l8Azde:j4Ca9b;oSUNyd:fTfGO,fTfGO,vjQg0b;SMDL4c:fTfGO,vjQg0b;aZ61od:arTwJ;ZrFutb:W4Cdfc;K8vqCc:MyIcle;NPKaK:SdcwHb;LBgRLc:XVMNvd,SdcwHb;rQSrae:C6D5Fc;kCQyJ:ueyPK;KQzWid:mB4wNe;EABSZ:MXZt9d;TxfV6d:YORN0b;UDrY1c:eps46d;F9mqte:UoRcbe;Nyt6ic:jn2sGd;w3bZCb:ZPGaIb;G0KhTb:LIaoZ;aAJE9c:WHW6Ef;V2HTTe:RolTY;Wfmdue:g3MJlb;imqimf:jKGL2e;BgS6mb:fidj5d;UVmjEd:EesRsb;z97YGf:oug9te;AfeaP:TkrAjf;eBZ5Nd:audvde;CxXAWb:YyRLvc;VN6jIc:ddQyuf;SLtqO:Kh1xYe;tosKvd:ZCqP3;VOcgDe:YquhTb;uuQkY:u2V3ud;WDGyFe:jcVOxd;trZL0b:qY8PFe;VxQ32b:k0XsBb;DULqB:RKfG5c;Np8Qkd:Dpx6qc;cFTWae:gT8qnd;gaub4:TN6bMe;xBbsrc:NEW1Qc;DpcR3d:zL72xf;hjRo6e:F62sG;yGxLoc:FmAr0c;oUlnpc:RagDlc;R2kc8b:ALJqWb;pj82le:mg5CW;dLlj2:Qqt3Gf;qGV2uc:HHi04c;gtVSi:ekUOYd;UyG7Kb:wQd0G;LsNahb:ucGLNb;xbe2wc:wbTLEd;Q1Ow7b:x5CSu;okUaUd:wItadb;G6wU6e:hezEbd;uknmt:GkPrzb;PqHfGe:im2cZe;Fmv9Nc:O1Tzwc;hK67qb:QWEO5b;BMxAGc:E5bFse;R4IIIb:QWfeKf;whEZac:F4AmNb;tH4IIe:Ymry6;zxnPse:GkRiKb;xqZiqf:wmnU7d;lkq0A:Z0MWEf;daB6be:lMxGPd;U96pRd:FsR04;LEikZe:byfTOb,lsjVmc/m=cdos,cr,hsm,jsa,mb4ZUb,d,csi,cEt90b,SNUn3,qddgKe,sTsDMc,dtl0hd,eHDfl:411:40
+
+1692237014339	Marionette	INFO	Stopped listening on port 50610
+Dynamically enable window occlusion 1
+[Parent 8100, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13032, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 8100, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13032, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 8100, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13032, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692237040368	geckodriver	INFO	Listening on 127.0.0.1:50686
+1692237043424	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50687" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileKeeUbG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692237043621	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692237043704	Marionette	INFO	Listening on port 50694
+WebDriver BiDi listening on ws://127.0.0.1:50687
+Read port: 50694
+1692237043838	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50687/devtools/browser/e0c25d8e-3fdb-4ff3-b59b-d68a8fda9def
+[Parent 3516, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18908, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+1692237351082	geckodriver	INFO	Listening on 127.0.0.1:50788
+1692237354150	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50789" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofiler8HPQa"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692237354347	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692237354434	Marionette	INFO	Listening on port 50796
+WebDriver BiDi listening on ws://127.0.0.1:50789
+Read port: 50796
+1692237354572	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50789/devtools/browser/fb7545df-74ac-4d9a-a159-18051d19bd04
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.google.com."
+[Parent 10940, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8352, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692237363874	Marionette	INFO	Stopped listening on port 50796
+JavaScript warning: https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/ck=xjs.s.Al72wKYK720.L.F4.O/am=CghAQAAAAAAgAABRQDgEYAMYgE_uDAAAQAAABQAAAABgFQGAAYDg_SdpAAgJEAJgAMTADQBKKAE7AAAAYOwHAAAAAABwAIwXgFYIAAdCQAEIAAAAgDwAOA8QHExYAAAAAAAAAAAAAAGXIBgckB4LCIAAAAAAAAAAAAAAqWTycgACAGA/d=1/exm=SNUn3,attn,cEt90b,cdos,cr,csi,d,dtl0hd,eHDfl,gwc,hsm,jsa,mb4ZUb,qddgKe,sTsDMc/excm=A9AtR,ABxRVc,AD6AIb,D1J6He,FmnE6b,FuQWyc,GLGZs,GRJ32c,JxE93,KzZUob,MRb7nf,Mxvwsd,NmR9jd,NsEUGe,Oa7Qpb,Ok4XMd,Ollhtb,PoJj8d,SKZSKc,SLDaee,SfrWY,T3q8Wd,TO0csb,U3Ovcc,U6nlJe,UQpTU,UiPhkb,VZLyBe,Wx0Z2d,WxJ6g,XHo6qe,XTkmZd,XbupY,Xk0c,Yltq7c,ZrXR8b,Zudxcb,bXyZdf,cKV22c,du3Q4e,eTv59e,f26on,fNMhz,hU1IHe,hfJ9hb,jkRPje,kOSi0d,mL4hG,oXRDzc,pMwOEe,pQk1fc,rL2AR,tlA71,tzTB5,vJPFse,vPi79c,wKa2Bd,y25qZb,yChgtb,yuQBec/ed=1/dg=2/rs=ACT90oFBcFRCy2WP0lCHyfY2SQEADFwy6Q/ee=AfeaP:TkrAjf;BMxAGc:E5bFse;BgS6mb:fidj5d;BjwMce:cXX2Wb;CxXAWb:YyRLvc;DULqB:RKfG5c;DpcR3d:zL72xf;EABSZ:MXZt9d;ESrPQc:mNTJvc;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;F9mqte:UoRcbe;Fmv9Nc:O1Tzwc;G0KhTb:LIaoZ;G6wU6e:hezEbd;GleZL:J1A7Od;IoGlCf:b5lhvb;JXS8fb:Qj0suc;JsbNhc:Xd8iUd;K8vqCc:MyIcle;KQzWid:mB4wNe;KcokUb:KiuZBf;KpRAue:Tia57b;LBgRLc:SdcwHb,XVMNvd;LEikZe:byfTOb,lsjVmc;LsNahb:ucGLNb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Np8Qkd:Dpx6qc;Nyt6ic:jn2sGd;Oj465e:KG2eXe;Pjplud:EEDORb,PoEs9b;PqHfGe:im2cZe;Q1Ow7b:x5CSu;QGR0gd:Mlhmy;R2kc8b:ALJqWb;R4IIIb:QWfeKf;R9Ulx:CR7Ufe;SLtqO:Kh1xYe;SMDL4c:fTfGO,vjQg0b;SNUn3:ZwDk9d,x8cHvb;TxfV6d:YORN0b;U96pRd:FsR04;UDrY1c:eps46d;UVmjEd:EesRsb;UyG7Kb:wQd0G;V2HTTe:RolTY;VGRfx:VFqbr;VN6jIc:ddQyuf;VOcgDe:YquhTb;VxQ32b:k0XsBb;WCEKNd:I46Hvd;WDGyFe:jcVOxd;Wfmdue:g3MJlb;YV5bee:IvPZ6d;ZWEUA:afR4Cf;ZrFutb:W4Cdfc;a56pNe:JEfCwb;aAJE9c:WHW6Ef;aZ61od:arTwJ;bcPXSc:gSZLJb;cEt90b:ws9Tlc;cFTWae:gT8qnd;dIoSBb:ZgGg9b;dLlj2:Qqt3Gf;daB6be:lMxGPd;dtl0hd:lLQWFe;eBAeSb:Ck63tb;eBZ5Nd:audvde;eHDfl:ofjVkb;g8nkx:U4MzKc;gaub4:TN6bMe;gtVSi:ekUOYd;hK67qb:QWEO5b;hjRo6e:F62sG;iFQyKf:QIhFr,vfuNJf;imqimf:jKGL2e;io8t5d:sgY6Zb;jY0zg:Q6tNgc;kCQyJ:ueyPK;kMFpHd:OTA3Ae;kY7VAf:d91TEb;kbAm9d:MkHyGd;l8Azde:j4Ca9b;lkq0A:Z0MWEf;lzgfYb:PI40bd;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;oSUNyd:fTfGO,vjQg0b;oUlnpc:RagDlc;okUaUd:wItadb;pNsl2d:j9Yuyc;pXdRYb:JKoKVe,MdUzUe;pj82le:mg5CW;qGV2uc:HHi04c;qaS3gd:yiLg6e;qavrXe:mYbt1d,zQzcXe;qddgKe:d7YSfd,x4FYXe;rQSrae:C6D5Fc;sP4Vbe:VwDzFe;sTsDMc:kHVSUb;tH4IIe:Ymry6;tosKvd:ZCqP3;trZL0b:qY8PFe;uY49fb:COQbmf;uknmt:GkPrzb;uuQkY:u2V3ud;vfVwPd:OXTqFb;w3bZCb:ZPGaIb;w9w86d:dt4g2b;wQlYve:aLUfP;wR5FRb:O1Gjze,TtcOte;wV5Pjc:L8KGxe;whEZac:F4AmNb;xBbsrc:NEW1Qc;xbe2wc:wbTLEd;xqZiqf:wmnU7d;yGxLoc:FmAr0c;yxTchf:KUM7Z;z97YGf:oug9te;zOsCQe:Ko78Df;zxnPse:GkRiKb/m=ABJeBb,ALJqWb,COQbmf,Da4hkd,Eox39d,FmAr0c,GCSbhd,GDeT4,GElbSc,HYSCof,KG2eXe,KR9dFe,LEikZe,M0hWhd,Mlhmy,OTA3Ae,PoEs9b,Qqt3Gf,RagDlc,SRqpxc,T1HOxc,U0aPgd,Um3BXb,UzbKLd,Wn3aEc,Wo3n8,aD8OEe,byfTOb,cSX9Xe,d5EhJe,d6zkRc,fVaWL,fcDBE,kWgXee,lsjVmc,nPaQu,ovKuLd,pFsdhd,pHXghd,sgY6Zb,tIj4fb,uxMpU,xfmZMb?xjs=s1, line 431: Script terminated by timeout at:
+_.Jr.prototype.ka@https://www.google.com/xjs/_/js/k=xjs.s.pt_BR.0WewSTN8qVw.O/ck=xjs.s.Al72wKYK720.L.F4.O/am=CghAQAAAAAAgAABRQDgEYAMYgE_uDAAAQAAABQAAAABgFQGAAYDg_SdpAAgJEAJgAMTADQBKKAE7AAAAYOwHAAAAAABwAIwXgFYIAAdCQAEIAAAAgDwAOA8QHExYAAAAAAAAAAAAAAGXIBgckB4LCIAAAAAAAAAAAAAAqWTycgACAGA/d=1/exm=SNUn3,attn,cEt90b,cdos,cr,csi,d,dtl0hd,eHDfl,gwc,hsm,jsa,mb4ZUb,qddgKe,sTsDMc/excm=A9AtR,ABxRVc,AD6AIb,D1J6He,FmnE6b,FuQWyc,GLGZs,GRJ32c,JxE93,KzZUob,MRb7nf,Mxvwsd,NmR9jd,NsEUGe,Oa7Qpb,Ok4XMd,Ollhtb,PoJj8d,SKZSKc,SLDaee,SfrWY,T3q8Wd,TO0csb,U3Ovcc,U6nlJe,UQpTU,UiPhkb,VZLyBe,Wx0Z2d,WxJ6g,XHo6qe,XTkmZd,XbupY,Xk0c,Yltq7c,ZrXR8b,Zudxcb,bXyZdf,cKV22c,du3Q4e,eTv59e,f26on,fNMhz,hU1IHe,hfJ9hb,jkRPje,kOSi0d,mL4hG,oXRDzc,pMwOEe,pQk1fc,rL2AR,tlA71,tzTB5,vJPFse,vPi79c,wKa2Bd,y25qZb,yChgtb,yuQBec/ed=1/dg=2/rs=ACT90oFBcFRCy2WP0lCHyfY2SQEADFwy6Q/ee=AfeaP:TkrAjf;BMxAGc:E5bFse;BgS6mb:fidj5d;BjwMce:cXX2Wb;CxXAWb:YyRLvc;DULqB:RKfG5c;DpcR3d:zL72xf;EABSZ:MXZt9d;ESrPQc:mNTJvc;EVNhjf:pw70Gc;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;F9mqte:UoRcbe;Fmv9Nc:O1Tzwc;G0KhTb:LIaoZ;G6wU6e:hezEbd;GleZL:J1A7Od;IoGlCf:b5lhvb;JXS8fb:Qj0suc;JsbNhc:Xd8iUd;K8vqCc:MyIcle;KQzWid:mB4wNe;KcokUb:KiuZBf;KpRAue:Tia57b;LBgRLc:SdcwHb,XVMNvd;LEikZe:byfTOb,lsjVmc;LsNahb:ucGLNb;Me32dd:MEeYgc;NPKaK:SdcwHb;NSEoX:lazG7b;Np8Qkd:Dpx6qc;Nyt6ic:jn2sGd;Oj465e:KG2eXe;Pjplud:EEDORb,PoEs9b;PqHfGe:im2cZe;Q1Ow7b:x5CSu;QGR0gd:Mlhmy;R2kc8b:ALJqWb;R4IIIb:QWfeKf;R9Ulx:CR7Ufe;SLtqO:Kh1xYe;SMDL4c:fTfGO,vjQg0b;SNUn3:ZwDk9d,x8cHvb;TxfV6d:YORN0b;U96pRd:FsR04;UDrY1c:eps46d;UVmjEd:EesRsb;UyG7Kb:wQd0G;V2HTTe:RolTY;VGRfx:VFqbr;VN6jIc:ddQyuf;VOcgDe:YquhTb;VxQ32b:k0XsBb;WCEKNd:I46Hvd;WDGyFe:jcVOxd;Wfmdue:g3MJlb;YV5bee:IvPZ6d;ZWEUA:afR4Cf;ZrFutb:W4Cdfc;a56pNe:JEfCwb;aAJE9c:WHW6Ef;aZ61od:arTwJ;bcPXSc:gSZLJb;cEt90b:ws9Tlc;cFTWae:gT8qnd;dIoSBb:ZgGg9b;dLlj2:Qqt3Gf;daB6be:lMxGPd;dtl0hd:lLQWFe;eBAeSb:Ck63tb;eBZ5Nd:audvde;eHDfl:ofjVkb;g8nkx:U4MzKc;gaub4:TN6bMe;gtVSi:ekUOYd;hK67qb:QWEO5b;hjRo6e:F62sG;iFQyKf:QIhFr,vfuNJf;imqimf:jKGL2e;io8t5d:sgY6Zb;jY0zg:Q6tNgc;kCQyJ:ueyPK;kMFpHd:OTA3Ae;kY7VAf:d91TEb;kbAm9d:MkHyGd;l8Azde:j4Ca9b;lkq0A:Z0MWEf;lzgfYb:PI40bd;nAFL3:NTMZac,s39S4;oGtAuc:sOXFj;oSUNyd:fTfGO,vjQg0b;oUlnpc:RagDlc;okUaUd:wItadb;pNsl2d:j9Yuyc;pXdRYb:JKoKVe,MdUzUe;pj82le:mg5CW;qGV2uc:HHi04c;qaS3gd:yiLg6e;qavrXe:mYbt1d,zQzcXe;qddgKe:d7YSfd,x4FYXe;rQSrae:C6D5Fc;sP4Vbe:VwDzFe;sTsDMc:kHVSUb;tH4IIe:Ymry6;tosKvd:ZCqP3;trZL0b:qY8PFe;uY49fb:COQbmf;uknmt:GkPrzb;uuQkY:u2V3ud;vfVwPd:OXTqFb;w3bZCb:ZPGaIb;w9w86d:dt4g2b;wQlYve:aLUfP;wR5FRb:O1Gjze,TtcOte;wV5Pjc:L8KGxe;whEZac:F4AmNb;xBbsrc:NEW1Qc;xbe2wc:wbTLEd;xqZiqf:wmnU7d;yGxLoc:FmAr0c;yxTchf:KUM7Z;z97YGf:oug9te;zOsCQe:Ko78Df;zxnPse:GkRiKb/m=ABJeBb,ALJqWb,COQbmf,Da4hkd,Eox39d,FmAr0c,GCSbhd,GDeT4,GElbSc,HYSCof,KG2eXe,KR9dFe,LEikZe,M0hWhd,Mlhmy,OTA3Ae,PoEs9b,Qqt3Gf,RagDlc,SRqpxc,T1HOxc,U0aPgd,Um3BXb,UzbKLd,Wn3aEc,Wo3n8,aD8OEe,byfTOb,cSX9Xe,d5EhJe,d6zkRc,fVaWL,fcDBE,kWgXee,lsjVmc,nPaQu,ovKuLd,pFsdhd,pHXghd,sgY6Zb,tIj4fb,uxMpU,xfmZMb?xjs=s1:431:81
+
+Dynamically enable window occlusion 1
+[Parent 10940, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8352, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10940, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8352, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10940, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[Parent 10940, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8352, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[GPU 8352, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692239144008	geckodriver	INFO	Listening on 127.0.0.1:51009
+1692239147064	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51010" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileJZpnf4"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692239147263	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692239147345	Marionette	INFO	Listening on port 51017
+WebDriver BiDi listening on ws://127.0.0.1:51010
+Read port: 51017
+1692239147469	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51010/devtools/browser/f579af37-57c0-46f9-91ae-67603ec1f201
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 7876, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd, line 16: Script terminated by timeout at:
+e@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:16:33
+ova/<@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:17:30
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:12:1946
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1692239298457	Marionette	INFO	Stopped listening on port 51017
+Dynamically enable window occlusion 1
+[Parent 7876, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7876, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7876, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7876, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7876, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692369889500	geckodriver	INFO	Listening on 127.0.0.1:58323
+1692369892530	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58324" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilekQLN9C"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692369893326	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692369893454	Marionette	INFO	Listening on port 58332
+WebDriver BiDi listening on ws://127.0.0.1:58324
+Read port: 58332
+1692369893639	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58324/devtools/browser/cad77af6-cd31-45e1-8349-18bf0aa11e4c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 10616, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17632, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=AvtSve,Ctsu,EFQ78c,EGw7Od,EN3i8d,I6YDgd,IZ1fbc,IZT63,K0PMbc,KUM7Z,L1AAkb,LDQI,LEikZe,MpJwZc,NOeYWe,O6y8ed,PHUIyb,PrPYRd,Rusgnf,SCuOPb,STuCOe,SpsfSb,UPKV3d,UUJqVe,Uas9Hd,W2YXuc,YHI3We,YTxL4,ZUKRxc,_b,_tp,aW3pY,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,eVCnO,fJpY1b,fqEYIb,hc6Ubd,hmHrle,inNHtf,kSPLL,lsjVmc,ltDFwf,lwddkf,mWLH9d,my67ye,n73qwf,njlZCf,oLggrd,pxq3x,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,vHEMJe,vfuNJf,ws9Tlc,xBaz7b,xQtZb,yRXbo,ywOR5c,zbML3c,zr1jrb,zy0vNb/excm=_b,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd, line 16: Script terminated by timeout at:
+e@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=AvtSve,Ctsu,EFQ78c,EGw7Od,EN3i8d,I6YDgd,IZ1fbc,IZT63,K0PMbc,KUM7Z,L1AAkb,LDQI,LEikZe,MpJwZc,NOeYWe,O6y8ed,PHUIyb,PrPYRd,Rusgnf,SCuOPb,STuCOe,SpsfSb,UPKV3d,UUJqVe,Uas9Hd,W2YXuc,YHI3We,YTxL4,ZUKRxc,_b,_tp,aW3pY,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,eVCnO,fJpY1b,fqEYIb,hc6Ubd,hmHrle,inNHtf,kSPLL,lsjVmc,ltDFwf,lwddkf,mWLH9d,my67ye,n73qwf,njlZCf,oLggrd,pxq3x,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,vHEMJe,vfuNJf,ws9Tlc,xBaz7b,xQtZb,yRXbo,ywOR5c,zbML3c,zr1jrb,zy0vNb/excm=_b,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:16:33
+ova/<@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=AvtSve,Ctsu,EFQ78c,EGw7Od,EN3i8d,I6YDgd,IZ1fbc,IZT63,K0PMbc,KUM7Z,L1AAkb,LDQI,LEikZe,MpJwZc,NOeYWe,O6y8ed,PHUIyb,PrPYRd,Rusgnf,SCuOPb,STuCOe,SpsfSb,UPKV3d,UUJqVe,Uas9Hd,W2YXuc,YHI3We,YTxL4,ZUKRxc,_b,_tp,aW3pY,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,eVCnO,fJpY1b,fqEYIb,hc6Ubd,hmHrle,inNHtf,kSPLL,lsjVmc,ltDFwf,lwddkf,mWLH9d,my67ye,n73qwf,njlZCf,oLggrd,pxq3x,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,vHEMJe,vfuNJf,ws9Tlc,xBaz7b,xQtZb,yRXbo,ywOR5c,zbML3c,zr1jrb,zy0vNb/excm=_b,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:17:30
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=AvtSve,Ctsu,EFQ78c,EGw7Od,EN3i8d,I6YDgd,IZ1fbc,IZT63,K0PMbc,KUM7Z,L1AAkb,LDQI,LEikZe,MpJwZc,NOeYWe,O6y8ed,PHUIyb,PrPYRd,Rusgnf,SCuOPb,STuCOe,SpsfSb,UPKV3d,UUJqVe,Uas9Hd,W2YXuc,YHI3We,YTxL4,ZUKRxc,_b,_tp,aW3pY,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,eVCnO,fJpY1b,fqEYIb,hc6Ubd,hmHrle,inNHtf,kSPLL,lsjVmc,ltDFwf,lwddkf,mWLH9d,my67ye,n73qwf,njlZCf,oLggrd,pxq3x,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,vHEMJe,vfuNJf,ws9Tlc,xBaz7b,xQtZb,yRXbo,ywOR5c,zbML3c,zr1jrb,zy0vNb/excm=_b,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlHegdWS-J8W7tPT0Pxl_lA2O8XIJw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:12:1946
+
+1692370014235	Marionette	INFO	Stopped listening on port 58332
+Dynamically enable window occlusion 1
+[Parent 10616, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17632, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10616, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17632, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10616, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17632, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10616, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17632, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10616, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17632, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370471498	geckodriver	INFO	Listening on 127.0.0.1:58680
+1692370474545	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58681" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileezTE72"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370474959	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370475059	Marionette	INFO	Listening on port 58689
+WebDriver BiDi listening on ws://127.0.0.1:58681
+Read port: 58689
+1692370475194	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58681/devtools/browser/ff702d46-c88d-4da8-881a-5a4473ab92df
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 10848, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 12316, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370486258	Marionette	INFO	Stopped listening on port 58689
+Dynamically enable window occlusion 1
+[Parent 10848, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 12316, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10848, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 12316, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10848, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 12316, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10848, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 12316, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370555583	geckodriver	INFO	Listening on 127.0.0.1:58769
+1692370558623	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58770" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileww4kwu"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370558835	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370558937	Marionette	INFO	Listening on port 58777
+WebDriver BiDi listening on ws://127.0.0.1:58770
+Read port: 58777
+1692370559070	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58770/devtools/browser/effefb11-1a99-4a32-9f75-fd9b3600ec9a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 17644, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13204, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370722053	geckodriver	INFO	Listening on 127.0.0.1:58898
+1692370725105	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58899" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofile6y99rU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370725321	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370725423	Marionette	INFO	Listening on port 58907
+WebDriver BiDi listening on ws://127.0.0.1:58899
+Read port: 58907
+1692370725553	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58899/devtools/browser/9495ac60-6e56-46a8-836d-36fef9a5a5a9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 8912, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 12076, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370751402	geckodriver	INFO	Listening on 127.0.0.1:58968
+1692370754442	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58969" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilevjt04d"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370754656	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370754755	Marionette	INFO	Listening on port 58977
+WebDriver BiDi listening on ws://127.0.0.1:58969
+Read port: 58977
+1692370754904	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58969/devtools/browser/70704281-f5ea-4645-b4ba-f89a872d79d4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 15600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 2348, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370876689	geckodriver	INFO	Listening on 127.0.0.1:59079
+1692370879726	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59080" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofile7C95Mz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370879927	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370880036	Marionette	INFO	Listening on port 59088
+WebDriver BiDi listening on ws://127.0.0.1:59080
+Read port: 59088
+1692370880134	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59080/devtools/browser/0f942525-a263-45ab-9525-f24c62486b32
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 4788, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6464, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370937310	geckodriver	INFO	Listening on 127.0.0.1:59168
+1692370940349	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileR3o8Fl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370940549	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370940653	Marionette	INFO	Listening on port 59177
+WebDriver BiDi listening on ws://127.0.0.1:59169
+Read port: 59177
+1692370940786	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59169/devtools/browser/7f8c47e6-1e5d-4941-bcf7-993799680092
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 19588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19284, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370950291	Marionette	INFO	Stopped listening on port 59177
+Dynamically enable window occlusion 1
+[Parent 19588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19284, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19284, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19284, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19284, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19588, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19284, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370968470	geckodriver	INFO	Listening on 127.0.0.1:59245
+1692370971512	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59246" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileSubGhW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370971726	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370971852	Marionette	INFO	Listening on port 59254
+Read port: 59254
+WebDriver BiDi listening on ws://127.0.0.1:59246
+1692370971907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59246/devtools/browser/eeaa4ed2-a236-4ae8-8602-8cb67fd34eca
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 13760, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17480, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692370993150	geckodriver	INFO	Listening on 127.0.0.1:59315
+1692370996198	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59316" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofile8iN999"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692370996402	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692370996503	Marionette	INFO	Listening on port 59324
+WebDriver BiDi listening on ws://127.0.0.1:59316
+Read port: 59324
+1692370996636	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59316/devtools/browser/ddbfab46-472c-4bf3-a387-9fa8b99c5192
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 1372, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7592, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692371028301	geckodriver	INFO	Listening on 127.0.0.1:59390
+1692371031333	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59391" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileFxoz4j"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692371031563	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692371031672	Marionette	INFO	Listening on port 59406
+WebDriver BiDi listening on ws://127.0.0.1:59391
+Read port: 59406
+1692371031845	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59391/devtools/browser/6abd2dbe-2730-498a-a6ba-9755a4e6477a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 18316, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11768, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692371105332	geckodriver	INFO	Listening on 127.0.0.1:59491
+1692371108366	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59492" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilecniyup"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692371108570	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692371108671	Marionette	INFO	Listening on port 59500
+WebDriver BiDi listening on ws://127.0.0.1:59492
+Read port: 59500
+1692371108803	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59492/devtools/browser/b9f75fef-0b53-4c4a-9331-857531f3c52a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 10600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17220, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyJzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlGeK3rJf3uKYCG3AvJ49UbEMSApaw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd, line 16: Script terminated by timeout at:
+e@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyJzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlGeK3rJf3uKYCG3AvJ49UbEMSApaw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:16:33
+ova/<@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyJzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlGeK3rJf3uKYCG3AvJ49UbEMSApaw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:17:30
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyJzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlGeK3rJf3uKYCG3AvJ49UbEMSApaw/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:12:1946
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1692371164819	Marionette	INFO	Stopped listening on port 59500
+Dynamically enable window occlusion 1
+[Parent 10600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17220, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17220, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17220, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17220, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17220, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10600, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17220, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692373507723	geckodriver	INFO	Listening on 127.0.0.1:49964
+1692373510776	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49965" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofile3srsjT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692373511595	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692373511700	Marionette	INFO	Listening on port 49972
+WebDriver BiDi listening on ws://127.0.0.1:49965
+Read port: 49972
+1692373511882	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49965/devtools/browser/80bd98b6-7c91-4620-9a5b-7bd0c36636f6
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AXo7B7UJSTgTmvf8Fm0VPz1ZAExMxhV8Hceasgl4uyvq1dY1skGUteJU-TRS3rbv7hoRYyvTK1vgiA&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S302331695%3A1692373514726522 line 206 > injectedScript line 2 > eval line 3187 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 4488, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11468, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692373700529	geckodriver	INFO	Listening on 127.0.0.1:50072
+1692373703588	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50073" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileplh7AG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692373703786	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692373703872	Marionette	INFO	Listening on port 50080
+WebDriver BiDi listening on ws://127.0.0.1:50073
+Read port: 50080
+1692373704004	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50073/devtools/browser/17d4797e-00a3-4e74-9c0d-8143be199f56
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AXo7B7VMwgO2Zq1EFFRWJq3_aEm9tG6IIioGv5cQrFcEFt4OvIQXIuDYQyBdpVdHA_8_ivs0hEIT&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1460365950%3A1692373707103978 line 206 > injectedScript line 2 > eval line 7026 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 11720, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7720, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692373712376	Marionette	INFO	Stopped listening on port 50080
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/excm=_b,_r,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlGPEyH-dYRRa0OrOtmUI47VSTAztg/m=_b,_tp,_r, line 261: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/excm=_b,_r,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlGPEyH-dYRRa0OrOtmUI47VSTAztg/m=_b,_tp,_r:261:188
+
+Dynamically enable window occlusion 1
+[Parent 11720, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7720, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11720, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7720, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11720, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7720, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11720, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7720, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11720, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 7720, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692373739563	geckodriver	INFO	Listening on 127.0.0.1:50136
+1692373742634	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "50137" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileWX3JYz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692373742822	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692373742907	Marionette	INFO	Listening on port 50144
+WebDriver BiDi listening on ws://127.0.0.1:50137
+Read port: 50144
+1692373743040	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:50137/devtools/browser/66664882-9c91-4377-85d8-20825586fe36
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AXo7B7UBBbKyJGEtMK73-aChCn9TkVlQfJ5azCLfTF28WxjEwzynaHNJyIBtUN8aBfMIb7-QEVzPuQ&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S1141499131%3A1692373745914041 line 206 > injectedScript line 2 > eval line 4152 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692373751192	Marionette	INFO	Stopped listening on port 50144
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/am=FwdAyJzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/excm=_b,_r,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlGVIZ1U7WEgw4D-kVEZLhFvFZ0bkQ/m=_b,_tp,_r, line 261: Script terminated by timeout at:
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/am=FwdAyJzHBhD_U53vGSeHAQAAAAAACAAAFsMd/d=1/excm=_b,_r,_tp,identifierview/ed=1/dg=0/wt=2/ujg=1/rs=AOaEmlGVIZ1U7WEgw4D-kVEZLhFvFZ0bkQ/m=_b,_tp,_r:261:188
+
+Dynamically enable window occlusion 1
+[Parent 7484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4292, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4292, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4292, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4292, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4292, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692382566982	geckodriver	INFO	Listening on 127.0.0.1:54678
+1692382570038	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54679" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilepWNHK8"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692382570835	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692382570949	Marionette	INFO	Listening on port 54686
+WebDriver BiDi listening on ws://127.0.0.1:54679
+Read port: 54686
+1692382571276	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54679/devtools/browser/7bbb0c59-7eab-4f99-8010-e2af8d6860af
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AXo7B7WnFmoCLFezprbbQcz-2I-b-g0MjlfvAyt_wRO0civQriKqI87Y0SJE2vMpc4CH5sm8UwHd8g&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-267868552%3A1692382574992627 line 206 > injectedScript line 2 > eval line 7266 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 6500, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18028, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692382579719	Marionette	INFO	Stopped listening on port 54686
+Dynamically enable window occlusion 1
+[Parent 6500, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18028, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 6500, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18028, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 6500, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18028, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 6500, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18028, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692382600264	geckodriver	INFO	Listening on 127.0.0.1:54777
+1692382603325	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54778" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilep2I9zm"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692382603528	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692382603612	Marionette	INFO	Listening on port 54786
+WebDriver BiDi listening on ws://127.0.0.1:54778
+Read port: 54786
+1692382603755	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54778/devtools/browser/8b5bef7c-dfbf-4560-8247-f9194e162f1d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=AXo7B7U25ks1YYtEAWd9CLWjI_4XDmUhkN7V4FHXls9dmcMWLJkYC9UITznlBiy3klmbGiWC1zL0&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S940000499%3A1692382607010903 line 206 > injectedScript line 2 > eval line 5958 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692382611528	Marionette	INFO	Stopped listening on port 54786
+Dynamically enable window occlusion 1
+[Parent 14996, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14996, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14996, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14996, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14996, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14996, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14996, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17692, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692383059255	geckodriver	INFO	Listening on 127.0.0.1:54905
+1692383062323	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54906" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilepLlKwN"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692383062513	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692383062596	Marionette	INFO	Listening on port 54913
+WebDriver BiDi listening on ws://127.0.0.1:54906
+Read port: 54913
+1692383062728	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54906/devtools/browser/c88a7086-2c06-4f27-8e34-1ad6f2854330
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?checkedDomains=youtube&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AXo7B7VSSrdHrCyK125fU7YamyjcNfcE4_eeyytYj4xcjaPr0QZQn5sPyaLxGJDFctlJVfwNwxPSlA&pstMsg=1&rip=1&service=mail&dsh=S117897147%3A1692383008502504 line 206 > injectedScript line 2 > eval line 384 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1692383068751	Marionette	INFO	Stopped listening on port 54913
+Dynamically enable window occlusion 1
+[Parent 14796, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18936, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14796, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18936, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14796, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18936, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14796, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18936, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14796, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18936, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 14796, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18936, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692383097522	geckodriver	INFO	Listening on 127.0.0.1:54973
+1692383100593	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "54974" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileNvSmr7"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692383100781	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692383100862	Marionette	INFO	Listening on port 54981
+WebDriver BiDi listening on ws://127.0.0.1:54974
+Read port: 54981
+1692383100987	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:54974/devtools/browser/c658110f-42ee-40a5-8661-07fe723a1afa
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?checkedDomains=youtube&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AXo7B7VSSrdHrCyK125fU7YamyjcNfcE4_eeyytYj4xcjaPr0QZQn5sPyaLxGJDFctlJVfwNwxPSlA&pstMsg=1&rip=1&service=mail&dsh=S117897147%3A1692383008502504 line 206 > injectedScript line 2 > eval line 2124 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1692383107037	Marionette	INFO	Stopped listening on port 54981
+Dynamically enable window occlusion 1
+[Parent 11240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16552, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16552, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16552, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16552, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16552, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 11240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16552, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692383118045	geckodriver	INFO	Listening on 127.0.0.1:55032
+1692383121095	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55033" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileK4T6tF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692383121280	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692383121361	Marionette	INFO	Listening on port 55040
+WebDriver BiDi listening on ws://127.0.0.1:55033
+Read port: 55040
+1692383121495	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55033/devtools/browser/e49cc9aa-bbe2-401b-a150-3b43c2224a29
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?checkedDomains=youtube&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AXo7B7VSSrdHrCyK125fU7YamyjcNfcE4_eeyytYj4xcjaPr0QZQn5sPyaLxGJDFctlJVfwNwxPSlA&pstMsg=1&rip=1&service=mail&dsh=S117897147%3A1692383008502504 line 206 > injectedScript line 2 > eval line 6420 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 4380, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11056, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 4380, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11056, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1692383277764	geckodriver	INFO	Listening on 127.0.0.1:55129
+1692383280806	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55130" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileeJhJOl"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692383281003	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692383281087	Marionette	INFO	Listening on port 55137
+WebDriver BiDi listening on ws://127.0.0.1:55130
+Read port: 55137
+1692383281222	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55130/devtools/browser/84812bcb-04d2-4bdd-b69a-accd04e7d41c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dfirefox-b-d%26q%3Dg&ec=GAZAAQ&hl=pt-BR&ifkv=AXo7B7XwWrkY8HLroJto3Bb9DMBsA2NQrkrwkyJZJmzMoDFMJoLzwG3kpDzTwccwBXQhbFeof9_ZLQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S336234706%3A1692383252300035 line 206 > injectedScript line 2 > eval line 7155 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dfirefox-b-d%26q%3Dg&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=pt-BR&ifkv=AXo7B7WxoWJo779a1D5EFkSubcGVt3m2Z81whzAlOUt1Aw2LeZ4TFrcfFwPB2CbEJNx8_gGysA8bxQ&dsh=S-2147013523%3A1692383308518284 line 4 > injectedScript line 2 > eval line 3172 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1692383336299	Marionette	INFO	Stopped listening on port 55137
+Dynamically enable window occlusion 1
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[Parent 17460, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[GPU 9532, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692383341715	geckodriver	INFO	Listening on 127.0.0.1:55200
+1692383344784	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55201" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileeUtsDI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692383344971	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692383345055	Marionette	INFO	Listening on port 55208
+WebDriver BiDi listening on ws://127.0.0.1:55201
+Read port: 55208
+1692383345185	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55201/devtools/browser/3ffee36d-f037-44b0-b49b-cfc9155fcb68
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fclient%3Dfirefox-b-d%26q%3Dg&ec=GAZAAQ&hl=pt-BR&ifkv=AXo7B7XwWrkY8HLroJto3Bb9DMBsA2NQrkrwkyJZJmzMoDFMJoLzwG3kpDzTwccwBXQhbFeof9_ZLQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S336234706%3A1692383252300035 line 206 > injectedScript line 2 > eval line 7589 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 17976, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18868, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692384118629	geckodriver	INFO	Listening on 127.0.0.1:55868
+1692384121682	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55869" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofile4TWYQe"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692384121883	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692384121965	Marionette	INFO	Listening on port 55878
+WebDriver BiDi listening on ws://127.0.0.1:55869
+Read port: 55878
+1692384122104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55869/devtools/browser/dcde716f-a55d-43e8-892a-9ad7691e5fbd
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 15384, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10568, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%26oq%3Dg%26aqs%3Dchrome.1.69i57j0i131i433i512l9.835j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=pt-BR&ifkv=AXo7B7UZ2FDm9XXEaLOOzhDyWyE4HTF4AF1s40CZLQlPi7YuKS6NhN2WPJdyWyHt-Q7dWhZb7R2vcQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-955898890%3A1692383685644420 line 206 > injectedScript line 2 > eval line 645 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+1692384210313	geckodriver	INFO	Listening on 127.0.0.1:55985
+1692384213378	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55986" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileqA3eVc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692384213580	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692384213665	Marionette	INFO	Listening on port 55995
+WebDriver BiDi listening on ws://127.0.0.1:55986
+Read port: 55995
+1692384213798	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55986/devtools/browser/a5db33f1-3415-4347-b630-a7718e2bd84f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%26oq%3Dg%26aqs%3Dchrome.1.69i57j0i131i433i512l9.835j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=pt-BR&ifkv=AXo7B7UZ2FDm9XXEaLOOzhDyWyE4HTF4AF1s40CZLQlPi7YuKS6NhN2WPJdyWyHt-Q7dWhZb7R2vcQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-955898890%3A1692383685644420 line 206 > injectedScript line 2 > eval line 6268 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+console.error: (new TypeError("currentNode is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 66))
+TypeError: currentNode is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:66:20
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:309:10
+
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.error: "Unable to find target with innerWindowId:6442450952"
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+console.warn: "Listener for event 'frame' did not return a promise."
+JavaScript warning: https://accounts.google.com/SignUp?biz=false&cc=BR&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%26oq%3Dg%26aqs%3Dchrome.1.69i57j0i131i433i512l9.835j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&dsh=S671171667%3A1692384228551826&flowEntry=ServiceLogin&flowName=GlifWebSignIn&hl=pt-BR&ifkv=AXo7B7UFrl4Eygc-GLXvFX5ts8qvQ4SyuFjdkBDBe8wZNWkIIJGVql7z57jabUyhTlCSCzulgij4cA line 2 > eval line 4820 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1692384271454	Marionette	INFO	Stopped listening on port 55995
+Dynamically enable window occlusion 1
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+console.error: RemoteSecuritySettings.jsm: 
+  Failed to download attachment: TypeError: NetworkError: Network request failed
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13980, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 15716, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692384594539	geckodriver	INFO	Listening on 127.0.0.1:56396
+1692384597572	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56397" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileLg7le3"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692384597771	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692384597853	Marionette	INFO	Listening on port 56407
+WebDriver BiDi listening on ws://127.0.0.1:56397
+Read port: 56407
+1692384597981	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56397/devtools/browser/4ad24b22-381c-4c0b-90c1-cfeee8fb74f9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Dgoogle%26oq%3Dg%26aqs%3Dchrome.1.69i57j0i131i433i512l9.835j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&ec=GAZAAQ&hl=pt-BR&ifkv=AXo7B7UZ2FDm9XXEaLOOzhDyWyE4HTF4AF1s40CZLQlPi7YuKS6NhN2WPJdyWyHt-Q7dWhZb7R2vcQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-955898890%3A1692383685644420 line 206 > injectedScript line 2 > eval line 104 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+[Parent 17120, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18756, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAAAAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlFufOYWwfI9GZapnp_0wN3IfuPcMg/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd, line 12: Script terminated by timeout at:
+Wua/<@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAAAAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlFufOYWwfI9GZapnp_0wN3IfuPcMg/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:12:2169
+c@https://www.gstatic.com/_/mss/boq-identity/_/js/k=boq-identity.AccountsSignInUi.pt_BR.rs-BDV6mawA.es5.O/ck=boq-identity.AccountsSignInUi.s-yARbA9JRM.L.F4.O/am=FwdAyIzHBhD_U53vGSeHAQAAAAAAAAAAFsMd/d=1/exm=A2sInc,ANCJdb,AkfuYc,AvtSve,BDnJmb,COQbmf,Ctsu,EEDORb,EFQ78c,EGw7Od,EN3i8d,G0cNrd,GGodmf,I6YDgd,IZ1fbc,IZT63,K0PMbc,KG2eXe,KUM7Z,L1AAkb,LDQI,LEikZe,MbBXlb,Mlhmy,MpJwZc,N5Lqpc,NOeYWe,NTMZac,NwH0H,O6y8ed,OTA3Ae,OmgaI,PHUIyb,PkV8id,PrPYRd,RAnnUd,Rusgnf,SCuOPb,STuCOe,SUKkyc,SpsfSb,SzsEAf,U0aPgd,UPKV3d,UUJqVe,Uas9Hd,UmWJEc,V3dDOb,W2YXuc,XVMNvd,XVq9Qb,YHI3We,YTxL4,ZUKRxc,ZfAoz,_b,_r,_tp,aW3pY,aurFic,b3kMqb,bPkrc,bSspM,bTi8wc,byfTOb,e3uIRe,eVCnO,fJpY1b,fKUV3e,fgj8Rb,fqEYIb,gychg,hc6Ubd,hmHrle,i1Z3Ub,i5H9N,i5dxUd,inNHtf,kSPLL,kWgXee,kibjWe,kmSu5b,lg30w,lsjVmc,ltDFwf,lwddkf,m9oV,mWLH9d,my67ye,n73qwf,njlZCf,nnwwYc,oLggrd,ovKuLd,pxq3x,qNG0Fc,qPfo0c,qmdT9,siKnQd,soHxf,t2srLd,tUnxGc,uu7UOe,vDwyod,vHEMJe,vfuNJf,wGM7Jc,ws9Tlc,wzQaQb,xBaz7b,xQtZb,xUdipf,yDVVkb,yRXbo,ywOR5c,zbML3c,zr1jrb,zsCYJ,zy0vNb/excm=_b,_r,_tp,identifierview/ed=1/wt=2/ujg=1/rs=AOaEmlFufOYWwfI9GZapnp_0wN3IfuPcMg/ee=Al0B8:kibjWe;DaIJ8c:iAskyc;EkYFhd:BDnJmb;EmZ2Bf:zr1jrb;Erl4fe:FloWmf;JsbNhc:Xd8iUd;LBgRLc:XVMNvd;Me32dd:MEeYgc;NPKaK:PVlQOd;NSEoX:lazG7b;Oj465e:KG2eXe;Pjplud:EEDORb;QGR0gd:Mlhmy;SMDL4c:K0PMbc;SNUn3:ZwDk9d;UpnZUd:nnwwYc;XdiAjb:Nr4zW;a56pNe:JEfCwb;cEt90b:ws9Tlc;dIoSBb:SpsfSb;eBAeSb:zbML3c;iFQyKf:vfuNJf;io8t5d:yDVVkb;kMFpHd:OTA3Ae;nAFL3:NTMZac;nTuGK:JKNPM;oGtAuc:sOXFj;oSUNyd:K0PMbc;oXZmbc:tUnxGc;pXdRYb:fqEYIb;qddgKe:xQtZb;sP4Vbe:VwDzFe;uY49fb:COQbmf;ul9GGd:VDovNc;vNjB7d:YTxL4;wR5FRb:siKnQd;yxTchf:KUM7Z/m=RqjULd:12:1946
+
+[Parent 17120, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18756, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 17120, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 18756, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-ux6i5uap_kgdJqLbszgrDc8lL0DO2SEHIjb65WwLNE.js line 2 > eval line 3706 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+SourceActor threw an exception: [Exception... "Failed to open input source 'chrome://global/content/neterror/aboutNetErrorCodes.js'"  nsresult: "0x805303f4 (<unknown>)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 708"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:708:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:561:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:452:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:416:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2167:33
+addAllSources@resource://devtools/server/actors/thread.js:1492:14
+watch@resource://devtools/server/actors/resources/sources.js:78:17
+watchResources@resource://devtools/server/actors/resources/index.js:322:19
+addSessionDataEntry@resource://devtools/server/actors/targets/session-data-processors/resources.js:11:21
+addSessionDataEntry@resource://devtools/server/actors/targets/base-target-actor.js:41:23
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:528:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.sys.mjs:437:21
+Line: 708, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 708: Failed to open input source 'chrome://global/content/neterror/aboutNetErrorCodes.js'
+1692390870549	geckodriver	INFO	Listening on 127.0.0.1:64952
+1692390873593	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64953" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileFFNdM6"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692390873791	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692390873878	Marionette	INFO	Listening on port 64960
+WebDriver BiDi listening on ws://127.0.0.1:64953
+Read port: 64960
+1692390874015	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64953/devtools/browser/879f2bfc-8efa-4034-b925-16b3163fbf23
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-ux6i5uap_kgdJqLbszgrDc8lL0DO2SEHIjb65WwLNE.js line 2 > eval line 2645 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://www.mohmal.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js, line 1: Script terminated by timeout at:
+c@https://www.mohmal.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js:1:9349
+
+1692390886905	Marionette	INFO	Stopped listening on port 64960
+Dynamically enable window occlusion 1
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 12204, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19288, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692390972350	geckodriver	INFO	Listening on 127.0.0.1:65042
+1692390975403	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65043" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileNpRoNI"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692390975588	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692390975671	Marionette	INFO	Listening on port 65051
+WebDriver BiDi listening on ws://127.0.0.1:65043
+Read port: 65051
+1692390975803	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65043/devtools/browser/57a38c41-f8de-4a4c-9fd2-cf56ce2fb9d7
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-ux6i5uap_kgdJqLbszgrDc8lL0DO2SEHIjb65WwLNE.js line 2 > eval line 238 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 13056, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13020, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13056, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13020, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692391031941	geckodriver	INFO	Listening on 127.0.0.1:65168
+1692391035025	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofileKUTQXw"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692391035209	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692391035290	Marionette	INFO	Listening on port 65176
+WebDriver BiDi listening on ws://127.0.0.1:65169
+Read port: 65176
+1692391035423	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:65169/devtools/browser/2af14c0a-d413-45d9-a15e-e3f6adece4a3
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-ux6i5uap_kgdJqLbszgrDc8lL0DO2SEHIjb65WwLNE.js line 2 > eval line 4235 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://www.mohmal.com."
+JavaScript warning: https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914, line 43: Script terminated by timeout at:
+Oa@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:43:416
+Pa@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:43:283
+Nj/c/</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:182:402
+c@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:75:331
+m.md@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:75:425
+m.complete@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:75:373
+m.B@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:326
+m.complete@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:98
+m.B@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:326
+m.complete@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:98
+m.complete@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:79:123
+m.B@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:326
+Gc.prototype.B@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:84:453
+m.complete@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:98
+Nj/c/</</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:182:430
+Qa@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:44:339
+Na.prototype.flush@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:44:127
+Pa@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:43:330
+Nj/c/</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:182:292
+m.md@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:75:425
+m.next@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:74:439
+m.m@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:223
+m.next@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:72:859
+wj/</</</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:174:362
+uj/<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:173:1013
+Ma.prototype.La/<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:43:162
+wj/</</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:174:371
+m.md@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:75:425
+m.next@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:74:439
+m.m@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:223
+m.next@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:72:859
+wj/</</</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:174:362
+uj/<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:173:1013
+Ma.prototype.La/<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:43:162
+wj/</</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:174:371
+m.md@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:75:425
+m.next@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:74:439
+m.m@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:73:223
+m.next@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:72:859
+ld/</<@https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914:93:671
+
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-ux6i5uap_kgdJqLbszgrDc8lL0DO2SEHIjb65WwLNE.js line 2 > eval line 5937 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-ux6i5uap_kgdJqLbszgrDc8lL0DO2SEHIjb65WwLNE.js line 2 > eval line 6043 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/aZrQl3reHFLrXxIU5jTX67bfpJTGr0dfi-1qyyEVSZQ.js line 2 > eval line 4614 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 597))
+JavaScript warning: https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20230802_RC00/outstream.min.js, line 88: Script terminated by timeout at:
+C@https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20230802_RC00/outstream.min.js:88:217
+x@https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20230802_RC00/outstream.min.js:111:309
+m.Nd@https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20230802_RC00/outstream.min.js:113:754
+m.hg/<@https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20230802_RC00/outstream.min.js:114:101
+Ph/<@https://imasdk.googleapis.com/formats/outstream/versioned/prod2/outstream_web_client_20230802_RC00/outstream.min.js:109:942
+
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+JavaScript warning: https://pagead2.googlesyndication.com/bg/-ux6i5uap_kgdJqLbszgrDc8lL0DO2SEHIjb65WwLNE.js line 2 > eval line 3321 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 1808, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 16872, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692392905345	geckodriver	INFO	Listening on 127.0.0.1:49168
+1692392908379	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49169" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofiled3qxMz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692392908569	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692392908654	Marionette	INFO	Listening on port 49176
+WebDriver BiDi listening on ws://127.0.0.1:49169
+Read port: 49176
+1692392908795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49169/devtools/browser/6eaa9eff-f9e7-4e97-8f35-ef4c11225a36
+1692392936679	Marionette	INFO	Stopped listening on port 49176
+Dynamically enable window occlusion 1
+[Parent 10484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20728, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20728, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.error: (new AbortError("IndexedDB: main/url-classifier-skip-urls list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+[Parent 10484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20728, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10484, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20728, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692392950927	geckodriver	INFO	Listening on 127.0.0.1:49214
+1692392953973	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49215" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofile6KgDSL"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692392954166	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692392954252	Marionette	INFO	Listening on port 49222
+WebDriver BiDi listening on ws://127.0.0.1:49215
+Read port: 49222
+1692392954397	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49215/devtools/browser/f2908ede-b1a0-4f3b-a720-afbbac34703f
+1692392962551	Marionette	INFO	Stopped listening on port 49222
+Dynamically enable window occlusion 1
+[Parent 4924, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20948, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 4924, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20948, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 4924, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20948, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 4924, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 20948, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.error: (new Error("IndexedDB: main/url-classifier-skip-urls list() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+1692392974068	geckodriver	INFO	Listening on 127.0.0.1:49259
+1692392977125	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49260" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\FERDDN~1\\AppData\\Local\\Temp\\rust_mozprofilentfaam"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692392977316	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692392977399	Marionette	INFO	Listening on port 49267
+WebDriver BiDi listening on ws://127.0.0.1:49260
+Read port: 49267
+1692392977592	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:49260/devtools/browser/d7d8020b-035f-4dd0-85b7-e50aeb89c7ae
+JavaScript warning: https://www.youtube.com/s/desktop/510f0670/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js, line 2534: Script terminated by timeout at:
+im.prototype.transition@https://www.youtube.com/s/desktop/510f0670/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:2534:33
+DE/<@https://www.youtube.com/s/desktop/510f0670/jsbin/desktop_polymer_enable_wil_icons.vflset/desktop_polymer_enable_wil_icons.js:8261:114
+
+1692393019302	Marionette	INFO	Stopped listening on port 49267
+Dynamically enable window occlusion 1
+[Parent 10540, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10540, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10540, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10540, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10540, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10540, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 4564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
