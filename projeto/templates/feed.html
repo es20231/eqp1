@@ -1,0 +1,26 @@
+{% extends 'dashboard.html' %}
+{% block conteudo %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/style_pictures_add.css')}}">
+<div class="dashboard">
+    {% for post in posts %}
+        <div class="picture">
+            <div class="image">
+                <img class="img" src="data:;base64,{{post.data}}" alt="">
+            </div>
+            <div class="container_card">
+                <div class="card">
+                    <h1>Comentários</h1>
+                    <hr class="line-card">
+                    <div class="textfield">
+                        <input type="text" name="comentario" placeholder="Comentário">
+                    </div>
+                    <button class="btn-comment">Comentar</button>
+                </div>
+            </div> 
+        </div>
+        <div>
+            <hr class="line-picture">
+        </div>
+    {% endfor %}
+</div>
+{% endblock conteudo %}

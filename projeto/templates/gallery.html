@@ -64,8 +64,9 @@
             <div class="box-picture">
                 <img src="data:;base64,{{image.string_data}}" alt="">
             </div>
+            <form action="{{url_for('postar_foto', id = current_user.id, image_id = image.id)}}" method="POST">
             <div class="textfield2">
-                <textarea name="biografia" cols="20" rows="2" placeholder="Legenda"></textarea>
+                <textarea name="legenda" cols="20" rows="2" placeholder="Legenda"></textarea>
             </div>
             <div class="box-filters">
                 <label for="Filtros">Filtros</label>
@@ -76,9 +77,10 @@
                 </select>
             </div>
             <div class="buttons">
-                <a href="#" class="btn-post">Confirmar</a>
+                <button type="submit" class="btn-post">Confirmar</button>
                 <button class="btn-close">Cancelar</button>
             </div>
+            </form>
         </div>
     </dialog>
     <hr class="line-below">
