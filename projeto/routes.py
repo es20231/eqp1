@@ -210,7 +210,7 @@ def gallery():
 
 @app.errorhandler(RequestEntityTooLarge)
 def handle_request_entity_too_large(e):
-    flash("O arquivo é muito grande. O tamanho máximo permitido é de 20 MB.", "file_length_error")
+    flash("O arquivo é muito grande. O tamanho máximo permitido é de 20 MB por upload.", "file_length_error")
     return redirect(request.url)
 
 @app.route('/gallery', methods=["POST"])
