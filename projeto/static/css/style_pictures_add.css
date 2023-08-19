@@ -219,6 +219,48 @@ button:hover {
     background: #00ff88;transition: background 0.7s;
 }
 
+.like-deslike {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+.like-button,
+.dislike-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Aumenta o tamanho do ícone e do botão */
+    background-color: #464343;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #f0ffffde;
+    transition: background-color 0.3s;
+}
+
+.like-button {
+    margin-left: 100px; /* Adiciona margem à esquerda (like) */
+}
+
+.like-button .fa-regular {
+    font-size: 25px; /* Adiciona margem à esquerda (like) */
+}
+
+.dislike-button {
+    margin-right: 380px; /* Adiciona margem à direita (dislike) */
+}
+
+.dislike-button .fa-regular{
+    font-size: 25px; /* Adiciona margem à direita (dislike) */
+}
+
+.like-button:hover,
+.dislike-button:hover {
+    background-color: #3e0748;
+}
+
 
 
 @media only screen and (max-width:950px){
