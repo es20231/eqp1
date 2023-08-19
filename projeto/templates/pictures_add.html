@@ -16,13 +16,14 @@
                         <p class="comment">Lindooo!</p>
                     </div>
                     <div class="box">
-                        <p>Carlos_edu</p>
-                        <p class="comment">Lindooo!</p>
+                        <p>FerdNando</p>
+                        <p class="comment">Legallll!</p>
                     </div>
                     <div class="box">
-                        <p>Carlos_edu</p>
-                        <p class="comment">Lindooo!</p>
+                        <p>Bruninho</p>
+                        <p class="comment">Nossa maluco, que foda kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
                     </div>
+                    
                 </div>
                 <div class="textfield">
                     <input type="text" name="comentario" placeholder="Comentário">
@@ -42,7 +43,7 @@
 
    
     <div class="box-comment">
-        <div class="like-deslike">
+        <div class="like-dislike">
             <!-- Botão de curtir -->
             <a class="like-button" id="like-button">
                 <span class="icon">
@@ -119,7 +120,7 @@
             const captionToggle = container.querySelector('.caption-toggle');
 
             if (captionText.scrollHeight > captionText.clientHeight) {
-            captionToggle.style.display = 'block'; // Exibe apenas se o conteúdo ultrapassar o limite
+            captionToggle.style.display = 'block'; 
             }
 
             captionToggle.addEventListener('click', function() {
@@ -138,16 +139,36 @@
         const dislikeButton = document.getElementById("dislike-button");
 
         likeButton.addEventListener("click", function() {
-            likeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-up"></i></span>'
+        if (!likeButton.classList.contains("active")) {
+            likeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-up"></i></span>';
             dislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
-        });
-
-        dislikeButton.addEventListener("click", function() {
+            likeButton.classList.add("active");
+            dislikeButton.classList.remove("active");
+            likeButton.style.fontSize='25px'
+            likeButton.style.height='49px'
+        } else {
             likeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
-            dislikeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-down"></i></span>';
-        });
+            likeButton.classList.remove("active");
+        }
     });
 
+    dislikeButton.addEventListener("click", function() {
+        if (!dislikeButton.classList.contains("active")) {
+            likeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
+            dislikeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-down"></i></span>';
+            dislikeButton.classList.add("active");
+            likeButton.classList.remove("active");
+            dislikeButton.style.fontSize='25px'
+            dislikeButton.style.height='49px'
+
+        } else {
+            dislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
+            dislikeButton.classList.remove("active");
+        }
+    });
+    });
+
+    
 
 </script>
 {% endblock conteudo %}

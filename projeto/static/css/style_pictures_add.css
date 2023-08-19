@@ -219,7 +219,7 @@ button:hover {
     background: #00ff88;transition: background 0.7s;
 }
 
-.like-deslike {
+.like-dislike {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -322,4 +322,3 @@ button:hover {
         margin-right: 11px;   
     }
 }
-
