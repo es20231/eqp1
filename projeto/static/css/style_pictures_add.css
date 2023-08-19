@@ -25,18 +25,18 @@
 
 .image{
     width: 60vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
-    justify-content:center;
+    justify-content:end;
     align-items: end;
     flex-direction: column;
 }
 
 .container_card{
     width: 40vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
     flex-direction: column;
     box-sizing: border-box;
@@ -101,7 +101,6 @@
     flex-direction: column;
     box-sizing: border-box;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .card >h1{
@@ -166,8 +165,60 @@ button:hover {
     padding: 2px;
     border-radius: 8px;
     border: none;
-    margin-top: 10px;
+    margin-top: 50px;
 }
+
+.box-comment {
+    border: 1px solid #464343;
+    padding: 5px;
+    width: 55vw;
+    background-color: #464343;
+    margin-left: 68px;
+    border-bottom-right-radius: 10px;
+}
+
+.caption-container {
+    display: flex;
+    flex-direction: column;
+    color: #f0ffffde;
+}
+
+.caption-user{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.caption-text {
+    margin: 0;
+    font-weight: 300;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a 2 linhas */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    max-width: 840px;
+    text-indent: 0;
+    transition: max-height 0.5s ease;
+}
+
+.caption-text.expanded {
+    -webkit-line-clamp: unset; /* Mostra todo o texto quando a classe 'expanded' é aplicada */
+    max-height: 100%;
+}
+
+.caption-toggle {
+    border: none;
+    background: none;
+    color: #8b27b3;
+    cursor: pointer;
+    display: none;
+}
+
+.caption-toggle:hover{
+    background: #00ff88;transition: background 0.7s;
+}
+
+
 
 @media only screen and (max-width:950px){
     .card{
@@ -183,6 +234,10 @@ button:hover {
         width: 40%;
         height: 33%;
     }
+    .box-comment{
+        width: 70.4%;
+        margin-left: 175px;
+    }
 }
 @media only screen and (max-width:600px){
     .picture{
@@ -193,11 +248,11 @@ button:hover {
     }
     .image{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .container_card{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .image-login{
         width: 50vw;
@@ -217,6 +272,11 @@ button:hover {
     .scroll{
         width: 40%;
         height: 33%;
+    }
+    .box-comment{
+        width: 90.5%;
+        margin-left: 0;
+        margin-right: 11px;   
     }
 }
 
