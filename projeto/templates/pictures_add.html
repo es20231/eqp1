@@ -10,6 +10,20 @@
             <div class="card">
                 <h1>Comentários</h1>
                 <hr class="line-card">
+                <div class="scroll">
+                    <div class="box">
+                        <p>Carlos_edu</p>
+                        <p class="comment">Lindooo!</p>
+                    </div>
+                    <div class="box">
+                        <p>Carlos_edu</p>
+                        <p class="comment">Lindooo!</p>
+                    </div>
+                    <div class="box">
+                        <p>Carlos_edu</p>
+                        <p class="comment">Lindooo!</p>
+                    </div>
+                </div>
                 <div class="textfield">
                     <input type="text" name="comentario" placeholder="Comentário">
                 </div>
@@ -17,6 +31,21 @@
             </div>
         </div> 
     </div>
+
+   
+    <div class="box-comment">
+        <div class="photo-caption">
+            <div class="caption-container">
+                <p class="caption-user">Carlos_edu</p>
+                <p class="caption-text">
+                    Como uma linguagem multiparadigma, o JavaScript suporta estilos de programação orientados a eventos, funcionais e imperativos (incluindo orientado a objetos e prototype-based), apresentando recursos como fechamentos (closures) e funções de alta ordem comumente indisponíveis em linguagens populares como Java e C++.
+                </p>
+                <button class="caption-toggle" onclick="toggleCaption(this)">Mostrar mais</button>
+            </div>
+        </div>
+    </div>
+   
+    
     <div>
         <hr class="line-picture">
     </div>
@@ -57,5 +86,30 @@
         <hr class="line-picture">
     </div>
 </div>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const commentContainers = document.querySelectorAll('.box-comment');
 
+        commentContainers.forEach(function(container) {
+            const captionText = container.querySelector('.caption-text');
+            const captionToggle = container.querySelector('.caption-toggle');
+
+            if (captionText.scrollHeight > captionText.clientHeight) {
+            captionToggle.style.display = 'block'; // Exibe apenas se o conteúdo ultrapassar o limite
+            }
+
+            captionToggle.addEventListener('click', function() {
+                captionText.classList.toggle('expanded');
+                if (captionToggle.innerHTML === 'Mostrar mais') {
+                    captionToggle.innerHTML = 'Mostrar menos';
+                } else {
+                    captionToggle.innerHTML = 'Mostrar mais';
+                }
+            });
+        });
+    });
+
+
+</script>
 {% endblock conteudo %}

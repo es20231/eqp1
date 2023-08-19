@@ -25,18 +25,18 @@
 
 .image{
     width: 60vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
-    justify-content:center;
+    justify-content:end;
     align-items: end;
     flex-direction: column;
 }
 
 .container_card{
     width: 40vw;
-    height: 100vh;
+    height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: start;
     flex-direction: column;
     box-sizing: border-box;
@@ -51,6 +51,46 @@
     margin-top: 100px;
 }
 
+.scroll::-webkit-scrollbar{
+    width: 10px;
+    border: 1px;
+    border-radius: 6px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #9836be;
+    border-radius: 6px;
+}
+
+.scroll{
+    position: absolute;
+    width: 255px;
+    height: 208px;
+    margin-top: 46px;
+    overflow-y: scroll;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box >p{
+    color: #f0ffffde;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.box .comment{
+    font-weight: 300;
+    word-wrap: break-word;
+    max-width: 240px;
+    text-indent: 0;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
 .card{
     height: 55vh;
     width: 20vw;
@@ -61,17 +101,17 @@
     flex-direction: column;
     box-sizing: border-box;
     border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .card >h1{
+    font-size: 25px;
     color: #00ff88e5;
     font-weight: 200;
     margin: 0;
 }
 
 .line-card{
-    width: 17vw;
+    width: 15vw;
     margin-bottom: 10px;
 }
 
@@ -85,22 +125,23 @@
 }
 
 .textfield >input{
-    width: 90%;
+    width: 94%;
     border: none;
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
     background: #514869;
     color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    margin-top: 198px;
 }
 
 .btn-comment{
     width: 40%;
-    padding: 4px 0 ;
-    margin-top: 5px;
+    padding: 2px 0 ;
+    margin-top: 3px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -124,12 +165,79 @@ button:hover {
     padding: 2px;
     border-radius: 8px;
     border: none;
-    margin-top: 10px;
+    margin-top: 50px;
 }
+
+.box-comment {
+    border: 1px solid #464343;
+    padding: 5px;
+    width: 55vw;
+    background-color: #464343;
+    margin-left: 68px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.caption-container {
+    display: flex;
+    flex-direction: column;
+    color: #f0ffffde;
+}
+
+.caption-user{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.caption-text {
+    margin: 0;
+    font-weight: 300;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limita a 2 linhas */
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    max-width: 840px;
+    text-indent: 0;
+    transition: max-height 0.5s ease;
+}
+
+.caption-text.expanded {
+    -webkit-line-clamp: unset; /* Mostra todo o texto quando a classe 'expanded' é aplicada */
+    max-height: 100%;
+}
+
+.caption-toggle {
+    border: none;
+    background: none;
+    color: #8b27b3;
+    cursor: pointer;
+    display: none;
+}
+
+.caption-toggle:hover{
+    background: #00ff88;transition: background 0.7s;
+}
+
+
 
 @media only screen and (max-width:950px){
     .card{
         width: 85%;
+    }
+    .line-card{
+        width: 75%;
+    }
+    .textfield >input{
+        margin-top: 170px;
+    }
+    .scroll{
+        width: 40%;
+        height: 33%;
+    }
+    .box-comment{
+        width: 70.4%;
+        margin-left: 175px;
     }
 }
 @media only screen and (max-width:600px){
@@ -141,11 +249,11 @@ button:hover {
     }
     .image{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .container_card{
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     .image-login{
         width: 50vw;
@@ -153,8 +261,23 @@ button:hover {
     .img{
         width: 90%;
     }
+    .line-card{
+        width: 85%;
+    }
     .line-picture{
         width: 85vw;
+    }
+    .textfield >input{
+        margin-top: 170px;
+    }
+    .scroll{
+        width: 40%;
+        height: 33%;
+    }
+    .box-comment{
+        width: 90.5%;
+        margin-left: 0;
+        margin-right: 11px;   
     }
 }
 
