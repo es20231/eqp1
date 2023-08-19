@@ -51,6 +51,46 @@
     margin-top: 100px;
 }
 
+.scroll::-webkit-scrollbar{
+    width: 10px;
+    border: 1px;
+    border-radius: 6px;
+}
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #9836be;
+    border-radius: 6px;
+}
+
+.scroll{
+    position: absolute;
+    width: 255px;
+    height: 208px;
+    margin-top: 46px;
+    overflow-y: scroll;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.box >p{
+    color: #f0ffffde;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.box .comment{
+    font-weight: 300;
+    word-wrap: break-word;
+    max-width: 240px;
+    text-indent: 0;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
 .card{
     height: 55vh;
     width: 20vw;
@@ -65,13 +105,14 @@
 }
 
 .card >h1{
+    font-size: 25px;
     color: #00ff88e5;
     font-weight: 200;
     margin: 0;
 }
 
 .line-card{
-    width: 17vw;
+    width: 15vw;
     margin-bottom: 10px;
 }
 
@@ -85,22 +126,23 @@
 }
 
 .textfield >input{
-    width: 90%;
+    width: 94%;
     border: none;
     border-radius: 10px;
-    padding: 15px;
+    padding: 5px;
     background: #514869;
     color: #f0ffffde;
     font-size: 12pt;
     box-shadow: 0px 10px 40px #00000056;
     outline: none;
     box-sizing: border-box;
+    margin-top: 198px;
 }
 
 .btn-comment{
     width: 40%;
-    padding: 4px 0 ;
-    margin-top: 5px;
+    padding: 2px 0 ;
+    margin-top: 3px;
     border: none;
     border-radius: 8px;
     outline: none;
@@ -131,6 +173,16 @@ button:hover {
     .card{
         width: 85%;
     }
+    .line-card{
+        width: 75%;
+    }
+    .textfield >input{
+        margin-top: 170px;
+    }
+    .scroll{
+        width: 40%;
+        height: 33%;
+    }
 }
 @media only screen and (max-width:600px){
     .picture{
@@ -153,8 +205,18 @@ button:hover {
     .img{
         width: 90%;
     }
+    .line-card{
+        width: 85%;
+    }
     .line-picture{
         width: 85vw;
+    }
+    .textfield >input{
+        margin-top: 170px;
+    }
+    .scroll{
+        width: 40%;
+        height: 33%;
     }
 }
 
