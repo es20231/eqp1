@@ -37,4 +37,13 @@ def criar_email():
     driver.find_element('xpath','//*[@id="create"]').click()
     time.sleep(5)
 
+def testar_login():
+
+    driver.get("http://127.0.0.1:5000")
+    time.sleep(5)
+
+
+criar_email()
+
+
 

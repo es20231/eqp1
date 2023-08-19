@@ -1,12 +1,16 @@
 from projeto import db, login_manager
 from projeto import bcrypt
 from flask_login import UserMixin
-
+import base64
 
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
 
+def default_profile_photo():
+    default_profile_photo = open('projeto/default_profile_photo/default_profile_photo.png', 'rb').read()
+    default_profile_photo_decoded = base64.b64encode(default_profile_photo).decode('ascii')
+    return default_profile_photo_decoded
 
 
 class User(db.Model, UserMixin):
@@ -17,7 +21,7 @@ class User(db.Model, UserMixin):
     senha = db.Column(db.String(length=15), nullable=False, unique=True)
     bio = db.Column(db.String(length=1024))
     date_created = db.Column(db.DateTime(timezone=True), nullable=False)
-    perfil_photo = db.Column(db.LargeBinary)
+    perfil_photo = db.Column(db.Text, nullable=False, default= default_profile_photo)
     email_confirmed = db.Column(db.Boolean, nullable=False, default=False)  # Novo campo para rastrear o status de confirmação do e-mail
     email_confirm_token = db.Column(db.String(100), unique=True)  # Novo campo para armazenar o token de confirmação de e-mail
     posts = db.relationship('Posts', backref='dono_user', lazy=True)
@@ -38,7 +42,10 @@ class User(db.Model, UserMixin):
     def add_nova_senha(self, senha):
         self.senhacrip = senha
         db.session.commit()
-        
+    
+    def add_novo_email(self, novo_email):
+        self.email = novo_email
+        db.session.commit()
 
     @property
     def senhacrip(self):
