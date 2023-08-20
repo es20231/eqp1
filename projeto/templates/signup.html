@@ -11,11 +11,12 @@
 </head>
 
 <body>
-    {% with messages = get_flashed_messages() %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
             {% for message in messages %}
+                {% if message[0] == 'success' or message[0] == 'danger' or message[0] == ''}
                 <div class="container">
-                    <span class="flashes">{{ message }}</span>
+                    <span class="flashes">{{ message[1] }}</span>
                 </div>
             {% endfor %}
         {% endif %}
