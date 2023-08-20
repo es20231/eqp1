@@ -26,6 +26,7 @@ class User(db.Model, UserMixin):
     email_confirm_token = db.Column(db.String(100), unique=True)  # Novo campo para armazenar o token de confirmação de e-mail
     posts = db.relationship('Posts', backref='dono_user', lazy=True)
     uploads = db.relationship('Uploads', backref='dono_user', lazy=True)
+    comentarios = db.relationship('Comments', backref='dono_user', lazy=True)
 
     def add_perfil_photo(self, data):
         self.perfil_photo = data
@@ -93,14 +94,19 @@ class Posts(db.Model):
         db.session.commit()
 
 class Likes(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True, nullable=False)
     usuario = db.Column(db.String(length=50), nullable=False)
     post = db.Column(db.Integer, db.ForeignKey('posts.id'))
 
 
 class Comments(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    usuario = db.Column(db.String(length=50), nullable=False)
+    usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
     comentario = db.Column(db.String(length=1024), nullable=False)
     post = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    data_do_comentario = db.Column(db.DateTime(timezone=True), nullable=False)
+
+    def insert_logged_user_id(self, user_logged):
+        self.usuario = user_logged.id
+        db.session.commit()
     
