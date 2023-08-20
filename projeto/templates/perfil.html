@@ -6,7 +6,11 @@
         <img class="img" src="data:;base64,{{profile.perfil_photo}}" alt="">
         <h2>{{profile.nome}}</h2>
         <h2>@{{profile.usuario}}</h2>
-        <p class="text">{{profile.bio}}</p>
+        {% if profile.bio != None %}
+            <p class="text">{{profile.bio}}</p>
+        {% else%}
+        <p class="text"></p>
+        {% endif %}
     </div>
     <div class="follow">
         <div class="seguidores">
