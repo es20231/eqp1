@@ -65,19 +65,22 @@
                 <img src="data:;base64,{{image.string_data}}" alt="">
             </div>
             <form action="{{url_for('postar_foto', id = current_user.id, image_id = image.id)}}" method="POST">
-            <div class="textfield2">
-                <textarea name="legenda" cols="20" rows="2" placeholder="Legenda"></textarea>
-            </div>
-            <div class="box-filters">
-                <label for="Filtros">Filtros</label>
-                <select class="filter">
-                    <option value="opcao1">Original</option>
-                    <option value="opcao2">Preto e Branco</option>
-                    <option value="opcao3">Opção 3</option>
-                </select>
-            </div>
+                <div class="textfield2">
+                    <textarea name="legenda" cols="20" rows="2" placeholder="Legenda"></textarea>
+                </div>
+                <div class="box-filters">
+                    <label for="Filtros">Filtros</label>
+                    <select class="filter">
+                        <option value="opcao1">Original</option>
+                        <option value="opcao2">Preto e Branco</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="btn-post">Confirmar</button>
+                </div>
+            </form>
             <div class="buttons">
-                <button type="submit" class="btn-post">Confirmar</button>
                 <button class="btn-close">Cancelar</button>
             </div>
             </form>
@@ -95,13 +98,9 @@
     {% endif %}
 
 </div>
-
-
-
 <script>
     var btnsPost = document.querySelectorAll(".btn-post");
     var modals = document.querySelectorAll(".image-modal");
-
     btnsPost.forEach(function (btn) {
         btn.onclick = function () {
             var imageId = btn.getAttribute("data-image-id");
@@ -111,7 +110,6 @@
             }
         };
     });
-
     modals.forEach(function (modal) {
         var btnClose = modal.querySelector(".btn-close");
         btnClose.onclick = function () {
