@@ -4,7 +4,7 @@ from projeto import serializer
 from projeto import mail
 from projeto import allowed_extensions
 from projeto.validators import validate_email, validate_senha, validate_usuario
-from projeto.models import User, Uploads, Posts
+from projeto.models import User, Uploads, Posts, Comments
 from flask import render_template, redirect, request, url_for, flash
 from flask_login import login_user, logout_user, login_required, current_user
 import base64
@@ -104,9 +104,8 @@ def login():
         user_logged = User.query.filter_by(email=email).first()
         
         if user_logged and user_logged.converte_senha(senha_texto_claro=senha):
-            if user_logged.email_confirmed:
-                login_user(user_logged)
-                return redirect(url_for('feed', id=user_logged.id))
+            login_user(user_logged)
+            return redirect(url_for('feed', id=user_logged.id))
         else:
             flash('Erro ao logar, email ou senha inválidos!!!', category='danger')
 
@@ -192,7 +191,8 @@ def dashboard():
 @login_required
 def feed(id):
     all_posts = Posts.query.order_by(desc(Posts.data_postagem)).all()
-    return render_template("feed.html", posts= all_posts)
+    all_comments = Comments.query.order_by(desc(Comments.data_do_comentario)).all()
+    return render_template("pictures_add.html", posts= all_posts, comentarios=all_comments)  
 
 @app.route('/perfil/<int:id>/feed/post/<int:image_id>', methods=["POST"])
 @login_required
@@ -201,10 +201,9 @@ def postar_foto(id,image_id):
         legenda_post = request.form.get('legenda')
 
         imagem_post = Uploads.query.filter_by(id=image_id).first()
-        if imagem_post.data == None:
+        if imagem_post.data == '':
             flash('Imagem não registrada na galeria. Faça upload da imagem na galeria para depois realizar a postagem.', "feed_post_image_error")
             return redirect(request.url)
-        
         else:
             new_post = Posts(data=imagem_post.string_data,desc=legenda_post, data_postagem=datetime.now())
             db.session.add(new_post)
@@ -215,6 +214,23 @@ def postar_foto(id,image_id):
 
     return redirect(request.url)
 
+@app.route('/<string:nome>/realizar_comentario/post/<string:nome_user_post>/<int:post_id>', methods=["GET","POST"])
+@login_required
+def comentar_post(nome,nome_user_post,post_id):
+    if request.method == "POST":
+        comentario = request.form.get('comentario')
+        
+        if comentario == '':
+            flash('Campo de comentário deve ser preenchido', 'empy_comment_error')
+            return redirect(request.url)
+        else:
+            new_comment = Comments(comentario=comentario, post=post_id, data_do_comentario=datetime.now())
+            db.session.add(new_comment)
+            db.session.commit()
+            new_comment.insert_logged_user_id(current_user)
+            return redirect(url_for('feed', id=current_user.id))
+    
+    return redirect(url_for('feed', id=current_user.id))
 
 
 @app.route('/perfil/<user>')
