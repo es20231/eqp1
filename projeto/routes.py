@@ -271,7 +271,7 @@ def upload_image():
 
             blob_photo = photo.read()
             blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
-            new_photo = Uploads(data=blob_photo, string_data=blob_photo_decoded,upload_date=datetime.now())
+            new_photo = Uploads(data=blob_photo, string_data=blob_photo_decoded, upload_date=datetime.now())
             db.session.add(new_photo)
             db.session.commit()
             new_photo.insert_logged_user_id(current_user)
@@ -314,12 +314,25 @@ def users():
 def configuration():
 
     if request.method == 'POST':
+        photo = request.files['image']
         usuario = request.form.get('usuario')
         bio = request.form.get('biografia')
         email = request.form.get('email')
         senha = request.form.get('senha')
         nova_senha = request.form.get('nova_senha')
         novo_email = request.form.get('novo_email')
+        #print(photo)
+
+        if photo.filename != '':
+            if not allowed_extensions(photo.filename):
+                flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
+                return redirect(request.url)
+            else:
+                blob_photo = photo.read()
+                blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
+                current_user.add_perfil_photo(blob_photo_decoded)
+                #print('Foto alterada!!!')
+
         if usuario:
             current_user.add_usuario(usuario)
         if bio:

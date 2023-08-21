@@ -8,11 +8,13 @@
     </div>
 
     <div class="card-update-below">
-        <div class="image">
-            <img src="data:;base64,{{user.perfil_photo}}" alt="">
-            <a href="#">Alterar foto de perfil</a>
-        </div>
-        <form action="" method="post">
+        <form action="" enctype="multipart/form-data" method="post">
+            <div class="image">
+                <img src="data:;base64,{{user.perfil_photo}}" alt="">
+                <label for="image">Alterar foto de perfil</label>
+                <input type="file" name="image">
+            </div>
+        
             <div class="textfield">
                 <label for="usuario">Usuário</label>
                 <input type="text" name="usuario" placeholder="Usuário">
