@@ -7,16 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{url_for('static', filename='css/style_signup.css')}}">
     <link rel="icon" href="static/img/Logo_microgram.png" type="image/x-icon">
-    <title>signup</title>
+    <title>Signup</title>
 </head>
 
 <body>
-    {% with messages = get_flashed_messages() %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
         {% if messages %}
             {% for message in messages %}
-                <div class="container">
-                    <span class="flashes">{{ message }}</span>
-                </div>
+                {% if message[0] == 'success' or message[0] == 'danger' %}
+                    <div class="container">
+                        <span class="flashes">{{ message[1] }}</span>
+                    </div>
+                {% endif %}
             {% endfor %}
         {% endif %}
     {% endwith %}
@@ -28,7 +30,7 @@
         <div class="rigth-signup">
             <div class="card-signup">
                 <h1>Cadastro</h1>
-                <form action="" method="post">
+                <form action="{{url_for('signup')}}" method="post">
                     <div class="textfield">
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" required placeholder="Nome">
@@ -47,7 +49,7 @@
                     </div>
                     <div class="textfield">
                         <label for="confirmar_senha">Confirmar Senha</label>
-                        <input type="password" name="confirmar_senha" required placeholder="Confirmar Senha">
+                        <input type="password" name="confirmar_senha" required minlength="6" maxlength="20" placeholder="Confirmar Senha">
                     </div>
                     <button class="btn-signup">Cadastrar</button>
                 </form>

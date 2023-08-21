@@ -12,8 +12,12 @@
         <div class="card-registration">
             <h2>Confirmação de Registro de Conta</h2>
             <hr>
-            <p>Sua conta foi confirmada e registrada com sucesso!
-                Você já pode fazer login em nossa aplicação.</p>
+            <p>Sua conta foi confirmada e registrada com sucesso! Você já pode fazer login em nossa aplicação.</p>
+            <p>Dados da conta:
+                <li>Email: {{user.email}}</li>
+                <li>Nome: {{user.nome}}</li>
+                <li>Data de Criação da Conta: {{user.date_created}}</li>
+            </p>
         </div>
     </div>
 </body>

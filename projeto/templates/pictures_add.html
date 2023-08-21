@@ -2,60 +2,129 @@
 {% block conteudo %}
 <link rel="stylesheet" href="{{url_for('static', filename='css/style_pictures_add.css')}}">
 <div class="dashboard">
+    {% for post in posts %}
     <div class="picture">
         <div class="image">
-            <img class="img" src="https://ojt.com/wp-content/uploads/2021/08/python-programming-language.png" alt="">
+            <img class="img" src="data:;base64,{{post.data}}" alt="">
         </div>
         <div class="container_card">
             <div class="card">
                 <h1>Comentários</h1>
                 <hr class="line-card">
-                <div class="textfield">
-                    <input type="text" name="comentario" placeholder="Comentário">
-                </div>
-                <button class="btn-comment">Comentar</button>
+                    <div class="scroll">
+                        {% for comentario in comentarios %}
+                            {% if comentario.post == post.id %}
+                                <div class="box">
+                                    <p><p></p></p>
+                                    <p>{{comentario.dono_user.nome}}:</p>
+                                    <p class="comment">{{comentario.comentario}}</p>
+                                </div>
+                            {% endif %} 
+                        {% endfor %}
+                    </div>
+                <form action="{{url_for('comentar_post', post_id = post.id,nome_user_post=post.dono_user.nome, nome=current_user.nome)}}" method="POST">
+                    <div class="textfield">
+                        <input type="text" name="comentario" placeholder="Comentário">
+                    </div>
+                    <button class="btn-comment" type="submit">Comentar</button>
+                </form>
             </div>
         </div> 
     </div>
-    <div>
-        <hr class="line-picture">
-    </div>
-    <div class="picture">
-        <div class="image">
-            <img class="img" src="https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css.jpg" alt="">
-        </div>
-        <div class="container_card">
-            <div class="card">
-                <h1>Comentários</h1>
-                <hr class="line-card">
-                <div class="textfield">
-                    <input type="text" name="comentario" placeholder="Comentário">
-                </div>
-                <button class="btn-comment">Comentar</button>
-            </div>
-        </div> 
-    </div>
-    <div>
-        <hr class="line-picture">
-    </div>
-    <div class="picture">
-        <div class="image">
-            <img class="img" src="https://miro.medium.com/v2/resize:fit:438/1*0G5zu7CnXdMT9pGbYUTQLQ.png" alt="">
-        </div>
-        <div class="container_card">
-            <div class="card">
-                <h1>Comentários</h1>
-                <hr class="line-card">
-                <div class="textfield">
-                    <input type="text" name="comentario" placeholder="Comentário">
-                </div>
-                <button class="btn-comment">Comentar</button>
-            </div>
-        </div> 
-    </div>
-    <div>
-        <hr class="line-picture">
-    </div>
-</div>
 
+   
+    <div class="box-comment">
+        <div class="like-dislike">
+            <!-- Botão de curtir -->
+            <a class="like-button" id="like-button">
+                <span class="icon">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </span>
+            </a>
+
+            <!-- Botão de não curtir -->
+            <a  class="dislike-button" id="dislike-button">
+                <span class="icon">
+                    <i class="fa-regular fa-thumbs-down"></i>
+                </span>
+            </a>
+        </div>
+        <div class="photo-caption">
+            <div class="caption-container">
+                <p class="caption-user">{{post.dono_user.nome}}</p>
+                <p class="caption-text">
+                    {{post.desc}}
+                </p>
+                <button class="caption-toggle" onclick="toggleCaption(this)">Mostrar mais</button>
+            </div>
+        </div>
+    </div>
+   
+    
+    <div>
+        <hr class="line-picture">
+    </div>
+    {% endfor %}
+</div>
+<script>
+    
+    document.addEventListener("DOMContentLoaded", function() {
+        const commentContainers = document.querySelectorAll('.box-comment');
+
+        commentContainers.forEach(function(container) {
+            const captionText = container.querySelector('.caption-text');
+            const captionToggle = container.querySelector('.caption-toggle');
+
+            if (captionText.scrollHeight > captionText.clientHeight) {
+            captionToggle.style.display = 'block'; 
+            }
+
+            captionToggle.addEventListener('click', function() {
+                captionText.classList.toggle('expanded');
+                if (captionToggle.innerHTML === 'Mostrar mais') {
+                    captionToggle.innerHTML = 'Mostrar menos';
+                } else {
+                    captionToggle.innerHTML = 'Mostrar mais';
+                }
+            });
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const likeButton = document.getElementById("like-button");
+        const dislikeButton = document.getElementById("dislike-button");
+
+        likeButton.addEventListener("click", function() {
+        if (!likeButton.classList.contains("active")) {
+            likeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-up"></i></span>';
+            dislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
+            likeButton.classList.add("active");
+            dislikeButton.classList.remove("active");
+            likeButton.style.fontSize='25px'
+            likeButton.style.height='49px'
+        } else {
+            likeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
+            likeButton.classList.remove("active");
+        }
+    });
+
+    dislikeButton.addEventListener("click", function() {
+        if (!dislikeButton.classList.contains("active")) {
+            likeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
+            dislikeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-down"></i></span>';
+            dislikeButton.classList.add("active");
+            likeButton.classList.remove("active");
+            dislikeButton.style.fontSize='25px'
+            dislikeButton.style.height='49px'
+
+        } else {
+            dislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
+            dislikeButton.classList.remove("active");
+        }
+    });
+    });
+
+    
+
+</script>
 {% endblock conteudo %}
