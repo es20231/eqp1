@@ -4,8 +4,8 @@ from projeto import serializer
 from projeto import mail
 from projeto import allowed_extensions
 from projeto.validators import validate_email, validate_senha, validate_usuario
-from projeto.models import User, Uploads, Posts, Comments
-from flask import render_template, redirect, request, url_for, flash
+from projeto.models import User, Uploads, Posts, Comments, Likes_Dislikes
+from flask import render_template, redirect, request, url_for, flash, jsonify
 from flask_login import login_user, logout_user, login_required, current_user
 import base64
 from flask_mail import Mail, Message
@@ -192,7 +192,8 @@ def dashboard():
 def feed(id):
     all_posts = Posts.query.order_by(desc(Posts.data_postagem)).all()
     all_comments = Comments.query.order_by(desc(Comments.data_do_comentario)).all()
-    return render_template("pictures_add.html", posts= all_posts, comentarios=all_comments)  
+    all_likes_dislikes = Likes_Dislikes.query.all()
+    return render_template("pictures_add.html", posts= all_posts, comentarios=all_comments, likes_dislikes=all_likes_dislikes)  
 
 @app.route('/perfil/<int:id>/feed/post/<int:image_id>', methods=["POST"])
 @login_required
@@ -232,7 +233,53 @@ def comentar_post(nome,nome_user_post,post_id):
     
     return redirect(url_for('feed', id=current_user.id))
 
+@app.route('/registrar_like_dislike', methods=["POST"])
+@login_required
+def registrar_like_dislike():
+    if request.method == "POST":
+        action = request.args.get('action')
+        post_id = int(request.args.get('post_id'))
 
+        post_relacionado = Posts.query.filter_by(id=post_id).first()
+
+        if post_id != post_relacionado.id:
+            return jsonify({"error": 'Post not found'}), 404
+        
+        has_like_dislike = Likes_Dislikes.query.filter_by(post= post_id, usuario=current_user.id).first()
+        if has_like_dislike:
+            if action == 'like':
+                has_like_dislike.value = 1
+                db.session.commit()
+                return redirect(url_for('feed', id=current_user.id))
+            elif action == 'dislike':
+                has_like_dislike.value = 0
+                db.session.commit()
+                return redirect(url_for('feed', id=current_user.id))
+            
+
+        else:
+            if action == 'like':
+                new_like = Likes_Dislikes(post = post_id, value = 1)
+                db.session.add(new_like)
+                db.session.commit()
+                new_like.insert_logged_user_id(current_user)
+
+                post = Posts.query.filter_by(id=post_id).first()
+                post.curtir()
+                return redirect(url_for('feed', id=current_user.id))
+            
+            elif action == 'dislike':
+                new_dislike = Likes_Dislikes(post=post_id, value = 0)
+                db.session.add(new_dislike)
+                db.session.commit()
+                new_dislike.insert_logged_user_id(current_user)
+
+                post = Posts.query.filter_by(id=post_id).first()
+                post.descurtir()
+                return redirect(url_for('feed', id=current_user.id))
+    return redirect(request.url)
+
+            
 @app.route('/perfil/<user>')
 @login_required
 def perfil(user):
