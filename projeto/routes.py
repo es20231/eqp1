@@ -8,6 +8,10 @@ from projeto.models import User, Uploads, Posts, Comments
 from flask import render_template, redirect, request, url_for, flash
 from flask_login import login_user, logout_user, login_required, current_user
 import base64
+from flask_mail import Mail, Message
+from sqlalchemy import desc
+from datetime import datetime
+from werkzeug.exceptions import RequestEntityTooLarge
 
 
 @app.route('/signup', methods=['POST', 'GET'])
@@ -27,16 +31,68 @@ def signup():
                 user = User(nome=nome,
                             usuario=usuario,
                             email=email,
-                            senhacrip=senha)
-                
+                            date_created = datetime.now().replace(microsecond=0),
+                            senhacrip=senha,
+                            email_confirm_token=token,  # Armazene o token no campo do usuário
+                            email_confirmed=False)  # Defina o status de confirmação como falso até que o e-mail seja confirmado
+                # user.email_confirm_token = token  # Armazena o token no campo do usuário
+                # user.email_confirmed = False  # Definir o status de confirmação como falso até que o e-mail seja confirmado
+
                 db.session.add(user)
                 db.session.commit()
+
+                # Enviar o e-mail de confirmação
+                msg = Message('Confirme seu registro',
+                              recipients=[email])
+                link = url_for('confirm_email', token=token, _external=True)
+                msg.html = render_template("registration.html", link=link)
+                mail.send(msg)
+                
+                
+
+                flash('Um e-mail de confirmação foi enviado. Por favor, verifique sua caixa de entrada.', category='success')
                 return redirect(url_for('login'))
                 
         else:
             flash('Erro ao cadastrar, tente novamente', category='danger')
 
     return render_template('signup.html')
+
+
+# Rota para confirmar o e-mail
+@app.route('/confirm_email/<token>')
+def confirm_email(token):
+    
+    try:
+        # Decodificar o token para verificar o valor
+        decoded_token = serializer.loads(token, salt='email-confirm', max_age=3600)
+        print("Decoded token:", decoded_token)
+
+        # Recuperar o email do token decodificado
+        email = decoded_token.get('email', None)
+        print("Decoded email:", email)
+
+        if email:
+            user = User.query.filter_by(email=email).first()
+            print("User:", user)
+
+            if user:
+                user.email_confirmed = True
+                user.email_confirm_token = None
+                db.session.commit()
+                flash('E-mail confirmado com sucesso. Você pode fazer login agora.', category='success')
+                msg = Message('Conta confirmada!', recipients=[user.email])
+                msg.html = render_template("confirm_registration.html", user=user)
+                mail.send(msg)
+            else:
+                flash('Erro ao confirmar e-mail. Usuário não encontrado.', category='danger')
+        else:
+            flash('Erro ao confirmar e-mail. Email não encontrado no token decodificado.', category='danger')
+
+    except Exception as e:
+        flash('Erro ao confirmar e-mail. Por favor, tente novamente.', category='danger')
+
+    return redirect(url_for('login'))
 
 
 @app.route('/', methods=['POST', 'GET'])
@@ -70,7 +126,8 @@ def confirm_registration():
 def token_expired():
     return render_template("token_expired.html")
 
-@app.route('/password_recovery')
+
+@app.route('/password_recovery', methods=['GET', 'POST'])
 def password_recovery():
     if request.method == 'POST':
         email = request.form.get('email')
@@ -125,7 +182,6 @@ def password_redefinition(token):
     return render_template("password_redefinition.html", token=token)
 
 
-
 @app.route('/dashboard')
 @login_required
 def dashboard():
@@ -177,7 +233,6 @@ def comentar_post(nome,nome_user_post,post_id):
     return redirect(url_for('feed', id=current_user.id))
 
 
-
 @app.route('/perfil/<user>')
 @login_required
 def perfil(user):
@@ -196,7 +251,6 @@ def gallery():
 def handle_request_entity_too_large(e):
     flash("O arquivo é muito grande. O tamanho máximo permitido é de 20 MB por upload.", "file_length_error")
     return redirect(request.url)
-
 
 @app.route('/gallery', methods=["POST"])
 @login_required
@@ -258,4 +312,27 @@ def users():
 @app.route('/configuration', methods=['POST', 'GET'])
 @login_required
 def configuration():
-    return render_template('configuration.html')
+
+    if request.method == 'POST':
+        usuario = request.form.get('usuario')
+        bio = request.form.get('biografia')
+        email = request.form.get('email')
+        senha = request.form.get('senha')
+        nova_senha = request.form.get('nova_senha')
+        novo_email = request.form.get('novo_email')
+        if usuario:
+            current_user.add_usuario(usuario)
+        if bio:
+            current_user.add_bio(bio)
+        if novo_email:
+            current_user.add_novo_email(novo_email)
+        if email and senha and nova_senha:
+            if current_user.converte_senha(senha_texto_claro=senha) and not validate_email(email):
+                current_user.add_nova_senha(nova_senha)
+            else:
+                flash('Erro ao alterar senha: Email ou Senha fornecidos inválidos', category='danger')
+                return redirect(url_for('configuration'))
+        return redirect(url_for('perfil', user=current_user.id))
+    
+
+    return render_template('configuration.html', user=current_user)
