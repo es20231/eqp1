@@ -73,16 +73,12 @@
                     <select class="filter">
                         <option value="opcao1">Original</option>
                         <option value="opcao2">Preto e Branco</option>
-                        <option value="opcao3">Opção 3</option>
+                        <option value="opcao3">Desfoque</option>
                     </select>
                 </div>
                 <div class="buttons">
                     <button type="submit" class="btn-post">Confirmar</button>
                 </div>
-            </form>
-            <div class="buttons">
-                <button class="btn-close">Cancelar</button>
-            </div>
             </form>
         </div>
     </dialog>
@@ -98,6 +94,7 @@
     {% endif %}
 
 </div>
+
 <script>
     var btnsPost = document.querySelectorAll(".btn-post");
     var modals = document.querySelectorAll(".image-modal");
@@ -111,10 +108,11 @@
         };
     });
     modals.forEach(function (modal) {
-        var btnClose = modal.querySelector(".btn-close");
-        btnClose.onclick = function () {
-            modal.close();
-        };
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.close();
+            }
+        });
     });
 
     function update() {

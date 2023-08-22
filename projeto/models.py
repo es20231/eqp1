@@ -27,6 +27,9 @@ class User(db.Model, UserMixin):
     posts = db.relationship('Posts', backref='dono_user', lazy=True)
     uploads = db.relationship('Uploads', backref='dono_user', lazy=True)
     comentarios = db.relationship('Comments', backref='dono_user', lazy=True)
+    likes_dislikes = db.relationship('Likes_Dislikes', backref='dono_user', lazy=True)
+    comments_likes = db.relationship('Likes_Comments', backref='dono_user', lazy=True)
+
 
     def add_perfil_photo(self, data):
         self.perfil_photo = data
@@ -79,24 +82,36 @@ class Posts(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     data = db.Column(db.Text, nullable=False)
     desc =  db.Column(db.String(length=1024))
-    quant_curtidas = db.Column(db.Integer, default=0)
+    quant_likes = db.Column(db.Integer, default=0)
+    quant_dislikes = db.Column(db.Integer, default=0)
     data_postagem = db.Column(db.DateTime(timezone=True), nullable=False)
     usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
-    curtidas = db.relationship('Likes', backref='like_user', lazy=True)
+    curtidas = db.relationship('Likes_Dislikes', backref='like_user', lazy=True)
     comentarios = db.relationship('Comments', backref='com_user', lazy=True)
+    comments_likes_post = db.relationship('Likes_Comments', backref="do_user", lazy=True)
+    
 
     def curtir(self):
-        self.quant_curtidas += 1
+        self.quant_likes += 1
+        db.session.commit()
+    
+    def descurtir(self):
+        self.quant_dislikes += 1
         db.session.commit()
 
     def insert_logged_user_id(self, user_logged):
         self.usuario = user_logged.id
         db.session.commit()
 
-class Likes(db.Model):
+class Likes_Dislikes(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, nullable=False)
-    usuario = db.Column(db.String(length=50), nullable=False)
+    usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
     post = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    value = db.Column(db.Boolean, nullable=False) #1 = Like 0 = Dislike
+
+    def insert_logged_user_id(self, user_logged):
+        self.usuario = user_logged.id
+        db.session.commit()
 
 
 class Comments(db.Model):
@@ -105,8 +120,24 @@ class Comments(db.Model):
     comentario = db.Column(db.String(length=1024), nullable=False)
     post = db.Column(db.Integer, db.ForeignKey('posts.id'))
     data_do_comentario = db.Column(db.DateTime(timezone=True), nullable=False)
+    quant_likes = db.Column(db.Integer, default= 0)
+    likes_no_comentario = db.relationship('Likes_Comments', backref="dono_curtida", lazy=True)
+
+    def curtir_comentario(self):
+        self.quant_likes += 1
+        db.session.commit()
 
     def insert_logged_user_id(self, user_logged):
         self.usuario = user_logged.id
         db.session.commit()
-    
+
+class Likes_Comments(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    usuario = db.Column(db.Integer, db.ForeignKey('user.id'))
+    comentario_id = db.Column(db.Integer, db.ForeignKey('comments.id'))
+    post_id = db.Column(db.Integer, db.ForeignKey('posts.id'))
+    value = db.Column(db.Boolean, nullable=False) #1 = Like 0 = No Like
+
+    def insert_logged_user_id(self, user_logged):
+        self.usuario = user_logged.id
+        db.session.commit()

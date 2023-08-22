@@ -4,14 +4,15 @@ from projeto import serializer
 from projeto import mail
 from projeto import allowed_extensions
 from projeto.validators import validate_email, validate_senha, validate_usuario
-from projeto.models import User, Uploads, Posts, Comments
-from flask import render_template, redirect, request, url_for, flash
+from projeto.models import User, Uploads, Posts, Comments, Likes_Dislikes, Likes_Comments
+from flask import render_template, redirect, request, url_for, flash, jsonify
 from flask_login import login_user, logout_user, login_required, current_user
 import base64
 from flask_mail import Mail, Message
 from sqlalchemy import desc
 from datetime import datetime
 from werkzeug.exceptions import RequestEntityTooLarge
+from projeto.filters import *
 
 
 @app.route('/signup', methods=['POST', 'GET'])
@@ -192,7 +193,9 @@ def dashboard():
 def feed(id):
     all_posts = Posts.query.order_by(desc(Posts.data_postagem)).all()
     all_comments = Comments.query.order_by(desc(Comments.data_do_comentario)).all()
-    return render_template("pictures_add.html", posts= all_posts, comentarios=all_comments)  
+    all_user_likes_dislikes = Likes_Dislikes.query.filter_by(usuario=id).all()
+    all_user_comments_likes = Likes_Comments.query.filter_by(usuario=id).all()
+    return render_template("pictures_add.html", posts= all_posts, comentarios=all_comments, likes_dislikes=all_user_likes_dislikes, all_user_comments_likes = all_user_comments_likes)  
 
 @app.route('/perfil/<int:id>/feed/post/<int:image_id>', methods=["POST"])
 @login_required
@@ -214,6 +217,39 @@ def postar_foto(id,image_id):
 
     return redirect(request.url)
 
+@app.route('/excluir_post', methods=["POST"])
+@login_required
+def excluir_post():
+    if request.method == 'POST':
+        post_id = request.args.get('post_id')
+
+        post_relacionado = Posts.query.filter_by(id=post_id,usuario=current_user.id).first()
+        if post_relacionado:
+            comentarios_post = Comments.query.filter_by(post=post_relacionado.id).all()
+            likes_dislikes_post = Likes_Dislikes.query.filter_by(post=post_relacionado.id).all()
+
+            for like_dislike in likes_dislikes_post:
+                db.session.delete(like_dislike)
+                db.session.commit()
+            
+            for comentario in comentarios_post:
+                db.session.delete(comentario)
+                db.session.commit()
+            
+            has_remaining_comments = Comments.query.filter_by(post= post_relacionado.id).all()
+            has_remaining_likes_dislikes = Likes_Dislikes.query.filter_by(post=post_relacionado.id).all()
+
+            if not has_remaining_likes_dislikes:
+                if not has_remaining_comments:
+                    db.session.delete(post_relacionado)
+                    db.session.commit()
+                    return redirect(url_for('feed', id=current_user.id))
+            
+            else:
+                flash('Erro ao tentar excluir uma postagem.Tente novamente', "error_delete_post")
+                return redirect(request.url)
+    return redirect(request.url)
+
 @app.route('/<string:nome>/realizar_comentario/post/<string:nome_user_post>/<int:post_id>', methods=["GET","POST"])
 @login_required
 def comentar_post(nome,nome_user_post,post_id):
@@ -232,6 +268,119 @@ def comentar_post(nome,nome_user_post,post_id):
     
     return redirect(url_for('feed', id=current_user.id))
 
+@app.route('/registrar_like_dislike', methods=["POST"])
+@login_required
+def registrar_like_dislike():
+    if request.method == "POST":
+        action = request.args.get('action')
+        post_id = int(request.args.get('post_id'))
+
+        post_relacionado = Posts.query.filter_by(id=post_id).first()
+
+        if post_id != post_relacionado.id:
+            return jsonify({"error": 'Post não encontrado'}), 404
+        
+        has_like_dislike = Likes_Dislikes.query.filter_by(post= post_id, usuario=current_user.id).first()
+        if has_like_dislike:
+            post = Posts.query.filter_by(id=post_id).first()
+            if action == 'like':
+                if has_like_dislike.value == 0:
+                    has_like_dislike.value = 1
+                    db.session.commit()
+                    post.quant_dislikes -= 1
+                    db.session.commit()
+                    post.quant_likes += 1
+                    db.session.commit()
+                    return redirect(url_for('feed', id=current_user.id))
+                
+                elif has_like_dislike.value == 1:
+                    has_like_dislike.value = 1
+                    db.session.commit()
+                    return redirect(url_for('feed', id=current_user.id))
+
+            elif action == 'dislike':
+                if has_like_dislike.value == 0:
+                    has_like_dislike.value = 0
+                    db.session.commit()
+                    return redirect(url_for('feed', id=current_user.id))
+                
+                elif has_like_dislike.value == 1:
+                    has_like_dislike.value = 0
+                    db.session.commit()
+                    post.quant_likes -= 1
+                    db.session.commit()
+                    post.quant_dislikes += 1
+                    db.session.commit()
+                    return redirect(url_for('feed', id=current_user.id))
+            
+
+        else:
+            if action == 'like':
+                new_like = Likes_Dislikes(post = post_id, value = 1)
+                db.session.add(new_like)
+                db.session.commit()
+                new_like.insert_logged_user_id(current_user)
+
+                post = Posts.query.filter_by(id=post_id).first()
+                post.curtir()
+                return redirect(url_for('feed', id=current_user.id))
+            
+            elif action == 'dislike':
+                new_dislike = Likes_Dislikes(post=post_id, value = 0)
+                db.session.add(new_dislike)
+                db.session.commit()
+                new_dislike.insert_logged_user_id(current_user)
+
+                post = Posts.query.filter_by(id=post_id).first()
+                post.descurtir()
+                return redirect(url_for('feed', id=current_user.id))
+    return redirect(request.url)
+
+@app.route('/registrar_like_comment', methods=["POST"])
+@login_required
+def registrar_like_comentario():
+    if request.method == "POST":
+        action = request.args.get('action')
+        post_id = int(request.args.get('post_id'))
+        comment_id = int(request.args.get('comment_id'))
+
+        post_relacionado = Posts.query.filter_by(id=post_id).first()
+
+        if post_relacionado.id == post_id:
+            comentario_do_post = Comments.query.filter_by(id=comment_id,post=post_id).first()
+
+            if not comentario_do_post:
+                return jsonify({"error": 'Comentário não encontrado'}), 404
+            
+            has_like = Likes_Comments.query.filter_by(post_id=post_id, usuario=current_user.id,comentario_id=comment_id).first()
+            if has_like:
+                if action == 'like':
+                    if has_like.value == 1:
+                        has_like.value = 1
+                        db.session.commit()
+                        return redirect(url_for('feed', id=current_user.id))
+                    
+                    elif has_like.value == 0:
+                        has_like.value = 1
+                        db.session.commit()
+                        comentario_do_post.quant_likes += 1
+                        db.session.commit()
+                        return redirect(url_for('feed', id=current_user.id))
+            
+            else:
+                if action == 'like':
+                    new_like_comment = Likes_Comments(comentario_id = comment_id, post_id=post_id, value = 1)
+                    db.session.add(new_like_comment)
+                    db.session.commit()
+                    new_like_comment.insert_logged_user_id(current_user)
+
+                    comentario = Comments.query.filter_by(id=comment_id,post=post_id).first()
+                    comentario.curtir_comentario()
+                    return redirect(url_for('feed', id=current_user.id))
+        else:
+            return jsonify({"error": "Post não encontrado"}), 404
+
+    return redirect(request.url)
 
 @app.route('/perfil/<user>')
 @login_required

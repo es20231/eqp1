@@ -16,7 +16,14 @@
                             {% if comentario.post == post.id %}
                                 <div class="box">
                                     <p><p></p></p>
-                                    <p>{{comentario.dono_user.nome}}:</p>
+                                    <div class="like-comment">
+                                        <p>{{comentario.dono_user.nome}}</p>
+                                        <a class="like-button-comment" data-post-id="{{post.id}}" data-comment-id="{{comentario.id}}" id="like-button-comment">
+                                            <span class="icon">
+                                                <i class="fa-regular fa-thumbs-up"></i>
+                                            </span>
+                                        </a>
+                                    </div>
                                     <p class="comment">{{comentario.comentario}}</p>
                                 </div>
                             {% endif %} 
@@ -36,18 +43,25 @@
     <div class="box-comment">
         <div class="like-dislike">
             <!-- Botão de curtir -->
-            <a class="like-button" id="like-button">
+            <a class="like-button" data-post-id="{{post.id}}" id="like-button">
                 <span class="icon">
                     <i class="fa-regular fa-thumbs-up"></i>
                 </span>
             </a>
 
             <!-- Botão de não curtir -->
-            <a  class="dislike-button" id="dislike-button">
+            <a  class="dislike-button" data-post-id="{{post.id}}" id="dislike-button">
                 <span class="icon">
                     <i class="fa-regular fa-thumbs-down"></i>
                 </span>
             </a>
+            {% if post.usuario == current_user.id %}
+                <a class="delete" data-post-id="{{post.id}}">
+                    <span class="icon">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </a>
+            {% endif %}
         </div>
         <div class="photo-caption">
             <div class="caption-container">
@@ -91,39 +105,150 @@
     });
 
     document.addEventListener("DOMContentLoaded", function() {
-        const likeButton = document.getElementById("like-button");
-        const dislikeButton = document.getElementById("dislike-button");
+        const likeButtons = document.querySelectorAll(".like-button");
+        const dislikeButtons = document.querySelectorAll(".dislike-button");
+        const likeButtonsComment = document.querySelectorAll(".like-button-comment");
 
-        likeButton.addEventListener("click", function() {
-        if (!likeButton.classList.contains("active")) {
-            likeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-up"></i></span>';
-            dislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
-            likeButton.classList.add("active");
-            dislikeButton.classList.remove("active");
-            likeButton.style.fontSize='25px'
-            likeButton.style.height='49px'
-        } else {
-            likeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
-            likeButton.classList.remove("active");
+        likeButtons.forEach(function(likeButton) {
+            likeButton.addEventListener("click", function() {
+                const parentDiv = likeButton.closest(".box-comment");
+                const thisLikeButton = parentDiv.querySelector(".like-button");
+                const thisDislikeButton = parentDiv.querySelector(".dislike-button");
+
+                if (!thisLikeButton.classList.contains("active")) {
+                    thisLikeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-up"></i></span>';
+                    thisDislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
+                    thisLikeButton.classList.add("active");
+                    thisDislikeButton.classList.remove("active");
+                    thisLikeButton.style.fontSize = '25px';
+                    thisLikeButton.style.height = '49px';
+                } else {
+                    thisLikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
+                    thisLikeButton.classList.remove("active");
+                }
+            });
+        });
+
+        likeButtonsComment.forEach(function(likeButtoncomment) {
+            likeButtoncomment.addEventListener("click", function() {
+                if (!likeButtoncomment.classList.contains("active")) {
+                    likeButtoncomment.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-up"></i></span>';
+                    likeButtoncomment.classList.add("active");
+                } else {
+                    likeButtoncomment.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
+                    likeButtoncomment.classList.remove("active");
+                }
+            });
+        });
+
+        dislikeButtons.forEach(function(dislikeButton) {
+            dislikeButton.addEventListener("click", function() {
+                const parentDiv = dislikeButton.closest(".box-comment");
+                const thisLikeButton = parentDiv.querySelector(".like-button");
+                const thisDislikeButton = parentDiv.querySelector(".dislike-button");
+
+                if (!thisDislikeButton.classList.contains("active")) {
+                    thisLikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
+                    thisDislikeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-down"></i></span>';
+                    thisDislikeButton.classList.add("active");
+                    thisLikeButton.classList.remove("active");
+                    thisDislikeButton.style.fontSize = '25px';
+                    thisDislikeButton.style.height = '49px';
+                } else {
+                    thisDislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
+                    thisDislikeButton.classList.remove("active");
+                }
+            });
+        });  
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const likeButtons = document.querySelectorAll(".like-button");
+        const dislikeButtons = document.querySelectorAll(".dislike-button");
+        const likeButtonsComment = document.querySelectorAll(".like-button-comment")
+
+        likeButtons.forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                const postId = this.getAttribute("data-post-id");
+                registerLikeDislike("like", postId);
+            });
+        });
+
+        dislikeButtons.forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                const postId = this.getAttribute("data-post-id");
+                registerLikeDislike("dislike", postId);
+            });
+        });
+        
+        likeButtonsComment.forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                const postId = this.getAttribute("data-post-id");
+                const commentId = this.getAttribute("data-comment-id");
+                registerLikeComment("like", postId, commentId);
+            });
+        });
+
+        function registerLikeDislike(action, postId) {
+            // Faça uma requisição Ajax para registrar o like ou dislike no servidor
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", `/registrar_like_dislike?action=${action}&post_id=${postId}`, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    // Ação concluída, atualize a interface ou faça qualquer ação necessária
+                    console.log(`Post ${postId} ${action}d!`);
+                }
+            };
+            xhr.send();
+        }
+
+        function registerLikeComment(action, postId, commentId) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", `/registrar_like_comment?action=${action}&post_id=${postId}&comment_id=${commentId}`, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status == 200) {
+                    console.log(`Post ${postId} ${commentId} ${action}`);
+                }
+            };
+            xhr.send();
         }
     });
 
-    dislikeButton.addEventListener("click", function() {
-        if (!dislikeButton.classList.contains("active")) {
-            likeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-up"></i></span>';
-            dislikeButton.innerHTML = '<span class="icon"><i class="fa-solid fa-thumbs-down"></i></span>';
-            dislikeButton.classList.add("active");
-            likeButton.classList.remove("active");
-            dislikeButton.style.fontSize='25px'
-            dislikeButton.style.height='49px'
+    document.addEventListener("DOMContentLoaded", function() {
+        const deleteButtons = document.querySelectorAll(".delete");
 
-        } else {
-            dislikeButton.innerHTML = '<span class="icon"><i class="fa-regular fa-thumbs-down"></i></span>';
-            dislikeButton.classList.remove("active");
+        deleteButtons.forEach(function(deleteButton) {
+            deleteButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                const postId = this.getAttribute("data-post-id");
+                confirmDelete(postId);
+            });
+        });
+
+        function confirmDelete(postId) {
+            const confirmation = confirm("Deseja realmente excluir este post?");
+            if (confirmation) {
+                deletePost(postId);
+            }
         }
-    });
-    });
 
+        function deletePost(postId) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", `/excluir_post?post_id=${postId}`, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    // Atualize a interface ou realize outras ações necessárias após a exclusão
+                    console.log(`Post ${postId} excluído com sucesso!`);
+                    window.location.reload();
+                }
+            };
+            xhr.send();
+        }
+        
+    });
     
 
 </script>

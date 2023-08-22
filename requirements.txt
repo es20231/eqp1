@@ -6,4 +6,3 @@ flask_bcrypt
 flask_login
 flask_mail
 python-dotenv
-pillow
