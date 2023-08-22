@@ -18,7 +18,7 @@
         {% if messages %}
             
             {% for message in messages %}
-                {% if message[0] == 'danger' and message[0] == 'success' %}
+                {% if message[0] == 'danger' or message[0] == 'success' %}
                     <div class="container">
                         <span class="flashes">{{ message[1] }}</span>
                     </div>
