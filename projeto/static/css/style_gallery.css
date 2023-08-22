@@ -162,6 +162,7 @@
 }
 
 .box-filters{
+    width: 50%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -169,6 +170,14 @@
 
 .box-filters >label{
     color: #f0ffffde;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .textfield2{
@@ -206,6 +215,7 @@
     gap: 15px;
     
 }
+
 
 .btn-post,
 .btn-excluir {
@@ -248,33 +258,6 @@
     transition: background 0.7s;
 }
 
-.btn-close{
-    width: 70%;
-    padding: 4px 0;
-    margin-top: 5px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    font-weight: 700;
-    letter-spacing: 1.0px;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
-}
-
-.btn-close{
-    background: #fc1606f8;
-    font-size: 16px; 
-    text-decoration: none;
-    color: black;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.btn-close:hover {
-    background: #cc1003f8;
-    transition: background 0.7s;
-}
 
 .line-below{
     height: 10%;

@@ -64,21 +64,22 @@
             <div class="box-picture">
                 <img src="data:;base64,{{image.string_data}}" alt="">
             </div>
-            <div class="textfield2">
-                <textarea name="biografia" cols="20" rows="2" placeholder="Legenda"></textarea>
-            </div>
-            <div class="box-filters">
-                <label for="Filtros">Filtros</label>
-                <select class="filter">
-                    <option value="opcao1">Original</option>
-                    <option value="opcao2">Preto e Branco</option>
-                    <option value="opcao3">Opção 3</option>
-                </select>
-            </div>
-            <div class="buttons">
-                <a href="#" class="btn-post">Confirmar</a>
-                <button class="btn-close">Cancelar</button>
-            </div>
+            <form action="{{url_for('postar_foto', id = current_user.id, image_id = image.id)}}" method="POST">
+                <div class="textfield2">
+                    <textarea name="legenda" cols="20" rows="2" placeholder="Legenda"></textarea>
+                </div>
+                <div class="box-filters">
+                    <label for="Filtros">Filtros</label>
+                    <select class="filter">
+                        <option value="opcao1">Original</option>
+                        <option value="opcao2">Preto e Branco</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="btn-post">Confirmar</button>
+                </div>
+            </form>
         </div>
     </dialog>
     <hr class="line-below">
@@ -93,44 +94,30 @@
     {% endif %}
 
 </div>
-
-<dialog>
-    <div class="box-post">
-        <div class="box-picture">
-            <img src="https://www.datocms-assets.com/48401/1628645197-learn-typescript.png" alt="">
-        </div>
-        <div class="textfield2">
-            <textarea name="biografia" cols="20" rows="2" placeholder="Legenda"></textarea>
-        </div>
-        <div class="box-filters">
-            <label for="Filtros">Filtros</label>
-            <select class="filter">
-                <option value="opcao1">Original</option>
-                <option value="opcao2">Preto e Branco</option>
-                <option value="opcao3">Opção 3</option>
-            </select>
-        </div>
-        <div class="buttons">
-            <a href="#" class="btn-post">Confirmar</a>
-            <button class="btn-close">Cancelar</button>
-        </div>
-    </div>
-</dialog>
-
-
-
 <script>
-    var btn = document.querySelector(".btn-post")
-    var modal = document.querySelector("dialog")
-    var btnClose = document.querySelector(".btn-close")
+    
+    var btnsPost = document.querySelectorAll(".btn-post");
+    var modals = document.querySelectorAll(".image-modal");
 
-    btn.onclick = function () {
-        modal.showModal()
-    }
+    btnsPost.forEach(function (btn) {
+        btn.onclick = function () {
+            var imageId = btn.getAttribute("data-image-id");
+            var modal = document.querySelector(".image-modal[data-image-id='" + imageId + "']");
+            if (modal) {
+            modal.showModal();
+            }
+        };
+    });
 
-    btnClose.onclick = function () {
-        modal.close()
-    }
+    modals.forEach(function (modal) {
+        modal.addEventListener('click', function(event) {
+            if (event.target === modal) {
+                modal.close();
+            }
+        });
+    });
+
+
 
     function update() {
         var progressStatus = document.getElementById("Progress_Status");
