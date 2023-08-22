@@ -62,7 +62,7 @@
     <dialog class="image-modal" data-image-id="{{ image.id }}">
         <div class="box-post">
             <div class="box-picture">
-                <img src="data:;base64,{{image.string_data}}" alt="">
+                <img id="modal-image" data-image-id="{{image.id}}" src="data:;base64,{{image.string_data}}" alt="">
             </div>
             <form action="{{url_for('postar_foto', id = current_user.id, image_id = image.id)}}" method="POST">
                 <div class="textfield2">
@@ -70,10 +70,10 @@
                 </div>
                 <div class="box-filters">
                     <label for="Filtros">Filtros</label>
-                    <select class="filter">
-                        <option value="opcao1">Original</option>
-                        <option value="opcao2">Preto e Branco</option>
-                        <option value="opcao3">Desfoque</option>
+                    <select id="filter-select" class="filter" name="selected_filter">
+                        <option value="Original">Original</option>
+                        <option value="Preto e Branco">Preto e Branco</option>
+                        <option value="Desfoque">Desfoque</option>
                     </select>
                 </div>
                 <div class="buttons">

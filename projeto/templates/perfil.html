@@ -14,14 +14,14 @@
     </div>
     <div class="follow">
         <div class="seguidores">
-            <h2>1000</h2>
+            <h2>{{total_users}}</h2>
             <h2>Seguidores</h2>
         </div>
         <div class="usuarios">
             <a href="{{url_for('users')}}">Usuários</a>
         </div>
         <div class="seguindo">
-            <h2>1000</h2>
+            <h2>{{total_users}}</h2>
             <h2>Seguindo</h2>
         </div>
     </div>
@@ -29,9 +29,9 @@
         <hr class="line-perfil">
     </div>
     <div class="bottom-perfil">
-        <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/13447146-programacaoial-cheia-de-ilustracao-de-design-de-icone-de-contorno-simbolo-de-computacao-em-nuvem-no-arquivo-eps-10-de-fundo-branco-vetor.jpg" alt="">
-        <img src="https://i.pinimg.com/236x/91/56/ab/9156ab661f6082b917a342b1c14a5185.jpg" alt=""> 
-        <img src="https://i.pinimg.com/564x/02/dd/98/02dd98db07a6b9eaffdedc6114d013d7.jpg" alt=""> 
+        {% for post in user_posts %}
+                <img src="data:;base64,{{post.data}}" alt="">
+        {% endfor %}
     </div>
 </div>  
 {% endblock conteudo %}
