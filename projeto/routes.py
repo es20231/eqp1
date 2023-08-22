@@ -105,10 +105,15 @@ def login():
         user_logged = User.query.filter_by(email=email).first()
         
         if user_logged and user_logged.converte_senha(senha_texto_claro=senha):
-            login_user(user_logged)
-            return redirect(url_for('feed', id=user_logged.id))
+            if user_logged.email_confirmed:
+                login_user(user_logged)
+                return redirect(url_for('feed', id=user_logged.id))
+            else:
+                flash('Erro ao logar, confirme sua conta!', category='danger')
+                return redirect(request.url)
         else:
-            flash('Erro ao logar, email ou senha inválidos!!!', category='danger')
+            flash("Erro ao logar, email ou senha invalidos!", category="danger")
+            return redirect(request.url)
 
     return render_template('login.html')
 
@@ -210,7 +215,7 @@ def postar_foto(id,image_id):
             return redirect(request.url)
         else:
             if selected_filter == 'Preto e Branco':
-                imagem_filtrada = black_and_white(imagem_post.data)
+                imagem_filtrada = apply_filter(imagem_post.data,black_and_white_filter)
                 new_post = Posts(data=imagem_filtrada,desc=legenda_post, data_postagem=datetime.now())
                 db.session.add(new_post)
                 db.session.commit()
@@ -218,7 +223,7 @@ def postar_foto(id,image_id):
                 flash("Postagem realizada com sucesso.", "success_post")
                 return redirect(url_for('feed', id=current_user.id))
             elif selected_filter == 'Desfoque':
-                imagem_filtrada = blur_filter(imagem_post.data)
+                imagem_filtrada = apply_filter(imagem_post.data,blur_filter)
                 new_post = Posts(data=imagem_filtrada,desc=legenda_post, data_postagem=datetime.now())
                 db.session.add(new_post)
                 db.session.commit()

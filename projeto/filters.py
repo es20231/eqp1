@@ -5,23 +5,22 @@ from PIL.ImageFilter import (
 )
 import io, base64
 
-def black_and_white(og_img):
+
+def apply_filter(og_img, filter_func):
     image = Image.open(io.BytesIO(og_img))
+    filtered_image = filter_func(image)
+
+    img_io = io.BytesIO()
+    image_format = image.format  # Obtém o formato original da imagem
+    filtered_image.save(img_io, format=image_format)  # Salva a imagem filtrada com o mesmo formato
+    img_bytes = img_io.getvalue()
+    data_img = base64.b64encode(img_bytes).decode('ascii')
+    return data_img
+
+def black_and_white_filter(image):
     black_and_white_image = image.convert("L")
-    
-    # Salva a imagem em preto e branco como bytes no formato JPEG
-    img_io = io.BytesIO()
-    black_and_white_image.save(img_io, format='JPEG')
-    img_bytes = img_io.getvalue()
-    data_img = base64.b64encode(img_bytes).decode('ascii')
-    return data_img
+    return black_and_white_image
 
-def blur_filter(og_img):
-    image = Image.open(io.BytesIO(og_img))
-    img_blur = image.filter(BLUR)
-
-    img_io = io.BytesIO()
-    img_blur.save(img_io, format='JPEG')
-    img_bytes = img_io.getvalue()
-    data_img = base64.b64encode(img_bytes).decode('ascii')
-    return data_img
+def blur_filter(image):
+    img_blur = image.filter(ImageFilter.BLUR)
+    return img_blur
