@@ -8,9 +8,10 @@
     </div>
 
     <div class="card-update-below">
-        <div class="image">
+        <div class="image" id="form-container">
             <img src="data:;base64,{{user.perfil_photo}}" alt="">
-            <a href="#">Alterar foto de perfil</a>
+            <label style="text-decoration: underline; cursor: pointer; color: #8b27b3;"  for="image">Alterar foto de perfil</label>
+            <input type="file" name="image" id="image-input" style="display: none;">
         </div>
         <form action="" method="post">
             <div class="textfield">
@@ -85,6 +86,30 @@
             card_update2.style.borderBottomLeftRadius = '0px';
             card_update2.style.borderBottomRightRadius = '0px';
         }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var imageInput = document.getElementById("image-input");
+        var imageLabel = document.querySelector(".image label");
+
+        imageLabel.addEventListener("click", function() {
+            imageInput.click(); // Simula o clique no input de imagem oculto
+        });
+
+        imageInput.addEventListener("change", function() {
+            var form = new FormData();
+            form.append("image", imageInput.files[0]);
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "{{url_for('configuration')}}", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    // Lógica após o envio bem-sucedido
+                    window.location.reload()
+                }
+            };
+            xhr.send(form);
+        });
     });
 </script>
 
