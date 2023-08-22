@@ -511,6 +511,8 @@ def configuration():
         if email and senha and nova_senha:
             if current_user.converte_senha(senha_texto_claro=senha) and not validate_email(email):
                 current_user.add_nova_senha(nova_senha)
+                flash('Senha alterada. Logue novamente na sua conta.', category="success")
+                return redirect(url_for('logout'))
             else:
                 flash('Erro ao alterar senha: Email ou Senha fornecidos inválidos', category='danger')
                 return redirect(url_for('configuration'))
