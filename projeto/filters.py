@@ -27,34 +27,3 @@ def blur_filter(og_img):
     return img_bytes
 
 
-def sharpen_filter(og_img):
-    image = Image.open(io.BytesIO(og_img))
-    img_sharpen = image.filter(SHARPEN)
-
-    img_io = io.BytesIO()
-    img_sharpen.save(img_io, format='JPEG')
-    img_bytes = img_io.getvalue()
-
-    return img_bytes
-
-
-def smooth_filter(og_img):
-    image = Image.open(io.BytesIO(og_img))
-    img_smooth = image.filter(SMOOTH)
-
-    img_io = io.BytesIO()
-    img_smooth.save(img_io, format='JPEG')
-    img_bytes = img_io.getvalue()
-
-    return img_bytes
-
-
-
-
-
-    
-
-
-
-    
-
