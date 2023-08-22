@@ -70,6 +70,18 @@
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
 }
 
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form .textfield{
+    width: 100%;
+}
+
 .box{
     display: flex;
     flex-direction: column;
@@ -80,6 +92,18 @@
     color: #f0ffffde;
     font-weight: 500;
     text-decoration: underline;
+}
+
+.box .like-comment{
+    display: flex;
+    color: #f0ffffde;
+    font-weight: 500;
+    text-decoration: underline;
+    justify-content: space-between;
+}
+
+.box .like-button-comment{
+    font-size: 1.0rem;
 }
 
 .box .comment{
@@ -178,6 +202,8 @@ button:hover {
     border-bottom-left-radius: 10px;
 }
 
+
+
 .caption-container {
     display: flex;
     flex-direction: column;
@@ -224,7 +250,7 @@ button:hover {
     justify-content: space-between;
     align-items: center;
     margin-top: 0px;
-    width: 100%; /* Garante que ocupe toda a largura */
+    width: 55vw; /* Garante que ocupe toda a largura */
 }
 
 .like-button,
@@ -238,6 +264,7 @@ button:hover {
     text-decoration: none;
     color: #f0ffffde;
     transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .like-button {
@@ -261,6 +288,19 @@ button:hover {
     background-color: #3e0748;
 }
 
+.delete{
+    margin-right: 15px;
+    padding: 10px; 
+    background-color: #464343;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.delete:hover{
+    background-color: rgb(211, 17, 17);
+}
 
 
 @media only screen and (max-width:950px){
@@ -321,4 +361,8 @@ button:hover {
         margin-left: 0;
         margin-right: 11px;   
     }
+    .like-dislike{
+        width: 100%;
+    }
 }
+
