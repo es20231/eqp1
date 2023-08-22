@@ -18,7 +18,7 @@
                                     <p><p></p></p>
                                     <div class="like-comment">
                                         <p>{{comentario.dono_user.nome}}</p>
-                                        <a class="like-button-comment" id="like-button-comment">
+                                        <a class="like-button-comment" data-post-id="{{post.id}}" data-comment-id="{{comentario.id}}" id="like-button-comment">
                                             <span class="icon">
                                                 <i class="fa-regular fa-thumbs-up"></i>
                                             </span>
@@ -55,11 +55,13 @@
                     <i class="fa-regular fa-thumbs-down"></i>
                 </span>
             </a>
-            <a class="delete">
-                <span class="icon">
-                    <i class="fa-solid fa-trash"></i>
-                </span>
-            </a>
+            {% if post.usuario == current_user.id %}
+                <a class="delete" data-post-id="{{post.id}}">
+                    <span class="icon">
+                        <i class="fa-solid fa-trash"></i>
+                    </span>
+                </a>
+            {% endif %}
         </div>
         <div class="photo-caption">
             <div class="caption-container">
@@ -157,12 +159,13 @@
                     thisDislikeButton.classList.remove("active");
                 }
             });
-        });
+        });  
     });
 
     document.addEventListener("DOMContentLoaded", function() {
         const likeButtons = document.querySelectorAll(".like-button");
         const dislikeButtons = document.querySelectorAll(".dislike-button");
+        const likeButtonsComment = document.querySelectorAll(".like-button-comment")
 
         likeButtons.forEach(button => {
             button.addEventListener("click", function(event) {
@@ -179,6 +182,15 @@
                 registerLikeDislike("dislike", postId);
             });
         });
+        
+        likeButtonsComment.forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                const postId = this.getAttribute("data-post-id");
+                const commentId = this.getAttribute("data-comment-id");
+                registerLikeComment("like", postId, commentId);
+            });
+        });
 
         function registerLikeDislike(action, postId) {
             // Faça uma requisição Ajax para registrar o like ou dislike no servidor
@@ -192,6 +204,50 @@
             };
             xhr.send();
         }
+
+        function registerLikeComment(action, postId, commentId) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", `/registrar_like_comment?action=${action}&post_id=${postId}&comment_id=${commentId}`, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status == 200) {
+                    console.log(`Post ${postId} ${commentId} ${action}`);
+                }
+            };
+            xhr.send();
+        }
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const deleteButtons = document.querySelectorAll(".delete");
+
+        deleteButtons.forEach(function(deleteButton) {
+            deleteButton.addEventListener("click", function(event) {
+                event.preventDefault();
+                const postId = this.getAttribute("data-post-id");
+                confirmDelete(postId);
+            });
+        });
+
+        function confirmDelete(postId) {
+            const confirmation = confirm("Deseja realmente excluir este post?");
+            if (confirmation) {
+                deletePost(postId);
+            }
+        }
+
+        function deletePost(postId) {
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", `/excluir_post?post_id=${postId}`, true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                    // Atualize a interface ou realize outras ações necessárias após a exclusão
+                    console.log(`Post ${postId} excluído com sucesso!`);
+                    window.location.reload();
+                }
+            };
+            xhr.send();
+        }
+        
     });
     
 
