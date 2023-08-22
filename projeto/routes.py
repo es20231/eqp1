@@ -415,7 +415,7 @@ def perfil(user):
     for conta in total_profiles:
         total_contas +=1
     profile = User.query.filter_by(id=user).first()
-    posts = Posts.query.filter_by(usuario=current_user.id).all()
+    posts = Posts.query.filter_by(usuario=user).all()
     return render_template("perfil.html", profile=profile, user_posts = posts, total_users = total_contas)
 
 @app.route('/gallery')
