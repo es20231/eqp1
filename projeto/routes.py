@@ -491,21 +491,12 @@ def users():
 def configuration():
 
     if request.method == 'POST':
-        photo = request.files['image']
         usuario = request.form.get('usuario')
         bio = request.form.get('biografia')
         email = request.form.get('email')
         senha = request.form.get('senha')
         nova_senha = request.form.get('nova_senha')
         novo_email = request.form.get('novo_email')
-        if photo.filename != '':
-            if not allowed_extensions(photo.filename):
-                flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
-                return redirect(request.url)
-            else:
-                blob_photo = photo.read()
-                blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
-                current_user.add_perfil_photo(blob_photo_decoded)
         if usuario:
             current_user.add_usuario(usuario)
         if bio:
@@ -521,4 +512,20 @@ def configuration():
         return redirect(url_for('perfil', user=current_user.id))
     
 
+    return render_template('configuration.html', user=current_user)
+
+@app.route('/configuration_user_profile_photo', methods=["POST"])
+@login_required
+def profile_photo_configuration():
+    photo = request.files['image']
+    if photo.filename != '':
+            if not allowed_extensions(photo.filename):
+                flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
+                return redirect(request.url)
+            else:
+                blob_photo = photo.read()
+                blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
+                current_user.add_perfil_photo(blob_photo_decoded)
+                return redirect(url_for('perfil', user=current_user.id))
+    
     return render_template('configuration.html', user=current_user)

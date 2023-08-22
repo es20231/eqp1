@@ -8,21 +8,21 @@
     </div>
 
     <div class="card-update-below">
-        <div class="image" id="form-container">
-            <img src="data:;base64,{{user.perfil_photo}}" alt="">
-            <label style="text-decoration: underline; cursor: pointer; color: #8b27b3;"  for="image">Alterar foto de perfil</label>
-            <input type="file" name="image" id="image-input" style="display: none;">
-        </div>
-        <form action="" method="post">
-            <div class="textfield">
-                <label for="usuario">Usuário</label>
-                <input type="text" name="usuario" placeholder="Usuário">
+            <div class="image" id="form-container">
+                <img src="data:;base64,{{user.perfil_photo}}" alt="">
+                <label style="text-decoration: underline; cursor: pointer; color: #8b27b3;"  for="image">Alterar foto de perfil</label>
+                <input type="file" name="image" id="image-input" style="display: none;">
             </div>
-    
-            <div class="textfield2">
-                <label for="biografia">Biografia</label>
-                <textarea name="biografia" cols="30" rows="3" placeholder="Biografia"></textarea>
-            </div>
+            <form action="" method="post" id="form2">
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                </div>
+        
+                <div class="textfield2">
+                    <label for="biografia">Biografia</label>
+                    <textarea name="biografia" cols="30" rows="3" placeholder="Biografia"></textarea>
+                </div>
     
             <button class="save">Salvar alterações</button>
         </form>
@@ -101,7 +101,7 @@
             form.append("image", imageInput.files[0]);
 
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "{{url_for('configuration')}}", true);
+            xhr.open("POST", "{{url_for('profile_photo_configuration')}}", true);
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                     // Lógica após o envio bem-sucedido
