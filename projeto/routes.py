@@ -186,7 +186,8 @@ def password_redefinition(token):
 @app.route('/dashboard')
 @login_required
 def dashboard():
-    return render_template("dashboard.html")
+    users = User.query.all()
+    return render_template("dashboard.html", users=users)
     
 @app.route('/perfil/<int:id>/feed')
 @login_required
