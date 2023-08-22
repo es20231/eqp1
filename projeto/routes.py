@@ -202,18 +202,36 @@ def feed(id):
 def postar_foto(id,image_id):
     if request.method == "POST":
         legenda_post = request.form.get('legenda')
+        selected_filter = request.form.get('selected_filter')
 
         imagem_post = Uploads.query.filter_by(id=image_id).first()
         if imagem_post.data == '':
             flash('Imagem não registrada na galeria. Faça upload da imagem na galeria para depois realizar a postagem.', "feed_post_image_error")
             return redirect(request.url)
         else:
-            new_post = Posts(data=imagem_post.string_data,desc=legenda_post, data_postagem=datetime.now())
-            db.session.add(new_post)
-            db.session.commit()
-            new_post.insert_logged_user_id(current_user)
-            flash("Postagem realizada com sucesso.", "success_post")
-            return redirect(url_for('feed', id=current_user.id))
+            if selected_filter == 'Preto e Branco':
+                imagem_filtrada = black_and_white(imagem_post.data)
+                new_post = Posts(data=imagem_filtrada,desc=legenda_post, data_postagem=datetime.now())
+                db.session.add(new_post)
+                db.session.commit()
+                new_post.insert_logged_user_id(current_user)
+                flash("Postagem realizada com sucesso.", "success_post")
+                return redirect(url_for('feed', id=current_user.id))
+            elif selected_filter == 'Desfoque':
+                imagem_filtrada = blur_filter(imagem_post.data)
+                new_post = Posts(data=imagem_filtrada,desc=legenda_post, data_postagem=datetime.now())
+                db.session.add(new_post)
+                db.session.commit()
+                new_post.insert_logged_user_id(current_user)
+                flash("Postagem realizada com sucesso.", "success_post")
+                return redirect(url_for('feed', id=current_user.id))
+            else:
+                new_post = Posts(data=imagem_post.string_data,desc=legenda_post, data_postagem=datetime.now())
+                db.session.add(new_post)
+                db.session.commit()
+                new_post.insert_logged_user_id(current_user)
+                flash("Postagem realizada com sucesso.", "success_post")
+                return redirect(url_for('feed', id=current_user.id))
 
     return redirect(request.url)
 
@@ -227,6 +245,11 @@ def excluir_post():
         if post_relacionado:
             comentarios_post = Comments.query.filter_by(post=post_relacionado.id).all()
             likes_dislikes_post = Likes_Dislikes.query.filter_by(post=post_relacionado.id).all()
+            comments_likes_post = Likes_Comments.query.filter_by(post_id = post_relacionado.id).all()
+
+            for like in comments_likes_post:
+                db.session.delete(like)
+                db.session.commit()
 
             for like_dislike in likes_dislikes_post:
                 db.session.delete(like_dislike)
@@ -236,14 +259,16 @@ def excluir_post():
                 db.session.delete(comentario)
                 db.session.commit()
             
+            has_remaining_comments_likes = Likes_Comments.query.filter_by(post_id=post_relacionado.id).all()
             has_remaining_comments = Comments.query.filter_by(post= post_relacionado.id).all()
             has_remaining_likes_dislikes = Likes_Dislikes.query.filter_by(post=post_relacionado.id).all()
 
-            if not has_remaining_likes_dislikes:
-                if not has_remaining_comments:
-                    db.session.delete(post_relacionado)
-                    db.session.commit()
-                    return redirect(url_for('feed', id=current_user.id))
+            if not has_remaining_comments_likes:
+                if not has_remaining_likes_dislikes:
+                    if not has_remaining_comments:
+                        db.session.delete(post_relacionado)
+                        db.session.commit()
+                        return redirect(url_for('feed', id=current_user.id))
             
             else:
                 flash('Erro ao tentar excluir uma postagem.Tente novamente', "error_delete_post")
@@ -385,8 +410,13 @@ def registrar_like_comentario():
 @app.route('/perfil/<user>')
 @login_required
 def perfil(user):
+    total_contas = 0
+    total_profiles = User.query.all()
+    for conta in total_profiles:
+        total_contas +=1
     profile = User.query.filter_by(id=user).first()
-    return render_template("perfil.html", profile=profile)
+    posts = Posts.query.filter_by(usuario=current_user.id).all()
+    return render_template("perfil.html", profile=profile, user_posts = posts, total_users = total_contas)
 
 @app.route('/gallery')
 @login_required
@@ -406,7 +436,6 @@ def handle_request_entity_too_large(e):
 def upload_image():
     if request.method == 'POST':
         photos = request.files.getlist('images[]')
-
 
         for photo in photos:
             if photo.filename == '':
@@ -432,7 +461,6 @@ def upload_image():
         return redirect(url_for('gallery'))
 
     return redirect(request.url)
-
 
 @app.route('/<int:id>/gallery')
 @login_required
@@ -463,12 +491,21 @@ def users():
 def configuration():
 
     if request.method == 'POST':
+        photo = request.files['image']
         usuario = request.form.get('usuario')
         bio = request.form.get('biografia')
         email = request.form.get('email')
         senha = request.form.get('senha')
         nova_senha = request.form.get('nova_senha')
         novo_email = request.form.get('novo_email')
+        if photo.filename != '':
+            if not allowed_extensions(photo.filename):
+                flash("Utilize um tipo de arquivo compatível (png, jpg, jpeg, gif)", category="compatibility_error")
+                return redirect(request.url)
+            else:
+                blob_photo = photo.read()
+                blob_photo_decoded = base64.b64encode(blob_photo).decode('ascii')
+                current_user.add_perfil_photo(blob_photo_decoded)
         if usuario:
             current_user.add_usuario(usuario)
         if bio:
