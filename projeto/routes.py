@@ -105,10 +105,15 @@ def login():
         user_logged = User.query.filter_by(email=email).first()
         
         if user_logged and user_logged.converte_senha(senha_texto_claro=senha):
-            login_user(user_logged)
-            return redirect(url_for('feed', id=user_logged.id))
+            if user_logged.email_confirmed:
+                login_user(user_logged)
+                return redirect(url_for('feed', id=user_logged.id))
+            else:
+                flash('Erro ao logar, confirme sua conta!', category='danger')
+                return redirect(request.url)
         else:
-            flash('Erro ao logar, email ou senha inválidos!!!', category='danger')
+            flash("Erro ao logar, email ou senha invalidos!", category="danger")
+            return redirect(request.url)
 
     return render_template('login.html')
 
@@ -415,7 +420,7 @@ def perfil(user):
     for conta in total_profiles:
         total_contas +=1
     profile = User.query.filter_by(id=user).first()
-    posts = Posts.query.filter_by(usuario=current_user.id).all()
+    posts = Posts.query.filter_by(usuario=user).all()
     return render_template("perfil.html", profile=profile, user_posts = posts, total_users = total_contas)
 
 @app.route('/gallery')
